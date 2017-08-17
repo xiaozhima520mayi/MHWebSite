@@ -1,0 +1,47 @@
+#fp-nav ul li a span, .fp-slidesNav ul li a span { width: 28px; height: 28px; background-color: #dfdcdc; border: none; }
+#fp-nav ul li, .fp-slidesNav ul li { margin-bottom: 50px; margin-right: 40px; }
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span { background: burlywood; }
+
+div.section { min-width: 1366px; height: 750px; overflow:hidden; }
+
+/*section1*/
+div.section1 img { width: 100%; height: 100%; min-height: 700px; }
+div.tp{ position: absolute; width: 40%; top: 28%; left: 27%; z-index: 30;  color: white; }
+div.tp p{font-size: 30px; line-height:60px;}
+@media (max-width : 1600px) {
+    div.tp { font-size: 22px; }
+}
+
+div.tp p:first-child { margin-left: 10%; margin-bottom: 3%; }
+
+/*section2*/
+div.part { width: 100%; height: 250px; position: relative; text-align: center;overflow:hidden;}
+div.part1, div.part3 { background-color: rgb(244,244,244); }
+div.part img { right: 28%;}
+img.al, img.ar { position: absolute;}
+div.part img.ar{ top:20px;}
+img.text { top: 20%; left: 20%;}
+div.part2 img.ar { left: 55%;}
+div.part2 img.al { left: 28%;}
+
+
+/*section3*/
+div.section3 { position: relative; }
+div.section3 p.back { width: 100%; height: 100%; min-height: 768px; background:url(../images/sylx/30.png) repeat }
+div.section3 img.m { position: absolute; width: 13%; top: 36%; left: 43%; }
+div.section3 img.lt { position: absolute; width: 17%; top: 16%; left: 24%;}
+div.section3 img.lb { position: absolute; width: 17%; top: 62%; left: 24%;}
+div.section3 img.rt { position: absolute; width: 17%; top: 16%; left: 59%;}
+div.section3 img.rb { position: absolute; width: 17%; top: 62%; left: 59%;}
+
+/*section4*/
+div.section4 { position: relative; }
+img.bc { width: 100%; height: 100%; min-height: 768px;}
+
+img.i1 { position: absolute; z-index: 3; top: 10%; left: 22%; width: 14%; }
+img.i2 { position: absolute; z-index: 3; top: 38%; left: 35%; width: 11%; }
+img.i3 { position: absolute; z-index: 3; top: 12%; left: 46%; width: 14%; }
+img.i4 { position: absolute; z-index: 3; top: 38%; left: 58%; width: 14%; }
+img.showwidth { position: absolute; top: 20%; left: 30%; width: 35%; }
+div.section4 div.blank { position: absolute; height: 35%; width: 50%; top: 20%; left: 25%; overflow: hidden;}
+.ftr { width: 100%; height: 100%; background: white;}

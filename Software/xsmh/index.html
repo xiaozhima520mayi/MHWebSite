@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>上业科技-学术门户管理软件</title>
+    <link rel="Shortcut Icon " href="/WebUI/images/logo_ico.ico">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <script src="js/jquery-1.8.3.min.js"></script> 
+    <script src="/WebUI/js/href.js"></script> 
+    <script>
+        isBrowser("/CompatibilityMode/Software/xsmh.html", "/Software/xsmh/index.html", "/Software/xsmh/index.html");
+    </script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script>
+        $(function () {
+            $('#dowebok').fullpage({
+                'navigation': true,
+                onLeave: function (index, nextIndex) {
+                    if (nextIndex == '1') {
+                        $('.section1').find(".flash1-1").addClass('fadeInUp animated');
+                    }
+                    if (index == '1') {
+                        $('.section1').find(".flash1-1").removeClass('fadeInUp animated');
+                    }
+                    if (nextIndex == '2') {
+                        $('.section2').find("h3").addClass('fadeInDown animated');
+                        $('.section2').find("h4").addClass('fadeInDown animated');
+                        $('.section2').find(".flash2-1").addClass('fadeInUp animated');
+                        $('.section2').find(".dzly").addClass('fadeInUp animated');
+                        $('.section2').find(".yhzx").addClass('fadeInUp animated');
+                        $('.section2').find(".wjdc").addClass('fadeInUp animated');
+                        $('.section2').find(".ycfw").addClass('fadeInUp animated');
+                        $('.section2').find(".phgl").addClass('fadeInUp animated');
+                        $('.section2').find(".jsmk").addClass('fadeInUp animated');
+                        $('.section2').find(".zydh").addClass('fadeInUp animated');
+                        $('.section2').find(".ckzx").addClass('fadeInUp animated');
+                        $('.section2').find(".xwmk").addClass('fadeInUp animated');
+                    }
+                    if (index == '2') {
+                        $('.section2').find("h3").removeClass('fadeInDown animated');
+                        $('.section2').find("h4").removeClass('fadeInDown animated');
+                        $('.section2').find(".flash2-1").removeClass('fadeInUp animated');
+                        $('.section2').find(".dzly").removeClass('fadeInUp animated');
+                        $('.section2').find(".yhzx").removeClass('fadeInUp animated');
+                        $('.section2').find(".wjdc").removeClass('fadeInUp animated');
+                        $('.section2').find(".ycfw").removeClass('fadeInUp animated');
+                        $('.section2').find(".phgl").removeClass('fadeInUp animated');
+                        $('.section2').find(".jsmk").removeClass('fadeInUp animated');
+                        $('.section2').find(".zydh").removeClass('fadeInUp animated');
+                        $('.section2').find(".ckzx").removeClass('fadeInUp animated');
+                        $('.section2').find(".xwmk").removeClass('fadeInUp animated');
+                    }
+                    if (nextIndex == '3') {
+                        $('.section3').find("h3").addClass('fadeInDown animated');
+                        $('.section3').find("h4").addClass('fadeInDown animated');
+                        $('.section3').find(".bg").addClass('fadeInUp animated');
+                        $('.section3').find(".flash3-2").addClass('fadeInUp animated');
+                        $('.section3').find(".flash3-3").addClass('fadeInUp animated');
+                        $('.section3').find(".flash3-4").addClass('fadeInUp animated');
+                    }
+                    if (index == '3') {
+                        $('.section3').find("h3").removeClass('fadeInDown animated');
+                        $('.section3').find("h4").removeClass('fadeInDown animated');
+                        $('.section3').find(".bg").removeClass('fadeInUp animated');
+                        $('.section3').find(".flash3-2").removeClass('fadeInUp animated');
+                        $('.section3').find(".flash3-3").removeClass('fadeInUp animated');
+                        $('.section3').find(".flash3-4").removeClass('fadeInUp animated');
+                    }
+                }
+            });
+            $(window).resize(function () {
+                autoScrolling();
+            });
+
+            function autoScrolling() {
+                var $ww = $(window).width();
+                if ($ww < 1024) {
+                    $.fn.fullpage.setAutoScrolling(false);
+                } else {
+                    $.fn.fullpage.setAutoScrolling(true);
+                }
+            }
+            autoScrolling();
+        });
+    </script>
+</head>
+<body>
+    <div class="big_box">
+        <div id="dowebok">
+            <div class="section section1">
+                <h3></h3>
+                <h4>致力打造学术化、专业化、标准化、数字化为一体的图书馆门户网站</h4>
+                <div class="flash1-1 fadeInUp animated"><img src="img/flash1-1.png" width="100%" height="100%"></div>
+            </div>
+            <div class="section section2">
+                <h3>功能模块</h3>
+                <h4>功能齐全、操作方便、用户体验性好</h4>
+                <div class="contant">
+                    <div class="flash2-1"><img src="img/flash2-1.png" width="100%" height="100%"></div>
+                    <div class="dzly"><img src="img/dzly.png" width="100%" height="100%"></div>
+                    <div class="yhzx"><img src="img/yhzx.png" width="100%" height="100%"></div>
+                    <div class="wjdc"><img src="img/wjdc.png" width="100%" height="100%"></div>
+                    <div class="ycfw"><img src="img/ycfw.png" width="100%" height="100%"></div>
+                    <div class="phgl"><img src="img/phgl.png" width="100%" height="100%"></div>
+                    <div class="jsmk"><img src="img/jsmk.png" width="100%" height="100%"></div>
+                    <div class="zydh"><img src="img/zydh.png" width="100%" height="100%"></div>
+                    <div class="ckzx"><img src="img/ckzx.png" width="100%" height="100%"></div>
+                    <div class="xwmk"><img src="img/xwmk.png" width="100%" height="100%"></div>
+                </div>
+            </div>
+            <div class="section section3">
+                <h3>技术特色</h3>
+                <h4>利用三大平台实现读者和图书馆、读者与读者之间的信息交流、数据互通</h4>
+                <div class="contant">
+                    <div class="bg">
+                        <img src="img/flash3-1.png" width="100%" height="100%" />
+                    </div>
+                    <div class="flash3-2">
+                        <div><img src="img/flash3-2.png"></div>
+                        <div><p>内置功能模块<br>管理平台</p></div>
+                    </div>
+                    <div class="flash3-3">
+                        <div><img src="img/flash3-3.png"></div>
+                        <div><p>内容信息<br>发布平台</p></div>
+                    </div>
+                    <div class="flash3-4">
+                        <div><img src="img/flash3-4.png"></div>
+                        <div><p>外部业务系统接口<br>管理平台</p></div>
+                    </div>
+                </div>
+                <!--<div class="footer-box">
+                    <div class="footer">上海上业信息科技有限公司 版权所有 沪ICP：09071524</div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

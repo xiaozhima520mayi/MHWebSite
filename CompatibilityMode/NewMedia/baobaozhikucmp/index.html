@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>上业科技-宝宝智库触摸屏系统</title>
+    <meta charset="utf-8">
+    <link rel="Shortcut Icon " href="/WebUI/images/logo_ico.ico">
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/slide.css" rel="stylesheet" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <!--<script src="/WebUI/js/href.js"></script>
+    <script>
+        isBrowser("/CompatibilityMode/NewMedia/baobaozhikucmp/index.html", "/CompatibilityMode/NewMedia/baobaozhikucmp/index.html", "/NewMedia/baobaozhikucmp/index.html");
+    </script>-->
+    <script src="js/slide.js"></script>
+    <!--[if IE 6]>
+         <script src="../../WebUI/js/pngfix.js"></script>
+            <script type="text/javascript">
+                DD_belatedPNG.fix('*');
+            </script>
+    <![endif]-->
+</head>
+<body>
+    <div class="big_box">
+        <div class="big_box">
+            <div class="section section1">
+                <div class="slides">
+                    <div class="slideInner">
+                        <a href="#" style="background: #ffe667 url(img/yellow.jpg) center top fixed no-repeat"></a>
+                        <a href="#" style="background: #53c0e1 url(img/blue.jpg) center top fixed no-repeat; "></a>
+                        <a href="#" style="background: #ff8f9d url(img/red.jpg) center top fixed no-repeat; "></a>
+                        <a href="#" style="background: #9ce478 url(img/green.jpg) center top fixed no-repeat; "></a>
+                    </div>
+                    <div class="nav">
+                        <a class="prev" href="javascript:;"></a>
+                        <a class="next" href="javascript:;"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="section section2">
+                <h2 class="title2"></h2>
+                <h3 class="title2-1"></h3>
+                <div class="photo2"><img src="img/section2-bg.png"></div>
+            </div>
+            <div class="section section3">
+                <h2 class="title3"></h2>
+                <h3 class="title3-1"></h3>
+                <div class="photo3"><img src="img/section3-bg.png"></div>
+            </div>
+            <div class="section section4">
+                <h2 class="title4"></h2>
+                <h3 class="title4-1"></h3>
+                <div class="photo4"><img src="img/section4-bg.png"></div>
+            </div>
+            <div class="section section5">
+                <h2 class="title5"></h2>
+                <h3 class="title5-1"></h3>
+                <div class="photo5"><img src="img/section5-bg.png"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".slideInner").slide({
+                slideContainer: $('.slideInner a'),
+                effect: 'easeOutCirc',
+                autoRunTime: 2000,
+                slideSpeed: 1000,
+                nav: true,
+                autoRun: true,
+                prevBtn: $('a.prev'),
+                nextBtn: $('a.next')
+            });
+        });
+        $(window).resize(function () {
+            $(".slideInner").slide({
+                slideContainer: $('.slideInner a'),
+                effect: 'easeOutCirc',
+                autoRunTime: 2000,
+                slideSpeed: 1000,
+                nav: true,
+                autoRun: true,
+                prevBtn: $('a.prev'),
+                nextBtn: $('a.next')
+            });
+        })
+
+    </script>
+</body>
+</html>

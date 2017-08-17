@@ -1,0 +1,11 @@
+﻿/*创建脚本*/
+.small_layer{position:absolute; top:0; left:210px;width:452px;}
+.small_layer_content{ background:url(../../../images/Gray/SmallPopBox/small_layer_l_m.png) repeat-y left top; position:relative;}
+.small_layer_content_r{background:url(../../../images/Gray/SmallPopBox/small_layer_r_m.png) repeat-y right top; overflow:hidden;}
+.small_layer_bottom{position:relative;overflow:hidden;}
+.layer{background:url(../../../images/Gray/SmallPopBox/small_layer.png) no-repeat;}
+.small_layer_bottom .small_layer_bot_l{ background-position:0 0; left:0; top:0;overflow:hidden; width:6px; height:6px; position:absolute;}
+.small_layer_bottom .small_layer_bot_r{ background-position:-6px 0; right:0; top:0;overflow:hidden;width:6px; height:6px; position:absolute;}
+.small_layer_bottom .small_layer_bot_m{background:url(../../../images/Gray/SmallPopBox/small_layer_b_m.png) repeat-x; margin:0 6px; height:6px; overflow:hidden;}
+.creatScript{margin:0 6px 0; padding-bottom:13px; background:#f5f5f5;}
+.small_top_boxs{background:url('../../../images/Gray/SmallPopBox/small_layer_t_bg.png') repeat-x left top #F5F5F5;}

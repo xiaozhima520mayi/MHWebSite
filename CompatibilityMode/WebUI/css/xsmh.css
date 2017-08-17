@@ -1,0 +1,22 @@
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff; height: 768px; overflow: hidden; }
+.section1 { background: url(../images/xsmh/section1-bg.jpg) center center; }
+.section1 .black-bg { position: absolute; top: 0; width: 100%; height: 100%; }
+.section1 h3 { background: url(../images/xsmh/title1.png); width: 596px; height: 55px; margin: 60px auto 0; }
+.section1 h4 { color: #ffffff; font-size: 24px; margin-top: 28px; }
+.flash1-1 { width: 577px; margin: 0 auto; margin-top: 32px; }
+#fp-nav ul li,
+.fp-slidesNav ul li { margin: 30px 48px; height: 28px; }
+#fp-nav ul li a span, .fp-slidesNav ul li a span { background-color: #b41e28; border-radius: 28px; height: 28px; width: 28px; border: none; }
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span { background: none; border: 3px solid #b41e28; margin-left: -2px; border-radius: 25px; height: 25px; width: 25px; }
+
+.section2 { background: #fff; }
+.section2 h3 { color: #1b1b1b; font-size: 60px; margin: 60px auto 0; }
+.section2 h4 { color: #696969; font-size: 30px; }
+
+.section2 .contant { position: relative; top: 0;margin: 20px auto 0; width:800px; height:550px; overflow:hidden; text-align:center; }
+.section3 { background: #f6f6f6; }
+.section3 h3 { color: #1b1b1b; font-size: 60px; margin-top: 60px; }
+.section3 h4 { color: #696969; font-size: 30px; }
+.section3 .contant { width:800px; margin:40px auto; position: relative; text-align:center; }
+.section3 .contant p { color: #696969; font-size: 16px; line-height: 24px; }
+

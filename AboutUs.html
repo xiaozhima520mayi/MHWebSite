@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>上业科技-关于我们</title>
+    <meta charset="utf-8" />
+    <link rel="Shortcut Icon " href="/WebUI/images/logo_ico.ico">
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <link href="WebUI/css/index.css" rel="stylesheet" />
+    <link href="WebUI/font/iconfont.css" rel="stylesheet" />
+    <link href="WebUI/font2/iconfont.css" rel="stylesheet" />
+    <link href="WebUI/css/list.css" rel="stylesheet" />
+    <script src="WebUI/js/jquery/jquery-1.8.0.min.js"></script>
+    <script src="WebUI/js/href.js"></script>
+    <script>
+        isBrowser("/CompatibilityMode/AboutUs.html", "/AboutUs.html", "/AboutUs.html");
+    </script>
+    <script src="WebUI/js/jquery/jquery.easing.1.3.js"></script>
+    <script src="WebUI/js/animate/jquery.mousewheel.min.js"></script>
+    <script src="WebUI/js/animate/animate.js"></script>
+    <script src="WebUI/js/respond.src.js"></script>
+</head>
+<body>
+    <div class="big_box">
+        <div class="about_nav">
+            <div class="top_content">
+                <a class="logo" href="Index.html"><img src="WebUI/images/logo2.png" /></a>
+                <div class="ab_nav fright">
+                    <a class="e" href="javascript://">公司介绍</a>
+                    <a href="javascript://">企业文化</a>
+                    <a href="javascript://">资质荣誉</a>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="wrap">
+            <ul class="items about_items">
+                <li class="e"></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="screen about_noe">
+                <div class="main">
+                    <div class="about_int margin8">
+                        <div class="title"><img src="WebUI/images/about_title.png" /></div>
+                        <ul>
+                            <li>
+                                <span><i class="iconfont">&#xe625;</i></span>
+                                <h4>发展历程</h4>
+                                <p>上业科技成立于2007年</p><p>至今已经历了8年的发展历程</p>
+                            </li>
+                            <li>
+                                <span><i class="iconfont">&#xe620;</i></span>
+                                <h4>服务对象</h4>
+                                <p>以专业化的研发实力和市场运作能力成功服务了1000多家高校和图书馆</p>
+                            </li>
+                            <li>
+                                <span><i class="iconfont">&#xe626;</i></span>
+                                <h4>公司规模</h4>
+                                <p class="col">总部位于上海</p><p class="col">在全国各地拥有13个分支机构</p>
+                            </li>
+                            <li>
+                                <span><i class="iconfont">&#xe627;</i></span>
+                                <h4>主要业务</h4>
+                                <p class="col">电子资源、软件开发、新媒体应用</p><p class="col">为教育行业提供信息资源解决方案</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="screen about_two">
+                <div class="main margin6">
+                    <h2 class="title"><img src="WebUI/images/two_title.png" /></h2>
+                    <div class="about_two_con"><img src="WebUI/images/about_two_con.png" /></div>
+                </div>
+                <div class="about_two_ri">
+                    <img src="WebUI/images/about_two_ri.png" />
+                </div>
+            </div>
+            <div class="screen about_three">
+                <div class="main">
+                    <div class="qua_content margin7">
+                        <h2 class="title"><img src="WebUI/images/three_title.png" /></h2>
+                        <div class="pic">
+                            <ul>
+                                <li><img src="WebUI/images/quaimg.jpg" /></li>
+                                <li><img src="WebUI/images/quaimg1.jpg" /></li>
+                            </ul>
+                        </div>
+                        <div class="font">
+                            <ul>
+                                <li>2016年计划上“新三板”</li>
+                                <li>6套自主研发的代码框架</li>
+                                <li>20项软件著作权登记证书 </li>
+                                <li>5套具有软件产品登记证书的软件</li>
+                                <li>1项闵行区创新基金</li>
+                                <li>1项上海市创新基金</li>
+                                <li>高新技术成果转化项目证书</li>
+                                <li>双软企业</li>
+                                <li>高新技术企业</li>
+                                <li>上海电子制造行业协会认证</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //页面刷新回到第一屏
+        function getSreenHeight() {
+            setTimeout(function () { $(window).scrollTop(0); }, 500)
+        }
+        getSreenHeight();
+        var Tween = { Linear: function (t, b, c, d) { return c * t / d + b; }, }
+        var current = 0;
+        var isComplete = true;
+        var isFirst = 0;
+
+        function doAnimate(current) {
+            var screenH = $(window).height();
+            var aboutimgheight = $(".about_two_ri>img").height();
+            var w = $(".about_two_ri>img").width();
+            if (isFirst == 0) {
+                if (screenH <= 768) {
+                    w = w * 0.8;
+                    aboutimgheight = aboutimgheight * 0.8;
+                    $(".about_two_ri>img").css({ width: w, height: aboutimgheight });
+                }
+                $(".about_two_ri").css("top", (screenH - aboutimgheight) / 2);
+                isFirst = 1;
+            }
+            $(".about_two_ri").css("width", w + "px");
+            if (current == 1) {
+                $(".about_two_ri").animate({ right: 0 }, 1000);
+            } else {
+                setTimeout(function () {
+                    $(".about_two_ri").css("right", "-" + w + "px");
+                }, 100);
+            }
+        }
+        /*右侧浮层点击事件*/
+        $(".items>li").click(function () {
+            var count = $(".items>li").index(this);
+            $(".items>li").eq(count).addClass("e").siblings("li").removeClass("e");
+            $(".ab_nav a").eq(count).addClass("e").siblings("a").removeClass("e");
+            //FunLeft(count);
+            if (count > current)
+                count = (count - current) * $(window).height();
+            else {
+                count = -((current - count) * $(window).height());
+            }
+            var sv = $(".items>li").index(this);
+            scrollwrap(count, function () { });
+            current = $(".items>li").index(this);
+            doAnimate(current);
+        })
+        /*导航点击*/
+        $(".ab_nav a").click(function () {
+            var count = $(".ab_nav a").index(this);
+            $(".ab_nav a").eq(count).addClass("e").siblings("a").removeClass("e");
+            $(".items>li").eq(count).addClass("e").siblings("li").removeClass("e");
+            if (count > current)
+                count = (count - current) * $(window).height();
+            else {
+                count = -((current - count) * $(window).height());
+            }
+            var sv = $(".ab_nav a").index(this);
+            scrollwrap(count, function () { });
+            current = $(".ab_nav a").index(this);
+            doAnimate(current);
+        })
+        function scrollwrap(value, fun) {
+            var currenth = current * ($(window).height());
+            var t = 0, d = 30;
+            function _run() {
+                if (t < d) {
+                    isComplete = false;
+                    t++;
+                    var top = Math.ceil(Tween.Linear(t, currenth, value, d));
+                    window.scrollTo(0, top);
+                    setTimeout(_run, 10);
+                } else {
+                    isComplete = true;
+                }
+            }
+            _run();
+        }
+        /*滚轮事件*/
+        $(document).bind('mousewheel', function (event, delta) {
+            if (!isComplete) return;
+            if (delta > 0) {
+                if ($(".items li").eq(0).hasClass("e")) {
+                    return;
+                }
+                else {
+                    //向上
+                    scrollwrap(-($(window).height()));
+                    current--;
+                    doAnimate(current);
+                }
+            }
+            else {
+                //向下2
+                if (current >= 4) return;
+                scrollwrap(($(window).height()));
+                current++;
+                doAnimate(current);
+            }
+            $(".items>li").eq(current).addClass("e").siblings("li").removeClass("e");
+            $(".ab_nav a").eq(current).addClass("e").siblings("a").removeClass("e");
+            //FunLeft(current);
+        })
+    </script>
+</body>
+</html>

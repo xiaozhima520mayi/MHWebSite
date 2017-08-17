@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>上业科技-360全景</title>
+    <link rel="Shortcut Icon " href="/WebUI/images/logo_ico.ico">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="/WebUI/js/href.js"></script>
+    <script>
+        isBrowser("../../CompatibilityMode/NewMedia/360/index.html", "/index.html", "/index.html");
+    </script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script>
+			$(function() {
+				$('#dowebok').fullpage({
+					'navigation': true,
+					onLeave: function(index, nextIndex) {
+						if (nextIndex == '1') {
+							$('.section1').find("h3").addClass('fadeInUp animated');
+							$('.section1').find("h4").addClass('fadeInUp animated');
+							$('.section1').find(".flash-box1").addClass('fadeInDown animated');
+						}
+						if (index == '1') {
+							$('.section1').find("h3").removeClass('fadeInUp animated');
+							$('.section1').find("h4").removeClass('fadeInUp animated');
+							$('.section1').find(".flash-box1").removeClass('fadeInDown animated');
+						}
+						if (nextIndex == '2') {
+							$('.section2').find("h3").addClass('fadeInUp animated');
+							$('.section2').find("h4").addClass('fadeInUp animated');
+							$('.section2').find(".flash-box2").addClass('fadeInDown animated');
+						}
+						if (index == '2') {
+							$('.section2').find("h3").removeClass('fadeInUp animated');
+							$('.section2').find("h4").removeClass('fadeInUp animated');
+							$('.section2').find(".flash-box2").removeClass('fadeInDown animated');
+						}
+						if (nextIndex == '3') {
+							$('.section3').find("h3").addClass('fadeInUp animated');
+							$('.section3').find("h4").addClass('fadeInUp animated');
+							$('.section3').find(".flash-box3").addClass('fadeInDown animated');
+						}
+						if (index == '3') {
+							$('.section3').find("h3").removeClass('fadeInUp animated');
+							$('.section3').find("h4").removeClass('fadeInUp animated');
+							$('.section3').find(".flash-box3").removeClass('fadeInDown animated');
+						}
+						if (nextIndex == '4') {
+							$('.section4').find("h3").addClass('fadeInUp animated');
+							$('.section4').find("h4").addClass('fadeInUp animated');
+							$('.section4').find(".flash-box4").addClass('fadeInDown animated');
+						}
+						if (index == '4') {
+							$('.section4').find("h3").removeClass('fadeInUp animated');
+							$('.section4').find("h4").removeClass('fadeInUp animated');
+							$('.section4').find(".flash-box4").removeClass('fadeInDown animated');
+						}
+						if (nextIndex == '5') {
+							$('.section5').find("h3").addClass('fadeInUp animated');
+							$('.section5').find("h4").addClass('fadeInUp animated');
+							$('.section5').find(".flash-box5").addClass('fadeInDown animated');
+						}
+						if (index == '5') {
+							$('.section5').find("h3").removeClass('fadeInUp animated');
+							$('.section5').find("h4").removeClass('fadeInUp animated');
+							$('.section5').find(".flash-box5").removeClass('fadeInDown animated');
+						}
+						if (nextIndex == '6') {
+							$('.section6').find("h3").addClass('fadeInUp animated');
+							$('.section6').find("h4").addClass('fadeInUp animated');
+							$('.section6').find(".flash-box6").addClass('fadeInDown animated');
+						}
+						if (index == '6') {
+							$('.section6').find("h3").removeClass('fadeInUp animated');
+							$('.section6').find("h4").removeClass('fadeInUp animated');
+							$('.section6').find(".flash-box6").removeClass('fadeInDown animated');
+						}
+					}
+				});
+				$(window).resize(function(){
+        			autoScrolling();
+    			});
+
+    			function autoScrolling(){
+       				var $ww = $(window).width();
+        			if($ww < 1024){
+            			$.fn.fullpage.setAutoScrolling(false);
+        			} else {
+            			$.fn.fullpage.setAutoScrolling(true);
+        			}
+   				}
+    			autoScrolling();
+			});
+    </script>
+</head>
+<body>
+    <div class="big_box">
+        <div class="logo-box">
+            <div class="logo"><span></span></div>
+        </div>
+        <div id="dowebok">
+            <div class="section section1">
+                <div class="flash-box1 fadeInDown animated"><img src="img/flash1-1.png" width="100%" height="100%"></div>
+                <h3 class="fadeInUp animated"></h3>
+                <h4 class="fadeInUp animated"></h4>
+            </div>
+            <div class="section section2">
+                <div class="flash-box2"><img src="img/flash2-1.png" width="100%" height="100%"></div>
+                <h3></h3>
+                <h4></h4>
+            </div>
+            <div class="section section3">
+                <div class="flash-box3"><img src="img/flash3-1.png" width="100%" height="100%"></div>
+                <h3></h3>
+                <h4></h4>
+            </div>
+            <div class="section section4">
+                <div class="flash-box4"><img src="img/flash4-1.png" width="100%" height="100%"></div>
+                <h3></h3>
+                <h4></h4>
+            </div>
+            <div class="section section5">
+                <div class="flash-box5"><img src="img/flash5-1.png" width="100%" height="100%"></div>
+                <h3></h3>
+                <h4></h4>
+            </div>
+            <div class="section section6">
+                <div class="flash-box6"><img src="img/flash6-1.png" width="100%" height="100%"></div>
+                <h3></h3>
+                <h4></h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

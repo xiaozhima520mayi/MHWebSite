@@ -1,0 +1,5 @@
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+#menu { position: fixed; right: 30px;#right: 30px; top: 50%; width: 10px; margin-top: -50px; padding: 0; list-style-type: none; z-index: 70;}
+#menu li { width:10px; height:10px; float:left; margin-top:10px;}
+#menu li a { display:block; float:left; width:10px; height:10px; text-indent:-100px; overflow:hidden; border-radius:5px; background:#fff;}
+#menu li.active a { background:#0074EA}

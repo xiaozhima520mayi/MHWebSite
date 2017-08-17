@@ -1,0 +1,6 @@
+﻿body{ background-color:#f3eded}
+.errors{ width:368px; height:300px; margin:0 auto; overflow:hidden;}
+.errors p{ text-align:center; line-height:24px; font-family:"微软雅黑"; color:#878787;}
+.errors p b{ color:#747474;}
+.errors p a{ color:#6997f4;}
+a.return_home{ text-align:center; width:125px; height:30px; line-height:30px; color:#fff; margin:20px auto; background-color:#dd6b05; display:block;}

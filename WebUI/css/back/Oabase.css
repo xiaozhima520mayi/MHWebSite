@@ -1,0 +1,112 @@
+﻿html,body{ width:100%; overflow:hidden; height:100%;cursor:auto;}
+/***************桌面图标*************************/
+
+.pagelist{overflow:hidden;cursor:default; position:absolute; left:2000px;-moz-transition:all 1s ease-in 0s;-o-transition:all 1s ease-in 0s;transition:all 1s ease-in 0s;-webkit-transition:all 1s ease-in 0s; opacity:0;}
+.desktop_current{ left:0;opacity:1;}
+.desktop_show_prepare2{ left:-2000px;opacity:0;-moz-transform:rotateY(135deg);-moz-transform-origin:center left;-moz-transition:all 1s ease-in 0s;
+                                               -webkit-transform:rotateY(135deg);-webkit-transform-origin:center left;-webkit-transition:-webkit-transform .8s linear,opacity .5s linear,left 0s linear .8s;
+                                               -o-transform:rotateY(135deg);-o-transform-origin:center left;-o-transition:all 1s ease-in 0s;
+                                               transform:rotateY(135deg);transform-origin:center left;transition:all 1s ease-in 0s;}
+
+.middle{ position:absolute;cursor:default; z-index:500;}
+.appIcons{ margin-top:46px;position:relative;cursor:auto;}
+.icon{ width:88px; height:89px; position:absolute; color:White; cursor:pointer; font-size:12px;}
+.icon:hover{ background:url(../../../WebUI/images/backImage/selectbg.png)}
+.addButtonIco{ width:48px; height:48px;cursor:pointer; overflow:hidden; position:relative; margin-left:20px; margin-top:7px;}
+.addButtonIco img{ width:48px; height:48px;}
+.appIconName{ cursor:pointer; color:White; height:20px; margin:8px 0 0; text-align:center;font:12px/1.0 tahoma,helvetica,clean,sans-serif;}
+.appIconName .appIconNameinner{background:url(../../../WebUI/images/backImage/tagLeft.png); display:inline-block; *display:inline; *zoom:1; height:20px; line-height:20px; margin:0;max-width:68px; overflow:hidden; padding:0; position:relative; padding-left:10px; width:auto; vertical-align:middle;color:White; overflow:hidden;}
+.appIconName .appIconNameinner input{float:left; width:47px; height:16px; overflow:hidden; border:0; margin-top:1px;}
+.appIconName .appIconNameright{background:url(../../../WebUI/images/backImage/tagRight.png);display:inline-block; height:20px;*display:inline; *zoom:1; margin:0 0 0 -4px; padding:0; vertical-align:middle; width:10px;}
+/****************************************/
+.desktop{ position:static; display:block; z-index:1;cursor:auto;}
+/*************列表选择管理***************/
+.managebg,.indicator_icon,.managebg .e{background:url(../../../WebUI/images/backImage/listmamangbg.png);}
+.managebg{ width:288px; height:32px; position:absolute; top:5px; left:35%;z-index:600;}
+.managebg_tool{ float:right; height:32px; line-height:25px; margin-right:7px;}
+.managebg_tool a{ display:block; width:16px; height:16px; float:left;background:url(../../../WebUI/images/backImage/listmamangbg.png) no-repeat; margin-top:5px; margin-right:10px;}
+.managebg_tool a.tool_about{ background:url("../../../WebUI/images/backImage/help.png");}
+.managebg_tool a.tool_canceled{ background-position:-136px -144px;}
+/*.managebg .indicator{ cursor:pointer; float:left; width:24px; height:21px;}*/
+.managebg .e{ background-position:0 -35px;}
+.indicator_icon{float:left; height:100%; width:100%;}
+.indicator_icon_1{ background-position:-128px -36px;}
+.indicator_icon_1:hover{ background-position:-152px -36px;}
+.managebg .e .indicator_icon_1{background-position:-152px -36px;}
+.indicator_icon_2{ background-position:-80px -36px;}
+.indicator_icon_2:hover{background-position:-105px -36px;}
+.managebg .e .indicator_icon_2{background-position:-105px -36px;}
+.indicator_icon_3{ background-position:-176px -36px;}
+.indicator_icon_3:hover{background-position:-200px -36px;}
+.managebg .e .indicator_icon_3{background-position:-200px -36px;}
+.indicator_icon_4{ background-position:-224px -36px;}
+.indicator_icon_4:hover{background-position:-248px -36px;}
+.managebg .e .indicator_icon_4{background-position:-248px -36px;}
+.indicator_icon_5{ background-position:-272px -36px;}
+.indicator_icon_5:hover{background-position:-56px -36px;}
+.managebg .e .indicator_icon_5{background-position:-56px -36px;}
+.indicator_icon_6{ background-position:-32px -141px;}
+.indicator_icon_6:hover{background-position:-32px -36px;}
+.managebg .e .indicator_icon_6{background-position:-32px -36px;}
+.indicator_icon_7{ background-position:-80px -141px;}
+.indicator_icon_7:hover{background-position:-56px -141px;}
+.managebg .e .indicator_icon_7{background-position:-56px -141px;}
+/****************************/
+
+/*************新列表选择管理***************/
+.newmanagebg{position:absolute; top:5px; height:32px; z-index:600;}
+.productlist{float:left; padding:0 10px;height:32px; overflow:hidden; background:url(../../../WebUI/images/backImage/prod.png) no-repeat left top;}
+.productlist .productname i{background:url(../../../WebUI/images/backImage/pro_rig_bord.gif) no-repeat right center; width:2px; height:10px; position:absolute; top:8px; right:0;}
+.productlist .productname{ padding:0 4px; display:inline-block;line-height:28px; height:28px; padding:0 9px; text-align:center; position:relative;}
+.productlist .productname span{ color:#fff}
+.indicator{color:#000;font-family:Arial,宋体,sans-serif;font-size:12px;margin:0;padding:0;margin-left:5px;text-shadow:1px 1px 3px #000;}
+.indicator:hover{ text-decoration:none;}
+.productlist a{ display:inline-block; color:#fff;}
+.productlist a:hover{ text-decoration:none}
+.productlist img{ display:none;}
+.productlist .e img{ display:block; position:absolute; width:100%; bottom:2px; left:0; height:26px;}
+.managebg_tool{ background:url(../../../WebUI/images/backImage/prod.png) no-repeat right top; width:70px;}
+/******************************************/
+
+/*************任管栏***************/
+.taskGroup{background:url(../../../WebUI/images/backImage/listmamangbg.png) no-repeat;}
+.bottomBarBgTask{ position:absolute; width:100%; height:83px; background:url(../../../WebUI/images/backImage/bgtask.png) repeat-x bottom; bottom:0; z-index:400;}
+.bottomBar{position:absolute;height:83px; right:0; bottom:0;z-index:600;}
+.bottomBar .task{ float:right; height:83px; overflow:hidden;}
+.taskGroup{ width:121px; height:100%; overflow:hidden; background-position:0 -57px; cursor:pointer;}
+.taske{background-position:-242px -57px;}
+.taskGroup:hover{background-position:-121px -57px;}
+.taskGroup .taskItemIcon{ float:left; height:83px; margin:0 6px 0 12px;}
+.taskGroup .taskItemIcon img{ cursor:pointer; float:left; height:32px; width:32px; margin-top:40px;}
+.taskGroup .taskItemText{ width:63px; height:42px; line-height:42px; margin-top:41px; float:left; color:White; overflow:hidden;}
+/****************************/
+/************对话框****************/
+.windows_action_bar{ background:url(../../../WebUI/images/backImage/listmamangbg.png) no-repeat; height:12px; width:12px;}
+.windows_transp_action_bar{ background:url(../../../WebUI/images/backImage/listmamangbg.png) no-repeat;}
+.windows{ border:1px solid #848988; width:500px; height:400px; position:absolute; left:30%; background:#fff; overflow:hidden;}
+.windows .windows_content{ position:relative;}
+.windows .windows_title{ background:url(../../../WebUI/images/backImage/windowTitle.gif) repeat-x; height:24px; border-bottom:1px solid #d3d5d5; cursor:inherit;}
+.windows .windows_title .windows_titleText{ height:24px;font:bold 12px/24px "Arial,宋体"; text-align:center;}
+.windows .windows_title .windows_buttonBar{ position:absolute; height:12px; top:7px; right:10px; width:62px; overflow:hidden;}
+.windows .windows_title .windows_transp_buttonBar{ position:absolute; height:21px; top:1px; right:10px; width:62px; overflow:hidden;}
+.windows .windows_title .windows_minify{background-position:-326px 0; display:block; overflow:hidden; margin-right:13px; float:left;}
+.windows .windows_title .windows_magify{background-position:-338px 0; display:block; overflow:hidden; margin-right:13px; float:left;}
+.windows .windows_title .windows_revert{background-position:-314px 0; display:block; overflow:hidden; margin-right:13px; float:left;}
+.windows .windows_title .windows_close{background-position:-350px 0; display:block; overflow:hidden; float:left;}
+.windows .windows_title .windows_transp_close{background-position:-339px -24px; display:block; overflow:hidden; float:left;margin-right:13px;height:21px; width:21px;}
+.windows .windows_title .windows_transp_close:hover{background-position:-318px -24px; display:block; overflow:hidden; float:left;margin-right:13px;height:21px; width:21px;}
+.windows .windows_title .windows_close:hover{background-position:-350px -12px;}
+.windows .windows_title .windows_minify:hover{background-position:-326px -12px;}
+.windows .windows_title .windows_revert:hover{background-position:-314px -12px;}
+.windows .windows_title .windows_magify:hover{background-position:-338px -12px;}
+.windows_transp{border:0; background:none;}
+.windows_transp .windows_title{ height:24px; background:none; border-bottom:none;}
+.windows_transp .windows_content{ position:relative;}
+.windows_transp .windows_content_Mask{ position:absolute; top:24px; left:0; height:300px; width:300px; z-index:20; background:url(../../../WebUI/images/backImage/blank.gif) repeat;}
+/*************background:url(../../../WebUI/images/backImage/logo.png); width:137px; height:157px; top:35%; left:45%; position:absolute;
+                            
+                            ***************/
+.maskcover{background:#B4D9F1; position:absolute; top:0; left:0; z-index:999999999}
+.maskcover .maskcover_logo{ background: url("../../../WebUI/images/backImage/logo.png");height: 157px;left: 50%;margin: -80px 0 0 -50px;position: absolute;top: 50%;width: 137px;}
+.maskcover .startingText{color:white;cursor: default;font-family: Arial,Tahoma,微软雅黑;font-size: 20px;height: 50px;left: 50%;margin: 80px 0 0 -55px;position: absolute;text-align: center;text-shadow: 0 0 3px #666666;top: 50%;width: 165px;}
+.maskcover .startingBarContainer {background: url("../../../WebUI/images/backImage/013.gif");left: 50%;margin: 120px 0 0 -51px;overflow: hidden;position: absolute;top: 50%;width: 136px; height:10px;}

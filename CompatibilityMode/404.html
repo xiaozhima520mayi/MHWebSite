@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <link href="WebUI/css/404.css" rel="stylesheet" />
+    <script src="WebUI/js/jquery-1.4.1.min.js"></script>
+    <script src="WebUI/js/href.js"></script>
+    <script>
+        isBrowser("/CompatibilityMode/404.html", "/CompatibilityMode/404.html", "/404.html");
+    </script>
+</head>
+<body>
+    <div class="errors">
+        <img src="WebUI/images/404/404.png" />
+        <p><b>5</b>秒后系统会自动转入<a href="javascript://">首页</a></p>
+        <a href="javascript://" class="return_home">返回首页</a>
+    </div>
+</body>
+<script>
+    $(function () {
+        tops();
+        var cur = 5;
+        var snt = setInterval(function () {
+            cur--;
+            $(".errors>p>b").text(cur);
+            if (cur == 0) {
+                clearInterval(snt);
+                location.href = "index.html";
+            }
+        }, 1000);
+    });
+
+    function tops() {
+        var modalHeight = $(".errors").height();
+        var screenHeight = $(window).height();
+        var Tops = (screenHeight - modalHeight) / 2;
+        if (Tops > 10) {
+            $(".errors").css("margin-top", Tops);
+        }
+        else {
+            $(".errors").css("margin-top", "10px");
+        }
+    }
+    tops();
+    window.onresize = function () {
+        tops();
+    }
+</script>
+</html>

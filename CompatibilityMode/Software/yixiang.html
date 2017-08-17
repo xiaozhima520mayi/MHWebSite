@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>上业科技-易享</title>
+    <link rel="Shortcut Icon " href="/WebUI/images/logo_ico.ico">
+    <link rel="stylesheet" type="text/css" href="../WebUI/css/base.css">
+    <link href="../WebUI/css/yixiang.css" rel="stylesheet" />
+    <script src="../WebUI/js/jquery-1.4.1.min.js"></script>
+    <script src="/WebUI/js/href.js"></script>
+    <script>
+        isBrowser("/CompatibilityMode/Software/yixiang.html", "/CompatibilityMode/Software/yixiang.html", "/Software/xx/index.html");
+    </script>
+    <!--[if IE 6]>
+         <script src="../WebUI/js/pngfix.js"></script>
+            <script type="text/javascript">
+                DD_belatedPNG.fix('*');
+            </script>
+    <![endif]-->
+
+</head>
+<body>
+    <div  class="big_box">
+        <div class="section section1" style="background-color: #e4f9e3">
+            <div class="logo"></div>
+            <div class="page-one-content mysecond"></div>
+        </div>
+        <div class="section section2" style="background-color: #f8f8d8">
+            <div class="page-two-top"></div>
+            <div class="page-two-middle"></div>
+            <div class="page-two-foot"></div>
+        </div>
+        <div class="section section3" style="background-color: #d4f6f6">
+            <div class="box">
+                <ul class="menu">
+                    <li id="one" class="current onehover">
+                    </li>
+                    <li class="others two" id="two">
+                    </li>
+                    <li class="others three" id="three">
+                    </li>
+                </ul>
+                <div class="content current">
+                    <h1 class="sign">无需插件</h1>
+                    <p class="information">不需要数据库厂商提供检索</p>
+                    <p class="information">接口不需要进行任何对接工作</p>
+                </div>
+                <div class="content current others" style="display:none">
+                    <h1 class="sign">支持馆外访问</h1>
+                    <p class="information">读者在有互联网的地方</p>
+                    <p class="information">经过身份认证后，就可以访问</p>
+                </div>
+                <div class="content current others" style="display:none">
+                    <h1 class="sign">统一认证</h1>
+                    <p class="information">与学校的统一身份认证</p>
+                    <p class="information">或者图书馆管理系统进行对接</p>
+                </div>
+            </div>
+        </div>
+        <div class="section section4" style="background-color: #fed4cc">
+            <div class="page-four-h1"></div>
+            <div class="page-four-infor"></div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $(".menu li").mouseover(function () {
+                $(".menu>li").each(function () {
+                    var id = $(this).attr("id");
+                    $(this).attr("class", id);
+                });
+                var index = $(this).index();
+                var cN = $(this).attr("id") + "hover";
+                $(this).addClass(cN)
+                $(".content").hide();
+                $(".content:eq(" + index + ")").show();
+            });
+        });
+
+    </script>
+</body>
+</html>

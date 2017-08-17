@@ -1,0 +1,46 @@
+﻿.ExamTitle{ height:67px}
+.exam_quest{ height:22px; line-height:22px; padding:21px 0 11px 0; overflow:hidden}
+.exam_quest label{ width:44px; float:left}
+.exam_quest input{ cursor:pointer; float:left; display:inline; width:62px; height:22px; margin:0 3px; border:0}
+.exam_ico{ background:url(../../images/Gray/exams/exam_ico.gif) no-repeat;}
+.texts{ background-position:0 0; width:62px; height:22px;}
+.single{ background-position:-62px 0; width:62px; height:22px;}
+.much{ background-position:-124px 0; width:62px; height:22px;}
+.judge{ background-position:-186px 0; width:62px; height:22px;}
+.full_in{ background-position:-248px 0; width:62px; height:22px;}
+.writing{ background-position:-310px 0; width:62px; height:22px;}
+.topics{ background-position:-372px 0; width:62px; height:22px;}
+.exam_sets{ position:relative}
+.exam_sets input{cursor:pointer; float:left; display:inline; width:16px; height:16px; margin:0 4px 0 5px; border:0}
+.exa_total{ position:absolute; right:0; top:-30px;}
+.exa_total label{ font:bold; font-family:微软雅黑,Arial; font-size:50px;}
+.text_full{background-position:0 -22px; width:16px; height:16px;}
+.edit_rule{background-position:-16px -22px; width:16px; height:16px;}
+.weight{background-position:-32px -22px; width:16px; height:16px;}
+.i{background-position:-192px -22px; width:16px; height:16px;}
+.underline{background-position:-80px -22px; width:16px; height:16px;}
+.size_frame{background-position:-208px -22px; width:16px; height:16px;}
+.superscript{background-position:-64px -22px; width:16px; height:16px;}
+.subscript{background-position:-48px -22px; width:16px; height:16px;}
+.insert_img{background-position:-96px -22px; width:16px; height:16px;}
+.insert_tab{background-position:-112px -22px; width:16px; height:16px;}
+.music{background-position:-128px -22px; width:16px; height:16px;}
+.previous_typ{background-position:-144px -22px; width:16px; height:16px;}
+.next_typ{background-position:-160px -22px; width:16px; height:16px;}
+.deletes{background-position:-176px -22px; width:16px; height:16px;}
+.PaperName{width: 640px;margin: 4px;min-height : 20px;padding:4px;background: url("../../images/Gray/exams/v3_30.gif") no-repeat scroll 0 0 transparent;}
+.PaperName_P{width: 640px;margin: 4px;min-height : 20px;padding:4px;}
+.border{border: 1px solid #DEDEDE;}
+.title{width: 620px;background: url("../../images/Gray/exams/v3_2z.gif") no-repeat scroll 0 0 transparent;min-height: 25px;margin-left: 30px;}
+.answerText{float: left;margin-left: 10px;background: url("../../images/Gray/exams/v3_2z.gif") no-repeat scroll 0 0 transparent; min-height: 25px;width: 607px;}
+.answer{float: left;font-size:15px;margin-left: 10px; }
+.answer span{ border-bottom:#999 1px solid; display:inline-block; width:100px; text-align:center; margin:0 10px }
+.BQuestion{ min-height:25px;background: url("/images/v3_2z.gif") no-repeat scroll 0 0 transparent;}
+ .trueAnswer, .score{float: left; margin-left: 10px;background: url("../../images/Gray/exams/v3_2z.gif") no-repeat scroll 0 0 transparent;min-height: 25px;width: 560px;}
+.trueItem{float: left;    font-size:15px;margin-left: 10px; min-height: 25px;width: 560px;}
+.trueAnswerText, .scoreText,.trueItemText{float: left;margin-left:20px; line-height:25px;}
+.scoreTexts{ color:#919191;margin:0 0 10px 20px}
+.hr{background-color: #EFEFEF;height: 1px;line-height: 1px;margin: 5px 0;}
+.heard{height: 25px;left: 0; position: absolute;top: 4px;width: 678px;border: 1px solid #DEDEDE;}
+.Topic{ border: 1px solid #DEDEDE;}
+.answer_area{ background:#fff; border:#d3d3d3 1px solid; height:48px; width:644px; margin-left:20px; padding:0 3px;}

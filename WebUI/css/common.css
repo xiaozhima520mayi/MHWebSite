@@ -1,0 +1,19 @@
+﻿/**升级浏览器**/
+.browser-update { width: 718px; height: 496px; clear: both; /*background: url(img/browser_bg_wrapper.png) no-repeat left top;*/ position: absolute; left: 50%; top: 50%; margin-left: -359px; margin-top: -248px; }
+.browser-update h1,
+.browser-update h2,
+.browser-update h3 { text-align: center; }
+.browser-update h1 { padding: 67px 0 0 0; font-size: 30px; line-height: 30px; color: #333; letter-spacing: 1px; }
+.browser-update h2 { font-size: 14px; line-height: 1.8; color: #999; padding: 32px 55px 15px; letter-spacing: 0.1px; }
+.browser-update h3 { font-size: 16px; line-height: 16px; color: #666; padding: 20px 0 40px 0; }
+.browser-update ul { clear: both; }
+.browser-update li { float: left; background: url(../images/browser_icon.png) no-repeat left top; width: 140px; height: 170px; position: relative; text-align: center; *display: inline; *zoom: 1; }
+.browser-update ul a { display: block; width: 100%; padding: 135px 0 0 0; }
+.browser-update h2 a.link { color: #6b95ea; }
+.browser-update h4 { color: #999; font-size: 14px; line-height: 20px; }
+.browser-update .chrome { background-position: 9px 0; margin: 0 0 0 89px; }
+.browser-update .firefox { background-position: -140px 0; margin: 0 60px; }
+.browser-update .ie { background-position: -292px 0; }
+#update { display: none; }
+.browser-update p { font-size: 10px; line-height: 30px; }
+.browser-update p a { width: 48px; color: #000; color: #6b95ea; }

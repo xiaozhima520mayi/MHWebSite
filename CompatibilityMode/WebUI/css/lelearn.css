@@ -1,0 +1,22 @@
+.section {height:1000px;overflow:hidden; position:relative; }
+#fp-nav ul li a span, .fp-slidesNav ul li a span { width: 28px; height: 28px; background-color: #dfdcdc; border: none; }
+#fp-nav ul li, .fp-slidesNav ul li { margin-bottom: 50px; margin-right: 40px; }
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span { background: palegoldenrod; }
+
+div.p1 { width: 50%; margin: 0 auto; height: 30%; text-align: center; }
+div.p1 img { margin-top:20px; width: 80%; }
+div.p2 { position: relative; width: 50%; margin: 0 auto; height: 75%; text-align: center; }
+div.p2 div.p21{}
+div.p2 div.p21 img.m{ width:40%}
+
+div.s1 { width: 50%; min-width: 900px; height: 60%; margin: 0 auto; min-height: 450px; }
+div.s1 img { width: 1000px; min-height: 400px; }
+div.s2 { min-width: 900px; min-height: 200px; width: 80%; height: 40%; margin: 0 auto; padding-left: 10%; }
+
+div.undertt { margin-top: 50px; float: left; width: 23%; height: 45%; }
+img.m { width: 40%; }
+img.m2 { position: absolute; margin-top: 5%; bottom: 0; right: 5%; }
+img.q { position: absolute; bottom: 0; right: 10%;}
+div.undertt p { width: 75%; height: 5%; background-color: rgba(180,150,150,0.1); position: relative; top: -8%; border-radius: 95%; display: none; box-shadow: 0 0 10px 5px rgba(150,150,150,0.3) inset; }
+div.undertt img { z-index: 8; }
+div.p2 img.pic { position: absolute; width: 90%; left: 20%; bottom: -60px; }

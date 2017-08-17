@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>上业科技-学位论文管理软件</title>
+    <link rel="Shortcut Icon " href="/WebUI/images/logo_ico.ico">
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <link href="WebUI/css/index.css" rel="stylesheet" />
+    <script src="../../WebUI/js/jquery/jquery-1.8.0.min.js"></script>
+    <script src="/WebUI/js/href.js"></script>
+    <script>
+        isBrowser("/CompatibilityMode/Software/PaperSubmission.html", "/Software/PapeSubmission/index.html", "/Software/PapeSubmission/index.html");
+    </script>
+    <script src="../../WebUI/js/jquery/jquery.easing.1.3.js"></script>
+    <script src="WebUI/js/animate/jquery.mousewheel.min.js"></script>
+    <script src="WebUI/js/animate/animate.js"></script>
+    
+</head>
+<body>
+    <div class="big_box">
+        <div class="content" id="wrap">
+            <ul class="items">
+                <li class="e"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="screen screen1">
+                <img src="WebUI/images/screen1.jpg" class="imgs" />
+                <div class="screen1_main mm">
+                    <img src="WebUI/images/s1_1.png" class="s1_1" />
+                    <h1 class="hellotext"><span class="hellotext_wrapper"></span></h1>
+                    <img src="WebUI/images/s1_3.png" class="s1_3" />
+                    <img src="WebUI/images/s1_4.png" class="s1_4" />
+                </div>
+                <div class="u-kuoquanquan no1">
+                    <div class="bg"></div>
+                    <div class="bg--pulse"></div>
+                </div>
+                <div class="u-kuoquanquan no2">
+                    <div class="bg"></div>
+                    <div class="bg--pulse"></div>
+                </div>
+                <div class="u-kuoquanquan no3">
+                    <div class="bg"></div>
+                    <div class="bg--pulse"></div>
+                </div>
+                <div class="u-kuoquanquan no4">
+                    <div class="bg"></div>
+                    <div class="bg--pulse"></div>
+                </div>
+                <div class="u-kuoquanquan no5">
+                    <div class="bg"></div>
+                    <div class="bg--pulse"></div>
+                </div>
+            </div>
+            <div class="screen screen2">
+                <div class="screen2_main mm">
+                    <img src="WebUI/images/s2_1.png" class="s2_1" />
+                    <img src="WebUI/images/s2_2.png" class="s2_2" />
+                    <img src="WebUI/images/s2_3.png" class="s2_3" />
+                    <img src="WebUI/images/s2_4.png" class="s2_4" />
+                    <img src="WebUI/images/s2_5.png" class="s2_5" />
+                    <p class="s2_border">
+                        <i></i>
+                        <span></span>
+                    </p>
+                    <h2>论文提交只需4个步骤</h2>
+                </div>
+                
+            </div>
+            <div class="screen screen3">
+                <img src="WebUI/images/screen3.jpg" class="imgs" />
+                <div class="screen3_main mm">
+                    <img src="WebUI/images/s3_3.png" class="s3_1" />
+                    <img src="WebUI/images/s3_1.png" class="s3_2" />
+                    <img src="WebUI/images/s3_2.png" class="s3_3" />
+                    <p class="s3_border">
+                        <i></i>
+                        <span class="one"></span>
+                        <span class="two"></span>
+                    </p>
+                    <h2>全新的响应式布局</h2>
+                    <h6>支持PC端、Pad端</h6>
+                </div>
+            </div>
+            <div class="screen screen4">
+                <div class="screen4_main mm">
+                    <img src="WebUI/images/s4_1.png" class="s4_1" />
+                    <img src="WebUI/images/s4_2.png" class="s4_2" />
+                    <p class="s4_border">
+                        <i></i>
+                        <span class="one"></span>
+                        <span class="two"></span>
+                    </p>
+                    <h2>支持手机移动端</h2>
+                    <h6>查询、阅读</h6>
+                </div>
+                <!--<p class="foot">上海上业信息科技有限公司 版权所有 沪ICP：09071524</p>-->
+            </div>
+        </div>
+    </div>
+    <script>
+        //页面刷新回到第一屏
+        function getSreenHeight() {
+            $(window).scrollTop(0);
+        }
+        getSreenHeight();
+        var Tween = { Linear: function (t, b, c, d) { return c * t / d + b; } }
+        var current = 0;
+        var isComplete = true;
+        /*右侧浮层点击事件*/
+        $(".items>li").click(function () {
+            var count = $(".items>li").index(this);
+            $(".items>li").eq(count).addClass("e").siblings("li").removeClass("e");
+            if (count > current) { //count = (count - current) * ($(window).height() - 44);
+                count = (count - current) * ($(window).height());
+            }
+            else {// count = -((current - count) * ($(window).height() - 44));
+                count = -((current - count) * ($(window).height()));
+            }
+            var sv = $(".items>li").index(this);
+            scrollwrap(count, function () { });
+            current = $(".items>li").index(this);
+            if (sv == 0) {
+                removeScreen3();
+                removeScreen4();
+                removeScreen2();
+            }
+            if (sv == 1) {
+                removeScreen3();
+                removeScreen4();
+                setTimeout(function () {
+                    screen2();
+                }, 300)
+            }
+            if (sv == 2) {
+                removeScreen2();
+                removeScreen4();
+                setTimeout(function () {
+                    screen3();
+                }, 300)
+            }
+            if (sv == 3) {
+                removeScreen2();
+                removeScreen3();
+                setTimeout(function () {
+                    screen4();
+                }, 300)
+            }
+        })
+        function scrollwrap(value, fun) {
+            //var currenth = current * (($(window).height() - 44));
+            var currenth = current * (($(window).height()));
+            var t = 0, d = 30;
+            function _run() {
+                if (t < d) {
+                    isComplete = false;
+                    t++;
+                    var top = Math.ceil(Tween.Linear(t, currenth, value, d));
+                    window.scrollTo(0, top);
+                    setTimeout(_run, 10);
+                } else {
+                    isComplete = true;
+                }
+            }
+            _run();
+        }
+        /*滚轮事件*/
+        $(document).bind('mousewheel', function (event, delta) {
+            if (!isComplete) return;
+            if (delta > 0) {
+                if ($(".items li").eq(0).hasClass("e")) {
+                    return;
+                }
+                else {
+                    //向上
+                    //scrollwrap(-(($(window).height() - 44)));
+                    scrollwrap(-(($(window).height())));
+                    current--;
+                }
+            }
+            else {
+                //向下2
+                if (current >= 4) return;
+                //scrollwrap((($(window).height() - 44)));
+                scrollwrap((($(window).height())));
+                current++;
+            }
+            $(".items>li").eq(current).addClass("e").siblings("li").removeClass("e");
+            if (current == 0) {
+                removeScreen2();
+                removeScreen4();
+                removeScreen3();
+            }
+            if (current == 1) {
+                removeScreen3();
+                removeScreen4();
+                setTimeout(function () {
+                    screen2();
+                }, 300)
+            }
+            if (current == 2) {
+                removeScreen2();
+                removeScreen4();
+                setTimeout(function () {
+                    screen3();
+                }, 300)
+            }
+            if (current == 3) {
+                removeScreen2();
+                removeScreen3();
+                setTimeout(function () {
+                    screen4();
+                }, 300)
+            }
+        })
+        //键盘上下箭头事件
+        $(document).keydown(function (event) {
+            if (event.keyCode == 38) {  //按了上箭头
+                if (!isComplete) return;
+                if ($(".items li").eq(0).hasClass("e")) {
+                    return;
+                }
+                else {
+                    //向上
+                    scrollwrap(-($(window).height()));
+                    current--;
+                }
+            }
+            else if (event.keyCode == 40) { //按了下箭头
+                //向下2
+                if (current >= 3) return;
+                scrollwrap(($(window).height()));
+                current++;
+            }
+            $(".items>li").eq(current).addClass("e").siblings("li").removeClass("e");
+            if (current == 0) {
+                removeScreen2();
+                removeScreen4();
+                removeScreen3();
+            }
+            if (current == 1) {
+                removeScreen3();
+                removeScreen4();
+                setTimeout(function () {
+                    screen2();
+                }, 300)
+            }
+            if (current == 2) {
+                removeScreen2();
+                removeScreen4();
+                setTimeout(function () {
+                    screen3();
+                }, 300)
+            }
+            if (current == 3) {
+                removeScreen2();
+                removeScreen3();
+                setTimeout(function () {
+                    screen4();
+                }, 300)
+            }
+        })
+        function screen2() {
+            $(".s2_1").addClass("animate1");
+            setTimeout(function () {
+                $(".s2_3,.s2_5,.s2_2,.s2_4").addClass("animate2");
+            }, 600)
+            setTimeout(function () {
+                $(".s2_border").addClass("animate4");
+            }, 1300)
+            setTimeout(function () {
+                $(".s2_border").addClass("animate5");
+            }, 1700)
+            setTimeout(function () {
+                $(".screen2_main h2").addClass("animate6");
+            }, 1800)
+        }
+        function screen3() {
+            $(".s3_1").addClass("animate1");
+            setTimeout(function () {
+                $(".s3_2").addClass("animate2");
+            }, 300)
+            setTimeout(function () {
+                $(".s3_3").addClass("animate3");
+            }, 500)
+            setTimeout(function () {
+                $(".s3_border").addClass("animate4");
+            }, 1000)
+            setTimeout(function () {
+                $(".s3_border").addClass("animate5");
+            }, 1400)
+            setTimeout(function () {
+                $(".screen3_main h2").addClass("animate6");
+            }, 1500)
+            setTimeout(function () {
+                $(".screen3_main h6").addClass("animate7");
+            }, 1700)
+        }
+        function screen4() {
+            $(".s4_1").addClass("animate1");
+            setTimeout(function () {
+                $(".s4_2").addClass("animate2");
+            }, 400)
+            setTimeout(function () {
+                $(".s4_border").addClass("animate3");
+            }, 800)
+            setTimeout(function () {
+                $(".s4_border").addClass("animate4");
+            }, 1000)
+            setTimeout(function () {
+                $(".screen4_main h2").addClass("animate5");
+            }, 1300)
+            setTimeout(function () {
+                $(".screen4_main h6").addClass("animate6");
+            }, 1500)
+            setTimeout(function () {
+                $(".foot").addClass("animates");
+            }, 2200)
+        }
+        function removeScreen2() {
+            $(".s2_1").removeClass("animate1");
+            $(".s2_3,.s2_5,.s2_2,.s2_4").removeClass("animate2");
+            $(".s2_border").removeClass("animate4");
+            $(".s2_border").removeClass("animate5");
+            $(".screen2_main h2").removeClass("animate6");
+        }
+        function removeScreen3() {
+            $(".s3_1").removeClass("animate1");
+            $(".s3_2").removeClass("animate2");
+            $(".s3_3").removeClass("animate3");
+            $(".s3_border").removeClass("animate4");
+            $(".s3_border").removeClass("animate5");
+            $(".screen3_main h2").removeClass("animate6");
+            $(".screen3_main h6").removeClass("animate7");
+        }
+        function removeScreen4() {
+            $(".s4_1").removeClass("animate1");
+            $(".s4_2").removeClass("animate2");
+            $(".s4_border").removeClass("animate3");
+            $(".s4_border").removeClass("animate4");
+            $(".screen4_main h2").removeClass("animate5");
+            $(".screen4_main h6").removeClass("animate6");
+            $(".foot").removeClass("animates");
+        }
+        window.onresize = function () {
+            imgH();
+        }
+
+        var Sys = {};
+        var ua = navigator.userAgent.toLowerCase();
+        var s;
+        (s = ua.match(/msie ([\d.]+)/)) ? Sys.ie = s[1] :
+        (s = ua.match(/firefox\/([\d.]+)/)) ? Sys.firefox = s[1] :
+        (s = ua.match(/chrome\/([\d.]+)/)) ? Sys.chrome = s[1] :
+        (s = ua.match(/opera.([\d.]+)/)) ? Sys.opera = s[1] :
+        (s = ua.match(/version\/([\d.]+).*safari/)) ? Sys.safari = s[1] : 0;
+        //以下进行测试
+        if (Sys.ie) document.write('IE: ' + Sys.ie);
+        if (Sys.ie == '7.0' || Sys.ie == '8.0') {
+            $(".u-kuoquanquan").hide();
+            $(".mm p").hide();
+        }
+        else {
+            $(".u-kuoquanquan").show();
+            $(".mm p").show();
+        }
+
+
+        function getSreenHeight() {
+            setTimeout(function () { $(window).scrollTop(0); }, 500)
+        }
+        getSreenHeight();
+    </script>
+</body>
+</html>

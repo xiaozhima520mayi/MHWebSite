@@ -1,0 +1,112 @@
+﻿.tool{ height:50px; background:url(../../../images/backImage/Gray/win_boxcontent_bg.png) repeat-x;position:relative; z-index:1000; padding-left:12px;}
+.tool_menu{ margin:2px 0 0 0; float:left;}
+.tool_menu_content{ margin-left:-3px;}
+.toolbut{ margin-left:20px;float:left;}
+.toolbut li{ float:left; margin-right:10px;}
+.toolprint{float:left;}
+.toolprint li{float:left; text-align:center}
+
+/**************************工具项**********************************/
+.toolbut li a.tool_setting,a.tool_new,a.tool_del,a.tool_edit,a.tool_separator,a.tool_order,div.tool_mannerlist,a.tool_up,a.tool_print,a.tool_import,a.tool_export,a.tool_show{height:41px; width:39px; background:url(../../../images/backImage/Gray/tool.png) no-repeat; display:block; text-align:center; line-height:70px; margin-top:2px;}
+.toolbut li a.tool_setting:hover,a.tool_new:hover,a.tool_del:hover,a.tool_edit:hover,a.tool_order:hover,a.tool_up:hover,a.tool_print:hover,a.tool_import:hover,a.tool_export:hover{background:url(../../../images/backImage/Gray/tool.png) no-repeat 0 -41px; text-decoration:none;}
+a.tool_tdel,a.tool_revert,a.tool_locking,a.tool_unlock,a.tool_childnew,a.tool_shortcuts,div.tool_direction,a.tool_resetpass,a.tool_admin,a.tool_preview
+,a.tool_inst,a.tool_release,a.tool_return,a.tool_audit,a.tool_information,a.tool_execution,a.toolprint_show,a.tool_download,a.tool_batchaudit,a.tool_direction_new,div.tool_direction_new,a.tool_lattice{height:41px; width:39px; background:url(../../../images/backImage/Gray/new_tool.png) no-repeat; display:block; text-align:center; line-height:70px; margin-top:2px;}
+a.tool_tdel:hover,a.tool_revert:hover,a.tool_locking:hover,a.tool_unlock:hover,a.tool_childnew:hover,a.tool_shortcuts:hover
+,div.tool_direction .tool_direction_pre:hover,div.tool_direction .tool_direction_next:hover,a.tool_resetpass:hover,a.tool_admin:hover
+,a.tool_preview:hover,a.tool_inst:hover,a.tool_release:hover,a.tool_return:hover,a.tool_audit:hover,a.tool_information:hover,a.tool_execution:hover,a.toolprint_show:hover,a.tool_download:hover,a.tool_batchaudit:hover,div.tool_direction_new .tool_direction_pre_new:hover,div.tool_direction_new .tool_direction_next_new:hover,a.tool_lattice:hover{background:url(../../../images/backImage/Gray/new_tool.png) no-repeat 0 -41px; text-decoration:none;}
+a.tool_new{ background-position:-42px 0;}
+a.tool_new:hover{background-position:-42px -41px;}
+a.tool_del{ background-position:-84px 0;}
+a.tool_del:hover{background-position:-84px -41px;}
+a.tool_edit{ background-position:-126px 0;}
+a.tool_edit:hover{background-position:-126px -41px;}
+a.tool_separator{ width:1px;background-position:top right; margin-top:0;}
+a.tool_order{ width:56px;background-position:0 -82px;}
+a.tool_order:hover{background-position:0 -123px;}
+div.tool_mannerlist{ width:72px; height:41px;background-position:-59px -123px; line-height:22px;}
+.tool_manner_but{ float:left; width:36px; height:24px;}
+a.tool_up{background-position:-136px -82px;}
+a.tool_up:hover{background-position:-136px -123px;}
+a.tool_print{background-position:-178px -82px;}
+a.tool_print:hover{background-position:-178px -82px;}
+a.tool_admin{background-position:0 0;}
+a.tool_admin:hover{background-position:0 -41px;}
+a.tool_tdel{background-position:-78px 0;}
+a.tool_tdel:hover{background-position:-78px -41px;}
+a.tool_revert{background-position:-39px 0;}
+a.tool_revert:hover{background-position:-39px -41px;}
+a.tool_locking{background-position:-117px 0;}
+a.tool_locking:hover{background-position:-117px -41px;}
+a.tool_unlock{background-position:-156px 0;}
+a.tool_unlock:hover{background-position:-156px -41px;}
+a.tool_childnew{background-position:-195px 0; width:56px;}
+a.tool_childnew:hover{background-position:-195px -41px; width:56px;}
+a.tool_shortcuts{background-position:-251px 0; width:56px;}
+a.tool_shortcuts:hover{background-position:-251px -41px; width:56px;}
+a.tool_import{background-position:-168px 0;}
+a.tool_import:hover{background-position:-168px -41px;}
+a.tool_export{background-position:-210px 0;}
+a.tool_export:hover{background-position:-210px -41px;}
+a.tool_resetpass{background-position:-381px 0; width:56px;}
+a.tool_resetpass:hover{background-position:-381px -41px;width:56px;}
+a.tool_show{background-position:-299px -466px; width:96px;}
+a.toolprint_show{background-position:-710px 0;}
+a.toolprint_show:hover{background-position:-710px -41px; }
+a.tool_preview{background-position:-515px 0;}
+a.tool_preview:hover{background-position:-515px -41px;}
+a.tool_inst{background-position:-437px 0;}
+a.tool_inst:hover{background-position:-437px -41px;}
+a.tool_release{background-position:-476px 0;}
+a.tool_release:hover{background-position:-476px -41px;}
+a.tool_return{background-position:-554px 0;}
+a.tool_return:hover{background-position:-554px -41px;}
+a.tool_audit{background-position:-593px 0;}
+a.tool_audit:hover{background-position:-593px -41px;}
+a.tool_information{background-position:-632px 0;}
+a.tool_information:hover{background-position:-632px -41px;}
+a.tool_execution{ background-position:-671px 0;}
+a.tool_execution:hover{background-position:-671px -41px;}
+a.tool_download{ background-position:-749px 0;}
+a.tool_download:hover{background-position:-749px -41px;}
+a.tool_batchaudit{background-position:-788px 0;width:56px;}
+a.tool_batchaudit:hover{background-position:-788px -41px;width:56px;}
+div.tool_direction{background-position:-307px 0; width:74px; overflow:hidden;}
+div.tool_direction .tool_direction_pre{width:37px; height:41px; display:block; float:left;}
+div.tool_direction .tool_direction_pre:hover{ background-position:-307px -41px;}
+div.tool_direction .tool_direction_next{width:36px; height:41px; display:block; float:left; margin-left:1px;}
+div.tool_direction .tool_direction_next:hover{background-position:-345px -82px;}
+
+/*文件查看添加处start*/
+div.tool_direction_new{background-position:-1684px 0; width:74px; height:24px; overflow:hidden;}
+div.tool_direction_new .tool_direction_pre_new{width:37px; height:24px; display:block; float:left;}
+div.tool_direction_new .tool_direction_pre_new:hover{ background-position:-1684px -41px;}
+div.no_last,div.no_last .tool_direction_pre_new:hover{background-position:-1684px -123px;}
+div.no_last .tool_direction_pre_new:hover,div.no_next .tool_direction_next_new:hover{ cursor:default;}
+div.no_next,div.no_next .tool_direction_next_new:hover{background-position:-1684px -164px;}
+div.tool_direction_new .tool_direction_next_new{width:36px; height:24px; display:block; float:left; margin-left:1px;}
+div.tool_direction_new .tool_direction_next_new:hover{background-position:-1722px -82px;}
+div.no_next .tool_direction_next_new:hover{background-position:-1722px -164px;}
+a.tool_lattice{background-position:-1758px 0; height:24px; width:27px;}
+a.tool_lattice:hover{background-position:-1758px -41px;}
+/*文件查看添加处end*/
+
+/****************************print_table部分*************************************/
+.table_line{ margin:0 140px; padding-top:25px}
+/****************************窗体内容结构*************************************/
+.win_content{ position:relative;top: 0px;left: 0px;}
+.win_content_l{ float:left; width:213px; border-right:1px solid #919191; height:419px; position:relative; background:#efefef;}
+.win_contents .win_content_l{ display:none;}
+.win_content_l_poson{float:left; width:8px; height:450px; position:relative; background:#efefef; display:none; border-right:1px solid #919191;}
+.win_contents .win_content_l_poson{ display:block;}
+.win_position_in{ position:absolute; right:-1px; top:40%; height:32px; width:10px; background:url(../../../images/backImage/Gray/tool.png) no-repeat -486px 0;}
+.win_position_out{ position:absolute; top:40%; left:-1px; height:32px; width:10px; background:url(../../../images/backImage/Gray/tool.png) no-repeat -444px 0; z-index:999;}
+.win_content_r{ }
+.win_contents .win_content_r{ margin-left:9px;}
+.win_content_b{ margin-left:10px;}
+.success_tips{ background:#eeffdd; border:1px solid #b9e2af; color:#48830e; text-align:center; height:37px; line-height:37px; font-size:12px; font-family:宋体,Arial; position:absolute; width:680px; z-index:1000; left:0; bottom:0;}
+.error_tips{ background:#fff8e2; border:1px solid #f0cf69; color:#865d35; text-align:center; height:37px; line-height:37px; font-size:12px; font-family:宋体,Arial; position:absolute; width:680px; z-index:1000; left:0; bottom:0;}
+/****************************隐藏输入框********************************/
+.hideInput{ position:absolute; top:-200px; left:0;}
+.helptips{ background:url('../../../WebUI/images/backImage/l3.png'); width:20px; height:21px; position:absolute; right:17px; top:12px; cursor:pointer;}
+
+.maskinput{position:absolute; top:0; left:0; background:url(../../../images/backImage/Gray/mask.png); width:100%; height:100%; z-index:1000}

@@ -1,0 +1,36 @@
+/*navigation*/
+#fp-nav ul li a span, .fp-slidesNav ul li a span { width: 28px; height: 28px; background-color: #dfdcdc; border: none; }
+#fp-nav ul li, .fp-slidesNav ul li { margin-bottom: 50px; margin-right: 40px; }
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span { background: dodgerblue; }
+/*section1*/
+body { min-width: 1200px; }
+.section{ height:768px; overflow:hidden;width: 100%;}
+* { margin: 0; padding: 0; }
+div.part1 { height: 570px; position:relative; overflow:hidden;}
+div.part2 { height: 210px; background-color:#f5f5f5}
+p.bp { background:url(../images/ssgp/10.png) repeat center top; position: absolute;left:0px; top:0; width:100%; height:100%; overflow:hidden;}
+
+div.part-mid { text-align: center; width: 1000px; margin: 0 auto; height: 100%; position:relative; }
+img.logo { position: relative; width: 25%; top: 5%; left: -35%; }
+img.te { position: relative; width: 85%; top: 8%; }
+img.lt { position: absolute; width:206px; height:164px; top: 350px; left:100px; }
+img.rt { position: relative; width:354px; height:300px; top: 90px;_top: 40px; right: -5%;}
+div.part2 div.part-mid ul { list-style-type: none; width:810px;margin:0 auto; overflow:hidden;}
+div.part2 div.part-mid ul li { float: left; margin:25px 80px 0;display: inline;  color: grey; position: relative;cursor:pointer;width:110px;}
+
+/*section2*/
+div.part-mid img.te1 { width: 70%; margin-top: 40px; }
+div.part-mid div.body img { width:280px;height:264px; margin: 20px 110px 0; overflow:hidden; float:left; display:inline;}
+img.te1 { animation-delay: 200ms; -webkit-animation-delay: 200ms; -moz-animation-delay: 200ms; -o-animation-delay: 200ms; }
+div.body img { animation-delay: 200ms; -webkit-animation-delay: 200ms; -moz-animation-delay: 200ms; -o-animation-delay: 200ms; }
+
+/*section3*/
+div.full { height: 100%; background: url("../images/ssgp/30.png") repeat center top; }
+img.te2 { animation-delay: 400ms; -webkit-animation-delay: 400ms; -moz-animation-delay: 400ms; -o-animation-delay: 400ms; }
+div.part-mid div.body1 img { margin-top: 80px;}
+
+/*section4*/
+div.ful { height: 33%; min-height: 240px; background-color: rgb(238,241,242); }
+div.ful div.part-mid img { width: 253.4px; height:150px; margin-top: 50px; position: relative; }
+img.pl, img.pl1 { left: -70px; }
+img.pr, img.pr1 { right: -70px; }

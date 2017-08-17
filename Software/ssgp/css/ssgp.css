@@ -1,0 +1,183 @@
+/*navigation*/
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    width: 28px;
+    height: 28px;
+    background-color: #dfdcdc;
+    border: none;
+}
+#fp-nav ul li , .fp-slidesNav ul li{
+    margin-bottom: 50px;
+    margin-right: 40px;
+}
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span{
+    background: dodgerblue;
+}
+/*section1*/
+body{
+    min-width: 1200px;
+}
+
+*{margin: 0;padding: 0}
+div.part1{
+    height: 80%;
+    min-height: 470px;
+}
+div.part2{
+    height: 20%;
+}
+img.bp{
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    min-height: 460px;
+}
+
+div.part-mid{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    height: 100%;
+}
+img.logo{
+    position: relative;
+    width: 25%;
+    top: 5%;
+    left: -35%;
+}
+img.te{
+    position: relative;
+    width: 85%;
+    top: 8%;
+}
+img.lt{
+    position: relative;
+    width: 20%;
+    top: 10%;
+    animation-delay: 50ms;
+    -webkit-animation-delay: 50ms;
+    -moz-animation-delay: 50ms;
+    -o-animation-delay: 50ms;
+}
+img.rt{
+    position: relative;
+    width: 35%;
+    top: 17%;
+    right: -5%;
+    animation-delay: 250ms;
+    -webkit-animation-delay: 250ms;
+    -moz-animation-delay: 250ms;
+    -o-animation-delay: 250ms;
+}
+div.part2 div.part-mid ul{
+    list-style-type: none;
+}
+div.part2 div.part-mid ul li{
+    display: inline-block;
+    float: left;
+    margin-left: 18% ;
+    color: grey;
+    position: relative;
+}
+div.part2 div.part-mid ul div.circle{
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    overflow: hidden;
+    cursor: default;
+    margin-bottom: 10px;
+}
+div.part2 div.part-mid ul div.circle i{
+    font-size: 50px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 40px;
+    color: grey;
+}
+div.part2 div.part-mid ul div.circle a {
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    position: relative;
+    left: -10px;
+    z-index: 1;
+}
+@media (max-width: 1500px) {
+    div.part2 div.part-mid ul div.circle{
+        width: 80px;
+        height: 80px;
+    }
+    div.part2 div.part-mid ul div.circle i{
+        font-size: 40px;
+        margin-top: 18px;
+        margin-left: 52px;
+    }
+    div.part2 div.part-mid ul div.circle a{
+        left: -35px;
+    }
+}
+
+div.part2 div.part-mid ul div.circle a i:last-child{
+    color: dodgerblue;
+}
+p{
+    cursor: default;
+}
+
+/*section2*/
+div.part-mid img.te1{
+    width: 70%;
+    margin-top: 8%;
+}
+div.part-mid div.body img{
+    width: 25%;
+    margin: 3% 7% 0 7%;
+}
+img.te1{
+    animation-delay: 200ms;
+    -webkit-animation-delay: 200ms;
+    -moz-animation-delay: 200ms;
+    -o-animation-delay: 200ms;
+}
+div.body img{
+    animation-delay: 200ms;
+    -webkit-animation-delay: 200ms;
+    -moz-animation-delay: 200ms;
+    -o-animation-delay: 200ms;
+}
+
+/*section3*/
+div.full{
+    height: 100%;
+    background: url("../img/30.png");
+}
+img.te2{
+    animation-delay: 400ms;
+    -webkit-animation-delay: 400ms;
+    -moz-animation-delay: 400ms;
+    -o-animation-delay: 400ms;
+}
+div.part-mid div.body1 img{
+    margin-top: 10%;
+}
+
+/*section4*/
+div.ful{
+    height: 33%;
+    min-height: 240px;
+    background-color: rgb(238,241,242);
+}
+div.ful div.part-mid img{
+    width: 25%;
+    margin-top: 7%;
+    position: relative;
+}
+img.pl,img.pl1{
+    left: -70px;
+}
+img.pr,img.pr1{
+    right: -70px;
+}

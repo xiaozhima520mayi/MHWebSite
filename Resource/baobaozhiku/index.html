@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>上业科技-上业宝宝智库</title>
+    <link rel="Shortcut Icon " href="/WebUI/images/logo_ico.ico">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="/WebUI/js/href.js"></script>
+    <script>
+        isBrowser("/CompatibilityMode/Resource/baobaozhiku.html", "/Resource/baobaozhiku/index.html", "/Resource/baobaozhiku/index.html");
+    </script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+</head>
+<body>
+    <div class="big_box">
+        <div id="dowebok">
+            <div class="section section1" id="page-one">
+                <h1 class="page-one-sign"></h1>
+                <p class="page-one-information">支持多种阅读模式：pc端、触摸屏端、手机端</p>
+                <div class="page-one-photo">
+                    <div class="computer fadeInLeftBig">
+                        <img src="images/computer.png" />
+                    </div>
+                    <div class="ipad fadeInUpBig">
+                        <img src="images/ipad.png" />
+                    </div>
+                    <div class="iphone pulse">
+                        <img src="images/iphone.png" />
+                    </div>
+                </div>
+                <div id="global_scroll" style="display:none">
+                    <img src="images/scroll.png">
+                </div>
+            </div>
+            <!--********************************************第一页完****************************************************-->
+            <div class="section section2" id="page-two">
+                <div class="page-two-information">
+                    <h1 class="page-two-sign slideInRight">适合6-12岁学龄儿童</h1>
+                    <div class="page-two-photo">
+                        <div class="page-two-xiaoxueg"></div>
+                    </div>
+                    <h2 class="page-two-infor">一年级、二年级、三年级、四年级</h2>
+                    <h2 class="page-two-infor">五年级、预备班、综合</h2>
+                </div>
+                <div id="global_scroll" style="display:none">
+                    <img src="images/scroll.png">
+                </div>
+            </div>
+            <div class="section section3" id="page-three">
+                <div class="page-three-information">
+                    <h1 class="page-three-sign">适合3-6岁幼儿及学龄前儿童</h1>
+                    <div class="page-three-photo">
+                        <div class="page-three-qimengg"></div>
+                    </div>
+                    <h2 class="page-three-infor">启蒙教育、才艺欣赏、国学启蒙</h2>
+                    <h2 class="page-three-info">文学博览、益智教育、 科普百科</h2>
+                </div>
+                <div id="global_scroll" style="display:none">
+                    <img src="images/scroll.png">
+                </div>
+            </div>
+            <div class="section section4" id="page-four">
+                <div class="page-three-information">
+                    <h1 class="page-four-sign">适合老师、家长和0—3岁的婴幼儿</h1>
+                    <div class="page-four-photo">
+                        <div class="page-four-qinzig"></div>
+                    </div>
+                    <h2 class="page-four-infor">产前产后、育儿指南、健康教育</h2>
+                    <h2 class="page-four-infor">生活文化、家庭教育</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $('#dowebok').fullpage({
+                sectionsColor: ['#57b6ff', '#f9ffd3', '#e3fdff', '#fff0f8'],
+                anchors: ['page1', 'page2', 'page3', 'page4'],
+                menu: '#menu',
+                'navigation': true,
+                continuousVertical: false,
+                afterLoad: function (anchorLink, index) {
+                    if (index == 2) {
+                        $('.section2').find('.page-two-sign').addClass('slideInRight');
+                        $('.section2').find('.page-two-infor').addClass('sixth');
+                        $('.section2').find('.page-two-photo').addClass('fadeInUpBig');
+                    }
+                    if (index == 3) {
+                        $('.section3').find('.page-three-sign').addClass('fadeInLeftBig');
+                        $('.section3').find('.page-three-photo').addClass('slideInRight');
+                    }
+                    if (index == 4) {
+                        $('.section4').find('.page-four-sign').addClass('slideInRight');
+                        $('.section4').find('.page-four-photo').addClass('fadeInLeftBig');
+                    }
+                },
+
+                onLeave: function (anchorLink, index) {
+                    if (index == 2) {
+                        $('.section2').find('.page-two-sign').removeClass('slideInRight');
+                        $('.section2').find('.page-two-infor').removeClass('sixth');
+                        $('.section2').find('.page-two-photo').removeClass('fadeInUpBig');
+                    }
+                    if (index == 3) {
+                        $('.section3').find('.page-three-sign').removeClass('fadeInLeftBig');
+                        $('.section3').find('.page-three-photo').removeClass('slideInRight');
+                    }
+                    if (index == 4) {
+                        $('.section4').find('.page-four-sign').removeClass('slideInRight');
+                        $('.section4').find('.page-four-photo').removeClass('fadeInLeftBig');
+                    }
+                },
+            });
+
+            /*setInterval(function(){
+                $.fn.fullpage.moveSectionDown();
+            }, 4000);*/
+        });
+    </script>
+</body>
+</html>

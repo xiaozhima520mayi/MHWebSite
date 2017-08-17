@@ -1,0 +1,5 @@
+﻿.file_preview{ position:absolute; left:300px; top:100px;z-index:9999;background-color:#000;box-shadow: 0 1px 2px 0 rgba(210, 210, 210, 0.31);}
+.file_close{box-shadow: 0 3px 2px 0 rgba(210, 210, 210, 0.31); position:absolute; right:-44px; top:0;width:44px; height:44px; background:url(../../WebUI/images/file_preview/close.gif) no-repeat; cursor:pointer}
+.file_close img{ float:left; width:44px; height:44px}
+.lef_switch{ position:absolute; left:-55px; top:178px; width:46px; height:46px; background:url(../../WebUI/images/file_preview/lef_switch.png) no-repeat; cursor:pointer }
+.rig_switch{ position:absolute; right:-53px; top:178px;width:46px; height:46px; background:url(../../WebUI/images/file_preview/rig_switch.png) no-repeat; cursor:pointer}

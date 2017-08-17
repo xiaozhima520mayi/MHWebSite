@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>时夕乐学网</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css"/>
+    <link rel="stylesheet" href="css/lelearn.css"/>
+</head>
+<body>
+   <div id="fullpage">
+       <div class="section">
+           <div class="s1">
+               <img src="img/11.png" alt=""/>
+           </div>
+           <div class="s2">
+               <div class="undertt"><a href="#p2"><img src="img/12.png" alt=""/><p></p></a></div>
+               <div class="undertt"><a href="#p3"><img src="img/13.png" alt=""/><p></p></a></div>
+               <div class="undertt"><a href="#p4"><img src="img/14.png" alt=""/><p></p></a></div>
+               <div class="undertt"><a href="#p5"><img src="img/15.png" alt=""/><p></p></a></div>
+           </div>
+       </div>
+       <div class="section">
+           <div class="p1">
+               <img src="img/21.png" alt=""/>
+           </div>
+           <div class="p2">
+               <img src="img/22.png" alt=""/>
+               <div class="p21">
+                   <img class="m" src="img/25.png" alt=""/>
+                   <img class="m v" src="img/24.png" alt=""/>
+               </div>
+           </div>
+       </div>
+       <div class="section">
+           <div class="p1">
+               <img src="img/31.png" alt=""/>
+           </div>
+           <div class="p2">
+               <img  src="img/33.png" alt=""/>
+               <img  class="v q" src="img/32.png" alt=""/>
+           </div>
+       </div>
+       <div class="section">
+           <div class="p1">
+               <img src="img/41.png" alt=""/>
+           </div>
+           <div class="p2">
+               <img src="img/42.png" alt=""/>
+               <img class="m2 v" src="img/43.png" alt=""/>
+           </div>
+       </div>
+       <div class="section">
+           <div class="p1">
+               <img src="img/51.png" alt=""/>
+           </div>
+           <div class="p2">
+               <img src="img/52.png" alt=""/>
+               <img class="v pic" src="img/53.png" alt=""/>
+           </div>
+       </div>
+   </div>
+   <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="/WebUI/js/href.js"></script> 
+    <script>
+        isBrowser("/CompatibilityMode/Resource/SXLXW.html", "/Resource/SXLXW/lelearn.html", "/Resource/SXLXW/lelearn.html");
+    </script>
+   <script src="js/jquery.fullPage.min.js"></script>
+   <script src="js/transit.js"></script>
+   <script>
+       $(function () {
+           $('#fullpage').fullpage({
+               sectionsColor:['#fff','rgb(220,164,56)','rgb(64,188,147)','rgb(88,128,242)','rgb(209,120,120)'],
+               navigation: true,
+               anchors:['p1','p2','p3','p4','p5']
+           });
+
+           $('div.undertt img').mouseover(function () {
+               $(this).transition({transform:'translateY(-5px)'}, 1000);
+               $(this).next().fadeIn(1000)
+           });
+           $('div.undertt img').mouseout(function () {
+               $(this).stop(true,false).transition({transform:'translateY(0)'}, 100);
+               $(this).next().fadeOut()
+           });
+
+           $('div.p1 img').mouseover(function () {
+               $(this).transition({transform:'translateX(-50px)'},1000);
+               $(this).parents('div.section').find('img.v').transition({transform:'translateX(50px)'},1000)
+           });
+           $('div.p1 img').mouseout(function () {
+               $(this).stop(true,false).transition({transform:'translateX(0)'},1000)
+               $(this).parents('div.section').find('img.v').stop(true,false).transition({transform:'translateX(0)'},1000)
+           });
+
+           $('div.p2 img.v').mouseover(function () {
+                          $(this).transition({transform:'translateX(-50px)'},1000);
+                          $(this).parents('div.section').find('div.p1 img').transition({transform:'translateX(50px)'},1000)
+           });
+           $('div.p2 img.v').mouseout(function () {
+               $(this).stop(true,false).transition({transform:'translateX(0)'},1000);
+               $(this).parents('div.section').find('div.p1 img').stop(true,false).transition({transform:'translateX(0)'},1000)
+           });
+
+       })
+   </script>
+</body>
+</html>

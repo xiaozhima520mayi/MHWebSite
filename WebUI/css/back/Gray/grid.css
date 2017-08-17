@@ -1,0 +1,15 @@
+﻿.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default{ color:#000; background:url(../../../images/backImage/Gray/gridthbg.gif) repeat-x;border: 1px solid #919191;}
+.ui-th-select,.ui-widget-content .ui-th-select,.ui-widget-header .ui-th-select{background:url(../../../images/backImage/Gray/grid0001.gif) repeat-x;}
+.s-ico{ position:absolute; right:0; top:0; width:16px; height:22px;}
+/*Grid*/
+.ui-jqgrid{position: relative;}
+.ui-jqgrid .ui-jqgrid-view{position:relative;left:0px; top:0px; padding:.0em; font-size:11px;}
+
+.ui-widget-content{ background:none; border:none;}
+.ui-jqgrid .ui-jqgrid-btable{table-layout:fixed; margin:0em; outline-style: none;background:url(../../../images/backImage/Gray/grid_content1.gif) repeat; }
+.ui-jqgrid tr.jqgrow td{font-weight: normal; overflow: hidden; white-space: pre; height: 26px;padding: 0 4px 0 5px;border-bottom-width: 1px; border-bottom-color: inherit; border-bottom-style: solid;}
+.ui-jqgrid tr.jqgrow td input{ margin-left:-1px;*margin-left:-3px;_margin-left:-3px;}
+.ui-jqgrid tr.ui-row-ltr td{border:none;}
+.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #3c3c3c; background: #fdf5ce url(../../../images/backImage/Gray/grid_content_select.gif) 50% 50% repeat-x;  color: #c77405; }
+.ui-jqgrid-htable th input{ margin-left:4px; margin-top:2px;*margin-left:0; *margin-top:0;_margin-left:0; _margin-top:0; float:left;}
+.ui-jqgrid-htable th{ font-weight:normal;}

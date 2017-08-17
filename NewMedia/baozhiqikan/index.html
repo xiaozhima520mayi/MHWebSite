@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>上业科技-报纸期刊触摸屏系统</title>
+    <link rel="Shortcut Icon " href="/WebUI/images/logo_ico.ico">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="/WebUI/js/href.js"></script>
+    <script>
+        isBrowser("../../CompatibilityMode/NewMedia/baozhiqikan/index.html", "/index.html", "/index.html");
+    </script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script>
+        $(function () {
+            $('#dowebok').fullpage({
+                'navigation': true,
+                onLeave: function (index, nextIndex) {
+                    if (nextIndex == '2') {
+                        $('.section2').find("h3").addClass('fadeInDown animated');
+                        $('.section2').find("h4").addClass('fadeInDown animated');
+                        $('.section2').find("p").addClass('fadeInRight animated');
+                        $('.section2').find(".cmp").addClass('fadeInLeft animated');
+                        $('.section2').find('.circle1').addClass('fadeInLeft animated');
+                        $('.section2').find('.circle2').addClass('fadeInLeft animated');
+                        $('.section2').find('.circle3').addClass('fadeInRight animated');
+                        $('.section2').find('.circle4').addClass('fadeInRight animated');
+                    }
+                    if (index == '2') {
+                        $('.section2').find("h3").removeClass('fadeInDown animated');
+                        $('.section2').find("h4").removeClass('fadeInDown animated');
+                        $('.section2').find("p").removeClass('fadeInRight animated');
+                        $('.section2').find(".cmp").removeClass('fadeInLeft animated');
+                        $('.section2').find('.circle1').removeClass('fadeInLeft animated');
+                        $('.section2').find('.circle2').removeClass('fadeInLeft animated');
+                        $('.section2').find('.circle3').removeClass('fadeInRight animated');
+                        $('.section2').find('.circle4').removeClass('fadeInRight animated');
+                    }
+                    if (nextIndex == '3') {
+                        $('.section3').find("h3").addClass('fadeInDown animated');
+                        $('.section3').find("h4").addClass('fadeInDown animated');
+                        $('.section3').find(".photo-2").addClass('fadeInRight animated');
+                        $('.section3').find(".photo-1").addClass('fadeInLeft animated');
+                        $('.section3').find('p').addClass('fadeInDown animated');
+                        $('.section3').find('.section3-title-bg').addClass('bounceIn animated');
+                        $('.section3').find('.title1').addClass('fadeInLeft animated');
+                        $('.section3').find('.title2').addClass('fadeInLeft animated');
+                        $('.section3').find('.title3').addClass('fadeInRight animated');
+                        $('.section3').find('.title4').addClass('fadeInRight animated');
+                    }
+                    if (index == '3') {
+                        $('.section3').find("h3").removeClass('fadeInDown animated');
+                        $('.section3').find("h4").removeClass('fadeInDown animated');
+                        $('.section3').find(".photo-2").removeClass('fadeInRight animated');
+                        $('.section3').find(".photo-1").removeClass('fadeInLeft animated');
+                        $('.section3').find('p').removeClass('fadeInDown animated');
+                        $('.section3').find('.section3-title-bg').removeClass('bounceIn animated');
+                        $('.section3').find('.title1').removeClass('fadeInLeft animated');
+                        $('.section3').find('.title2').removeClass('fadeInLeft animated');
+                        $('.section3').find('.title3').removeClass('fadeInRight animated');
+                        $('.section3').find('.title4').removeClass('fadeInRight animated');
+                    }
+                }
+            });
+            $(window).resize(function () {
+                autoScrolling();
+            });
+
+            function autoScrolling() {
+                var $ww = $(window).width();
+                if ($ww < 1024) {
+                    $.fn.fullpage.setAutoScrolling(false);
+                } else {
+                    $.fn.fullpage.setAutoScrolling(true);
+                }
+            }
+            autoScrolling();
+        });
+    </script>
+</head>
+<body>
+    <div  class="big_box">
+        <div id="dowebok">
+            <div class="section section1">
+                <h3><img src="img/logo.png" width="100%" height="100%"></h3>
+                <div class="black-bg"></div>
+                <div class="arrow"></div>
+            </div>
+            <div class="section section2">
+                <h3>电子报刊系统</h3>
+                <h4>100多种国内主流报纸，为读者提供最新、最快的资讯平台</h4>
+                <div class="contant">
+                    <div class="contant-left">
+                        <div class="cmp"><img src="img/cmp.png" width="100%" height="100%"></div>
+                    </div>
+                    <div class="contant-right">
+                        <p>包含：日报，早报/晨报，晚报，导报，青年报，英文，周报，都市报，体育，财经，金融，健康，教育，科技，老年，法制等类别</p>
+                    </div>
+                </div>
+                <div class="title">
+                    <div class="circle circle1">
+                        <h5>传播更快捷</h5>
+                    </div>
+                    <div class="circle circle2">
+                        <h5>覆盖面积广</h5>
+                    </div>
+                    <div class="circle circle3">
+                        <h5>回溯性增强</h5>
+                    </div>
+                    <div class="circle circle4">
+                        <h5>筛选更实用</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="section section3">
+                <h3>电子期刊系统</h3>
+                <h4>1000多种精品高清期刊目录，提供全方位的阅读资源</h4>
+                <div class="photo-box">
+                    <div class="photo">
+                        <div class="photo-1"><img src="img/qikan.png" width="100%" height="100%"></div>
+                        <div class="photo-2"><img src="img/qikan2.png" width="100%" height="100%"></div>
+                    </div>
+                </div>
+                <p>包含：时尚生活，娱乐休闲，运动健康，教育科技，商业财经，新闻人物，文化艺术等类别</p>
+                <div class="section3-title">
+                    <div class="title1">快速查找</div>
+                    <div class="title2">用户体验好</div>
+                    <div class="title3">提高信息量</div>
+                    <div class="title4">贴近生活</div>
+                    <div class="section3-title-bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

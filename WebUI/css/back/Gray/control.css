@@ -1,0 +1,25 @@
+﻿/*************************菜单栏****************************/
+.menu,.menuover,.menuclick{ width:192px; height:25px; position:relative;}
+.menu .menu_down,.menuover .menu_down,.menuclick .menu_down{background:url(../../../images/backImage/Gray/menu_down.gif) no-repeat; height:25px; padding:0 0 0 8px;}
+.menu .menu_down_r,.menuover .menu_down_r,.menuclick .menu_down_r{background:url(../../../images/backImage/Gray/menu_down.gif) no-repeat right -25px; height:25px; line-height:25px; font-size:14px;font-family:微软雅黑,Arial,\5B8B\4F53,sans-serif; cursor:pointer;}
+.menuover .menu_down{background-position:0 -50px;}
+.menuover .menu_down_r{background-position:right -75px;}
+.menuclick .menu_down{background-position:0 -100px;}
+.menuclick .menu_down_r{background-position:right -125px;}
+.menu .menu_content,.menuover .menu_content{width:198px; display:none;}
+.menuclick .menu_content{width:198px; display:block; z-index:99999;}
+.menu_content_t,.menu_content_b{background:url(../../../images/backImage/Gray/menu_bgcontent.png) no-repeat; height:9px; overflow:hidden; padding-left:10px;}
+.menu_content_t_r,.menu_content_b_r{background:url(../../../images/backImage/Gray/menu_bgcontent.png) no-repeat right -9px; height:9px; overflow:hidden;}
+.menu_content_b{background-position:0 -18px;}
+.menu_content_b_r{background-position:right -27px;}
+.menu_content_c{background:url(../../../images/backImage/Gray/menu_bglcon.png) repeat-y; padding-left:10px;}
+.menu_content_c_r{background:url(../../../images/backImage/Gray/menu_bgrcon.png) repeat-y right;padding-right:10px;}
+.menu_content_c_r ul{ background:#fff; overflow:hidden;}
+.menu_content_c_r ul li{ margin-bottom:5px; height:20px; line-height:20px; float:none;margin-right:0; cursor:pointer; padding-left:5px;}
+.menu_content_c_r ul li.e{ background:#e3e3e3;}
+
+/*************************搜索框******************************/
+.seach{ background:url(../../../images/backImage/Gray/tool.png) no-repeat -490px -168px; height:22px; width:235px; position:absolute; top:12px; right:42px;}
+.seach_import{height:22px; background:url(../../../images/backImage/Gray/tool.png) no-repeat right -329px; margin-left:9px; overflow:hidden;}
+.seach_import input{ border:0; height:14px; padding:3px 0 2px; font-size:12px; margin-right:26px; margin-top:2px; width:190px; float:left;outline:medium none;}
+.seach_but{ display:block; width:16px; height:14px;background:url(../../../images/backImage/Gray/tool.png) no-repeat -474px -168px; position:absolute; top:4px; right:8px; cursor:pointer;}

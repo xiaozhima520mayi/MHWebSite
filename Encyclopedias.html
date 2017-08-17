@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>上业科技-百科视频学习系统</title>
+    <meta charset="utf-8" />
+    <link rel="Shortcut Icon " href="/WebUI/images/logo_ico.ico">
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <link href="WebUI/css/index.css" rel="stylesheet" />
+    <link href="WebUI/font/iconfont.css" rel="stylesheet" />
+    <link href="WebUI/font2/iconfont.css" rel="stylesheet" />
+    <link href="WebUI/css/list.css" rel="stylesheet" />
+    <link href="WebUI/css/encyclopedias.css" rel="stylesheet" />
+    <script src="WebUI/js/jquery/jquery-1.8.0.min.js"></script>
+    <script src="WebUI/js/href.js"></script>
+    <script>
+        isBrowser("/CompatibilityMode/Encyclopedias.html", "/Encyclopedias.html", "/Encyclopedias.html");
+    </script>
+    <script src="WebUI/js/respond.src.js"></script>
+    <script src="WebUI/js/jquery/jquery.easing.1.3.js"></script>
+    <script src="WebUI/js/animate/jquery.mousewheel.min.js"></script>
+    <script src="WebUI/js/animate/animate.js"></script>
+</head>
+<body>
+    <div class="big_box">
+        <div class="content" id="wrap">
+            <ul class="items ency_items">
+                <li class="e"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="screen ency_noe">
+                <div class="main1250">
+                    <h2 class="tit margin9">
+                        <img src="WebUI/images/ency_noe_h2.png" />
+                        <p>拥有视频、期刊、电子书三大媒体类型！</p>
+                    </h2>
+                    <div class="img" id="firstImg">
+                        <img class="img1" src="WebUI/images/ency_img1.png" />
+                        <img class="img2" src="WebUI/images/ency_img2.png" />
+                        <img class="img3" src="WebUI/images/ency_img3.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="screen ency_two">
+                <div class="main margin10">
+                    <h2 class="title">
+                        <p>收录资源海量丰富</p>
+                    </h2>
+                    <div class="pic_tab">
+                        <ul>
+                            <li><img src="WebUI/images/pic_tabimg1.png" /></li>
+                            <li><img src="WebUI/images/pic_tabimg2.png" /></li>
+                        </ul>
+                    </div>
+                    <div class="tab_but">
+                        <a class="e" href="javascript://"></a>
+                        <a href="javascript://"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="screen ency_three">
+                <div class="main margin11">
+                    <h2 class="title">
+                        <p>支持多种阅读模式</p>
+                        <font>触摸屏端、PC端、Pad端、手机端</font>
+                    </h2>
+                    <div class="pic">
+                        <img class="img1" src="WebUI/images/ency_threeimg1.png" />
+                        <img class="img2" src="WebUI/images/ency_threeimg2.png" />
+                        <img class="img3" src="WebUI/images/ency_threeimg3.png" />
+                        <img class="img4" src="WebUI/images/ency_threeimg4.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="screen ency_four">
+                <div class="main margin12">
+                    <div class="intended_for" style="display:none;">
+                        <img src="WebUI/images/intended_forimg.png" />
+                        <div class="img1"></div>
+                        <div class="img2"></div>
+                        <div class="img3"></div>
+                        <div class="img4"></div>
+                        <div class="img5"></div>
+                    </div>
+                    <div class="intended_animate" style=" display:block;">
+                        <img src="WebUI/images/encyclopedias/people_mac.png" class="people_mac" />
+                        <div class="bord1"></div>
+                        <h1>适用人群范围广</h1>
+                        <img src="WebUI/images/encyclopedias/p3.png" class="p1" />
+
+                        <div class="bord2">
+                            <span class="span_b1"></span>
+                            <span class="span_b2"></span>
+                        </div>
+                        <img src="WebUI/images/encyclopedias/p1.png" class="p2" />
+
+                        <div class="bord3">
+                            <span class="span_b1"></span>
+                            <span class="span_b2"></span>
+                        </div>
+                        <img src="WebUI/images/encyclopedias/p2.png" class="p3" />
+
+                        <div class="bord4"></div>
+                        <img src="WebUI/images/encyclopedias/p4.png" class="p4" />
+
+                        <div class="bord5"></div>
+                        <img src="WebUI/images/encyclopedias/p5.png" class="p5" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        //页面刷新回到第一屏
+        function getSreenHeight() {
+            setTimeout(function () { $(window).scrollTop(0); }, 500)
+        }
+        getSreenHeight();
+        var Tween = { Linear: function (t, b, c, d) { return c * t / d + b; }, }
+        var current = 0;
+        var isComplete = true;
+        /*右侧浮层点击事件*/
+        $(".items>li").click(function () {
+            var count = $(".items>li").index(this);
+            $(".items>li").eq(count).addClass("e").siblings("li").removeClass("e");
+            $(".ab_nav a").eq(count).addClass("e").siblings("a").removeClass("e");
+            //FunLeft(count);
+            if (count > current)
+                count = (count - current) * $(window).height();
+            else {
+                count = -((current - count) * $(window).height());
+            }
+            var sv = $(".items>li").index(this);
+            scrollwrap(count, function () { });
+            current = $(".items>li").index(this);
+            if (sv == 0) {
+                removeanimate3();
+                removeanimate4();
+                animate1();
+            }
+            if (sv == 1) {
+                removeanimate1();
+                removeanimate3();
+                removeanimate4();
+            }
+            if (sv == 2) {
+                removeanimate1();
+                removeanimate4();
+                animate3();
+            }
+            if (sv == 3) {
+                removeanimate1();
+                removeanimate3();
+                animate4();
+            }
+        })
+        /*导航点击*/
+        $(".ab_nav a").click(function () {
+            var count = $(".ab_nav a").index(this);
+            $(".ab_nav a").eq(count).addClass("e").siblings("a").removeClass("e");
+            $(".items>li").eq(count).addClass("e").siblings("li").removeClass("e");
+            if (count > current)
+                count = (count - current) * $(window).height();
+            else {
+                count = -((current - count) * $(window).height());
+            }
+            var sv = $(".ab_nav a").index(this);
+            scrollwrap(count, function () { });
+            current = $(".ab_nav a").index(this);
+            encyThree(current);
+            if (sv == 0) {
+                removeanimate3();
+                removeanimate4();
+                animate1();
+            }
+            if (sv == 1) {
+                removeanimate1();
+                removeanimate3();
+                removeanimate4();
+            }
+            if (sv == 2) {
+                removeanimate1();
+                removeanimate4();
+                animate3();
+            }
+            if (sv == 3) {
+                removeanimate1();
+                removeanimate3();
+                animate4();
+            }
+        })
+        function scrollwrap(value, fun) {
+            var currenth = current * ($(window).height());
+            var t = 0, d = 30;
+            function _run() {
+                if (t < d) {
+                    isComplete = false;
+                    t++;
+                    var top = Math.ceil(Tween.Linear(t, currenth, value, d));
+                    window.scrollTo(0, top);
+                    setTimeout(_run, 10);
+                } else {
+                    isComplete = true;
+                }
+            }
+            _run();
+        }
+        /*滚轮事件*/
+        $(document).bind('mousewheel', function (event, delta) {
+            if (!isComplete) return;
+            if (delta > 0) {
+                if ($(".items li").eq(0).hasClass("e")) {
+                    return;
+                }
+                else {
+                    //向上
+                    scrollwrap(-($(window).height()));
+                    current--;
+                }
+            }
+            else {
+                //向下2
+                if (current >= 3) return;
+                scrollwrap(($(window).height()));
+                current++;
+            }
+            $(".items>li").eq(current).addClass("e").siblings("li").removeClass("e");
+            $(".ab_nav a").eq(current).addClass("e").siblings("a").removeClass("e");
+            //FunLeft(current);
+            if (current == 0) {
+                removeanimate3();
+                removeanimate4();
+                animate1();
+            }
+            if (current == 1) {
+                removeanimate1();
+                removeanimate3();
+                removeanimate4();
+            }
+            if (current == 2) {
+                removeanimate1();
+                removeanimate4();
+                animate3();
+            }
+            if (current == 3) {
+                removeanimate1();
+                removeanimate3();
+                animate4();
+            }
+        })
+
+        //键盘上下箭头事件
+        $(document).keydown(function (event) {
+            if (event.keyCode == 38) {  //按了上箭头
+                if (!isComplete) return;
+                if ($(".items li").eq(0).hasClass("e")) {
+                    return;
+                }
+                else {
+                    //向上
+                    scrollwrap(-($(window).height()));
+                    current--;
+                }
+            }
+            else if (event.keyCode == 40) { //按了下箭头
+                //向下2
+                if (current >= 3) return;
+                scrollwrap(($(window).height()));
+                current++;
+            }
+            $(".items>li").eq(current).addClass("e").siblings("li").removeClass("e");
+            $(".ab_nav a").eq(current).addClass("e").siblings("a").removeClass("e");
+            if (current == 0) {
+                removeanimate3();
+                removeanimate4();
+                animate1();
+            }
+            if (current == 1) {
+                removeanimate1();
+                removeanimate3();
+                removeanimate4();
+            }
+            if (current == 2) {
+                removeanimate1();
+                removeanimate4();
+                animate3();
+            }
+            if (current == 3) {
+                removeanimate1();
+                removeanimate3();
+                animate4();
+            }
+        })
+        $(function () {
+            var encywidth = $(".ency_noe .main1250").width();
+            var encyheight = $(".ency_noe .img").height();
+            var imgwidth = $(".ency_noe .img img").width();
+                $(".ency_noe .img .img1").css("left", (encywidth - imgwidth) / 2);
+                $(".ency_noe .img .img2").css("left", (encywidth - imgwidth) / 2);
+                $(".ency_noe .img .img3").css("left", (encywidth - imgwidth) / 2);
+            animate1();
+            //百科第二屏图片
+            $(".ency_two .tab_but>a").hover(function () {
+                $(".ency_two .tab_but a").removeClass("e");
+                $(this).addClass("e");
+                var index = $(this).index();
+                if (index == 1) {
+                    $(this).parent(".tab_but").siblings(".pic_tab").children("ul").animate({ left: "-1000px" })
+                }
+                else if (index == 0) {
+                    $(this).parent(".tab_but").siblings(".pic_tab").children("ul").animate({ left: "0" })
+                }
+            });
+        })
+        window.onresize = function () {
+            //百科第二屏图片
+            $(".ency_two .tab_but>a").hover(function () {
+                $(".ency_two .tab_but a").removeClass("e");
+                $(this).addClass("e");
+                var index = $(this).index();
+                if (index == 1) {
+                    $(this).parent(".tab_but").siblings(".pic_tab").children("ul").animate({ left: "-1000px" })
+                }
+                else if (index == 0) {
+                    $(this).parent(".tab_but").siblings(".pic_tab").children("ul").animate({ left: "0" })
+                }
+
+            })
+        };
+        function animate1() {
+            //百科第一屏图片
+            $(".ency_noe .img .img1").animate({ bottom: "0", opacity: '1' }, 500, function () {
+                $(".ency_noe .img .img2").animate({ bottom: "0", opacity: '1' }, 800, function () {
+                    $(".ency_noe .img .img3").animate({ bottom: "53px", opacity: '1' }, 1100);
+                });
+            });
+        }
+        function animate3() {
+            /*百科第三屏图片*/
+            $(".ency_three .pic .img1").animate({ left: "0", opacity: '1', }, 600, function () {
+                $(".ency_three .pic .img2").animate({ left: "246px", opacity: '1', }, 500, function () {
+                    $(".ency_three .pic .img3").animate({ left: "589px", opacity: '1', }, 400, function () {
+                        $(".ency_three .pic .img4").animate({ left: "802px", opacity: '1', }, 300)
+                    });
+                });
+            });
+        }
+        function animate4() {
+            isBrowser2();
+            setTimeout(function () {
+                $(".people_mac").addClass("animate1");
+                $(".bord1").addClass("animate2");
+                $(".p1").addClass("animate3");
+                $(".intended_animate h1").addClass("animate3");
+                $(".bord2 .span_b2").addClass("animate4");
+                $(".bord3 .span_b2").addClass("animate4");
+                $(".span_b1").addClass("animate5");
+                $(".p2 ").addClass("animate6");
+                $(".p3").addClass("animate6");
+                $(".bord4").addClass("animate7");
+                $(".bord5").addClass("animate7");
+                $(".p4").addClass("animate8");
+                $(".p5").addClass("animate8");
+            }, 200)
+        }
+        function removeanimate1() {
+            //百科第一屏图片
+            $(".ency_noe .img .img1").animate({ bottom: "-520px", opacity: '0' }, 150, function () {
+                $(".ency_noe .img .img2").animate({ bottom: "-568px", opacity: '0' }, 180, function () {
+                    $(".ency_noe .img .img3").animate({ bottom: "-639px", opacity: '0' }, 210);
+                });
+            });
+        }
+        function removeanimate3() {
+            /*百科第三屏图片*/
+            $(".ency_three .pic .img1").animate({ left: "1000px", opacity: '0', }, 160, function () {
+                $(".ency_three .pic .img2").animate({ left: "1000px", opacity: '0', }, 150, function () {
+                    $(".ency_three .pic .img3").animate({ left: "1000px", opacity: '0', }, 140, function () {
+                        $(".ency_three .pic .img4").animate({ left: "1000px", opacity: '0', }, 130)
+                    });
+                });
+            });
+        }
+        function removeanimate4() {
+            setTimeout(function () {
+                $(".people_mac").removeClass("animate1");
+                $(".bord1").removeClass("animate2");
+                $(".p1").removeClass("animate3");
+                $(".intended_animate h1").removeClass("animate3");
+                $(".bord2 .span_b2").removeClass("animate4");
+                $(".bord3 .span_b2").removeClass("animate4");
+                $(".span_b1").removeClass("animate5");
+                $(".p2 ").removeClass("animate6");
+                $(".p3").removeClass("animate6");
+                $(".bord4").removeClass("animate7");
+                $(".bord5").removeClass("animate7");
+                $(".p4").removeClass("animate8");
+                $(".p5").removeClass("animate8");
+            }, 200)
+        }
+        function isBrowser2() {
+            var browser = {
+                ua: navigator.userAgent.toLowerCase(),
+                msie: function () {
+                    return /msie/.test(this.ua);
+                },
+                ie6: function () {
+                    var self = this;
+                    return self.msie() && /msie 6./.test(self.ua);
+                },
+                ie7: function () {
+                    var self = this;
+                    return self.msie() && /msie 7.0/.test(self.ua);
+                },
+                ie8: function () {
+                    var self = this;
+                    return self.msie() && /msie 8.0/.test(self.ua);
+                }
+            };
+            if (browser.ie6() || browser.ie7() || browser.ie8()) {
+                $(".intended_for").show();
+                $(".intended_animate").hide();
+            }
+            else {
+                $(".intended_animate").show();
+                $(".intended_for").hide();
+            }
+        }
+    </script>
+</body>
+</html>

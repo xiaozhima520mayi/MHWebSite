@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>上业科技-服务与政策</title>
+    <link rel="Shortcut Icon " href="/WebUI/images/logo_ico.ico">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="../WebUI/js/href.js"></script>
+    <script>
+        isBrowser("/CompatibilityMode/ServicePolicy/servicePolicy.html", "/ServicePolicy/index.html", "/ServicePolicy/index.html");
+    </script>  
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tabso_yeso.js"></script>
+    <script>
+        $(function () {
+            $('#dowebok').fullpage({
+                'navigation': true,
+                anchors: ['page1', 'page2', 'page3', 'page4'],
+                menu: '#menu',
+                onLeave: function (index, nextIndex) {
+                    if (index == 1) {
+                        setTimeout(function () {
+                            $('.section1').find('.title1-1').removeClass('fadeInUp animated');
+                            $('.section1').find('.title1-2').removeClass('fadeInUp animated');
+                            $('.section1').find('.title1-3').removeClass('fadeInUp animated');
+                            $('.section1').find('.title1').removeClass('bounceIn animated');
+                        }, 100);
+                    }
+                    if (nextIndex == 1) {
+                        setTimeout(function () {
+                            $('.section1').find('.title1-1').addClass('fadeInUp animated');
+                            $('.section1').find('.title1-2').addClass('fadeInUp animated');
+                            $('.section1').find('.title1-3').addClass('fadeInUp animated');
+                            $('.section1').find('.title1').addClass('bounceIn animated');
+                        }, 500);
+                    }
+                    if (index == 2) {
+                        setTimeout(function () {
+                            $('.section2').find('h3').removeClass('fadeInUp animated');
+                            $('.section2').find('.tabbtn').removeClass('fadeInUp animated');
+                            $('.section2').find('.tabcon').removeClass('fadeInUp animated');
+                            $('.section2').find('.flash2-1').removeClass('fadeInLeft animated');
+                            $('.section2').find('.flash2-2').removeClass('fadeInDown animated');
+                            $('.section2').find('.flash2-3').removeClass('fadeInRight animated');
+                        }, 100);
+                    }
+                    if (nextIndex == 2) {
+                        setTimeout(function () {
+                            $('.section2').find('h3').addClass('fadeInUp animated');
+                            $('.section2').find('.tabbtn').addClass('fadeInUp animated');
+                            $('.section2').find('.tabcon').addClass('fadeInUp animated');
+                            $('.section2').find('.flash2-1').addClass('fadeInLeft animated');
+                            $('.section2').find('.flash2-2').addClass('fadeInDown animated');
+                            $('.section2').find('.flash2-3').addClass('fadeInRight animated');
+                        }, 500);
+                    }
+                    if (index == 3) {
+                        setTimeout(function () {
+                            $('.section3').find('h3').removeClass('fadeInUp animated');
+                            $('.section3').find('.tabbtn').removeClass('fadeInUp animated');
+                            $('.section3').find('.tabcon').removeClass('fadeInUp animated');
+                            //$('.section3').find('.flash3-1').removeClass('fadeInDown animated');
+                            $('.section3').find('.flash3-6').removeClass('fadeInUp animated');
+                            $('.section3').find('.flash3-4').removeClass('fadeInRight animated');
+                            $('.section3').find('.flash3-3').removeClass('fadeInLeft animated');
+                            $('.section3').find('.flash3-5').removeClass('fadeInRight animated');
+                            $('.section3').find('.flash3-2-1').removeClass('heightchange1');
+                            $('.section3').find('.flash3-2-2').removeClass('widthchange2');
+                            $('.section3').find('.flash3-2-3').removeClass('heightchange3');
+                            $('.section3').find('.flash3-2-4').removeClass('widthchange4');
+                        }, 100);
+                    }
+                    if (nextIndex == 3) {
+                        setTimeout(function () {
+                            $('.section3').find('h3').addClass('fadeInUp animated');
+                            $('.section3').find('.tabbtn').addClass('fadeInUp animated');
+                            $('.section3').find('.tabcon').addClass('fadeInUp animated');
+                            //$('.section3').find('.flash3-1').addClass('fadeInDown animated');
+                            $('.section3').find('.flash3-6').addClass('fadeInUp animated');
+                            $('.section3').find('.flash3-4').addClass('fadeInRight animated');
+                            $('.section3').find('.flash3-3').addClass('fadeInLeft animated');
+                            $('.section3').find('.flash3-5').addClass('fadeInRight animated');
+                            $('.section3').find('.flash3-2-1').addClass('heightchange1');
+                            $('.section3').find('.flash3-2-2').addClass('widthchange2');
+                            $('.section3').find('.flash3-2-3').addClass('heightchange3');
+                            $('.section3').find('.flash3-2-4').addClass('widthchange4');
+                        }, 500);
+                    }
+                    if (index == 4) {
+                        setTimeout(function () {
+                            $('.section4').find('h3').removeClass('fadeInUp animated');
+                            $('.section4').find('.tabbtn').removeClass('fadeInUp animated');
+                            $('.section4').find('.tabcon').removeClass('fadeInUp animated');
+                            $('.section4').find('.footer').removeClass('fadeInUp animated');
+                            $('.section4').find('.flash4-1').removeClass('fadeInLeft animated');
+                            $('.section4').find('.flash4-4').removeClass('fadeInRight animated');
+                            $('.section4').find('.flash4-2').removeClass('fadeInDown animated');
+                            $('.section4').find('.flash4-3').removeClass('fadeInDown animated');
+                        }, 100);
+                    }
+                    if (nextIndex == 4) {
+                        setTimeout(function () {
+                            $('.section4').find('h3').addClass('fadeInUp animated');
+                            $('.section4').find('.tabbtn').addClass('fadeInUp animated');
+                            $('.section4').find('.tabcon').addClass('fadeInUp animated');
+                            $('.section4').find('.footer').addClass('fadeInUp animated');
+                            $('.section4').find('.flash4-1').addClass('fadeInLeft animated');
+                            $('.section4').find('.flash4-4').addClass('fadeInRight animated');
+                            $('.section4').find('.flash4-2').addClass('fadeInDown animated');
+                            $('.section4').find('.flash4-3').addClass('fadeInDown animated');
+                        }, 500);
+                    }
+
+                }
+            });
+            $(window).resize(function () {
+                autoScrolling();
+            });
+
+            function autoScrolling() {
+                var $ww = $(window).width();
+                if ($ww < 1200) {
+                    $.fn.fullpage.setAutoScrolling(false);
+                } else {
+                    $.fn.fullpage.setAutoScrolling(true);
+                }
+            }
+            autoScrolling();
+        });
+        $(document).ready(function ($) {
+            $(".tabbtn2").tabso({
+                cntSelect: ".tabcon2",
+                tabEvent: "mouseover",
+                tabStyle: "fade"
+            });
+            $(".tabbtn3").tabso({
+                cntSelect: ".tabcon3",
+                tabEvent: "mouseover",
+                tabStyle: "fade"
+            });
+            $(".tabbtn4").tabso({
+                cntSelect: ".tabcon4",
+                tabEvent: "mouseover",
+                tabStyle: "fade"
+            });
+        });
+    </script>
+</head>
+<body>
+    <div  class="big_box">
+        <div id="dowebok">
+            <div class="section section1">
+                <div class="title1 bounceIn animated">
+                </div>
+                <div class="nav">
+                    <a href="#page2" class="title1-1 fadeInUp animated">
+                        <div class="circle circle1"></div>
+                        <h2>安装服务</h2>
+                    </a>
+                    <a href="#page3" class="title1-2 fadeInUp animated">
+                        <div class="circle circle2"></div>
+                        <h2>维护服务</h2>
+                    </a>
+                    <a href="#page4" class="title1-3 fadeInUp animated">
+                        <div class="circle circle3"></div>
+                        <h2>响应服务</h2>
+                    </a>
+                </div>
+                <div class="flash-tel">
+                    <div class="tel-1"></div>
+                    <div class="voice1"></div>
+                    <div class="voice2"></div>
+                    <div class="voice3"></div>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="content2">
+                    <div class="flash-box2">
+                        <div class="flash2-1"></div>
+                        <div class="flash2-2"></div>
+                        <div class="flash2-3"></div>
+                    </div>
+                    <div class="tab2">
+                        <h3 class="">上门安装 免费培训</h3>
+                        <ul class="tabbtn tabbtn2" id="fadetab">
+                            <li class="current"><a>安装验收</a></li>
+                            <li><a>培训服务</a></li>
+                            <li><a>数据更新</a></li>
+                        </ul>
+                        <div class="tabcon tabcon2" id="fadecon">
+                            <div class="sublist">我公司承诺在合同约定期限内供货，免费上门安装部署及验收，并在安装过程中为用户提供操作培训，确保数据和平台正常运行。</div>
+                            <div class="sublist">
+                                我公司承诺提出全面的培训计划，并在合同签订后实施。我司承诺承担所有培训费用（含培训教材费）及各项支出包括往返交通费、餐饮、住宿费用等。
+                                </br>免费为甲方的技术人员提供系统的技术培训。
+                                </br>免费为甲方读者提供每年不少于一次电子资源库的使用培训。
+                            </div>
+                            <div class="sublist">为用户连续订购的电子资源提供更新服务。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="content3">
+                    <div class="tab3">
+                        <h3 class="">定期回访 终身技术支持</h3>
+                        <div class="tabcon tabcon3" id="fadecon">
+                            <div class="sublist">我公司承诺在数据交付后提供不少于2天的现场运行监控等保驾服务。</div>
+                            <div class="sublist">我公司承诺自产品正式上线运行起，提供合同约定期限内的免费上门服务，所有交通、餐饮、住宿、上门等人工服务均免费。</div>
+                            <div class="sublist">我公司承诺提供定期回访（电话或上门回访），并汇总回访记录，将回访情况反馈给客户，使客户掌握产品的运行状态。</div>
+                            <div class="sublist">我公司提供终身远程技术支持服务及长期保驾服务。</div>
+                        </div>
+                        <ul class="tabbtn tabbtn3" id="fadetab">
+                            <li class="current"><a><span class="title3-1"></span>现场维护</a></li>
+                            <li><a><span class="title3-2"></span>上门维护</a></li>
+                            <li><a><span class="title3-3"></span>定期回访</a></li>
+                            <li><a><span class="title3-4"></span>售后服务</a></li>
+                        </ul>
+                    </div>
+                    <div class="flash-box3">
+                        <div class="flash3-1"></div>
+                        <div class="flash3-2">
+                            <div class="flash3-2-1 heightchange1"></div>
+                            <div class="flash3-2-2 widthchange2"></div>
+                            <div class="flash3-2-3 heightchange3"></div>
+                            <div class="flash3-2-4 widthchange4"></div>
+                        </div>
+                        <div class="flash3-3"></div>
+                        <div class="flash3-4"></div>
+                        <div class="flash3-5"></div>
+                        <div class="flash3-6"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section4">
+                <div class="content4">
+                    <div class="flash-box4">
+                        <div class="flash4-1"></div>
+                        <div class="flash4-2"></div>
+                        <div class="flash4-3"></div>
+                        <div class="flash4-4"></div>
+                        <div class="flash4-5"></div>
+                        <div class="flash4-6"></div>
+                    </div>
+                    <div class="tab4">
+                        <h3 class="">响应及时 服务优质</h3>
+                        <ul class="tabbtn tabbtn4" id="fadetab">
+                            <li class="current"><a><span class="title4-1"></span>响应流程</a></li>
+                            <li><a><span class="title4-2"></span>响应时间</a></li>
+                        </ul>
+                        <div class="tabcon tabcon4" id="fadecon">
+                            <div class="sublist">
+                                <ul>
+                                    <li>Email服务：提供7*8小时接收处理。</li>
+                                    <li>电话服务：提供7*24小时电话技术支持服务。</li>
+                                    <li>网络远程服务：提供7*8小时的专业远程服务。</li>
+                                    <li>服务热线： 021－68325081。</li>
+                                </ul>
+                            </div>
+                            <div class="sublist">
+                                <ul>
+                                    <li>服务响应时间（小时）：承诺30分钟内做出响应。</li>
+                                    <li>服务到场时间（小时）：承诺72小时内上门服务。</li>
+                                    <li>服务完成时限（天）：承诺3天内解决问题。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="footer-box">
+                    <div class="footer">上海上业信息科技有限公司 版权所有 沪ICP：09071524</div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

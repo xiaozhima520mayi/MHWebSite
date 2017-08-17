@@ -1,0 +1,85 @@
+.section{
+    text-align: center;
+}
+img{
+    width: 80%;
+}
+.p{
+    animation: sh 2s;
+    -webkit-animation: sh 2s;
+    -moz-animation: sh 2s;
+    -o-animation: sh 2s;
+}
+@keyframes sh {
+    from  {transform:scale(0,0)  ; opacity: 0}
+    to    {transform:scale(1,1)  ; opacity: 1}
+}
+@-webkit-keyframes sh {
+    from  {transform:scale(0,0)  ; opacity: 0}
+    to    {transform:scale(1,1)  ; opacity: 1}
+}
+@-moz-keyframes sh {
+    from  {transform:scale(0,0)  ; opacity: 0}
+    to    {transform:scale(1,1)  ; opacity: 1}
+}
+@-o-keyframes sh {
+    from  {transform:scale(0,0)  ; opacity: 0}
+    to    {transform:scale(1,1)  ; opacity: 1}
+}
+.s{
+    animation: t 2s;
+    -webkit-animation: t 2s;
+    -o-animation: t 2s;
+    -moz-animation: t 2s;
+}
+@keyframes t {
+    from  {transform: translateY(590px)}
+    to    {transform: translateY(0)}
+}
+@-webkit-keyframes t {
+    from  {transform: translateY(590px)}
+    to    {transform: translateY(0)}
+}
+@-moz-keyframes t {
+    from  {transform: translateY(590px)}
+    to    {transform: translateY(0)}
+}
+@-o-keyframes t {
+    from  {transform: translateY(590px)}
+    to    {transform: translateY(0)}
+}
+div.p1{
+    width: 70%;
+    height: 20%;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+div.p1 img{
+    margin-top: 5%;
+}
+div.p2{
+    width: 70%;
+    height: 80%;
+    margin: 0 auto;
+}
+div.p3{
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+}
+img.s1{
+    margin-top: 5%;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    width: 28px;
+    height: 28px;
+    background-color: #dfdcdc;
+    border: none;
+}
+#fp-nav ul li , .fp-slidesNav ul li{
+    margin-bottom: 50px;
+    margin-right: 40px;
+}
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span{
+    background: dodgerblue;
+}

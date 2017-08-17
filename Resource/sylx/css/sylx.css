@@ -1,0 +1,215 @@
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    width: 28px;
+    height: 28px;
+    background-color: #dfdcdc;
+    border: none;
+}
+#fp-nav ul li , .fp-slidesNav ul li{
+    margin-bottom: 50px;
+    margin-right: 40px;
+}
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span{
+    background: burlywood;
+}
+
+div.section{
+    min-width: 1366px;
+    min-height: 700px;
+}
+
+/*section1*/
+div.section1 img{
+    width: 100%;
+    height: 100%;
+    min-height: 700px;
+}
+div.tp{
+    position: absolute;
+    width: 40%;
+    top: 28%;
+    left: 27%;
+    z-index: 30;
+    font-size: 30px;
+    color: white;
+}
+@media (max-width : 1600px) {
+    div.tp{
+        font-size: 22px;
+    }
+}
+div.tp p:first-child{
+    margin-left: 10%;
+    margin-bottom:3% ;
+}
+
+/*section2*/
+div.part{
+    width:  100%;
+    height:  33%;
+    position: relative;
+    text-align: center;
+}
+div.part1,div.part3{
+    background-color: rgb(244,244,244);
+}
+div.part img{
+    width: 18%;
+    right: 28%;
+}
+img.al,img.ar{
+    position: absolute;
+}
+img.text{
+    top: 35%;
+    left: 28%;
+}
+div.part2 img.ar{
+    left: 55%;
+}
+div.part2 img.al{
+    left: 28%;
+}
+
+
+/*section3*/
+div.section3{
+    position: relative;
+}
+div.section3 img.back{
+    width: 100%;
+    height: 100%;
+    min-height: 768px;
+}
+div.section3 img.m{
+    position: absolute;
+    width: 13%;
+    top: 36%;
+    left: 43%;
+}
+div.section3 img.lt{
+    position: absolute;
+    width: 17%;
+    top: 16%;
+    left: 24%;
+    transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+}
+div.section3 img.lb{
+    position: absolute;
+    width: 17%;
+    top: 62%;
+    left: 24%;
+    transform-origin:100% 0;
+    -moz-transform-origin: 100% 0;
+    -webkit-transform-origin:100% 0;
+    -o-transform-origin:100% 0;
+}
+div.section3 img.rt{
+    position: absolute;
+    width: 17%;
+    top: 16%;
+    left: 59%;
+    transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -webkit-transform-origin:0 100%;
+    -o-transform-origin:0 100%;
+}
+div.section3 img.rb{
+    position: absolute;
+    width: 17%;
+    top: 62%;
+    left: 59%;
+    transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -webkit-transform-origin:0 0;
+    -o-transform-origin:0 0;
+}
+.rotateInDownRight,.rotateInDownLeft,.rotateInUpLeft,.rotateInUpRight{
+    animation-delay: 500ms;
+    -webkit-animation-delay: 500ms;
+    -moz-animation-delay: 500ms;
+    -o-animation-delay: 500ms;
+}
+
+/*section4*/
+div.section4{
+    position: relative;
+}
+img.bc{
+    width: 100%;
+    height: 100%;
+    min-height: 768px;
+}
+
+img.i1{
+    position: absolute;
+    z-index: 3;
+    top: 10%;
+    left: 22%;
+    width: 14%;
+}
+img.i2{
+    position: absolute;
+    z-index: 3;
+    top: 38%;
+    left: 35%;
+    width: 11%;
+}
+img.i3{
+    position: absolute;
+    z-index: 3;
+    top: 12%;
+    left: 46%;
+    width: 14%;
+}
+img.i4{
+    position: absolute;
+    z-index: 3;
+    top: 38%;
+    left: 58%;
+    width: 14%;
+}
+img.showwidth{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 35%;
+}
+div.section4 div.blank{
+    position: absolute;
+    height: 35%;
+    width: 50%;
+    top: 20%;
+    left: 25%;
+    overflow: hidden;
+}
+.ftr{
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: mtr 3s linear 500ms forwards;
+    -webkit-animation: mtr 3s linear 500ms forwards;
+    -moz-animation: mtr 3s linear 500ms forwards;
+    -o-animation: mtr 3s linear 500ms forwards;
+
+}
+@keyframes mtr{
+    from {transform: translateX(0)}
+    to   {transform: translateX(100%)}
+}
+@-webkit-keyframes mtr{
+    from {-webkit-transform: translateX(0)}
+    to   {-webkit-transform: translateX(100%)}
+}
+@-moz-keyframes mtr{
+    from {transform: translateX(0)}
+    to   {transform: translateX(100%)}
+}
+@-o-keyframes mtr{
+    from {transform: translateX(0)}
+    to   {transform: translateX(100%)}
+}
+
+

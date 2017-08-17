@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>上业科技-时夕商业领袖</title>
+    <link rel="Shortcut Icon " href="/WebUI/images/logo_ico.ico">
+    <link rel="stylesheet" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="css/sylx.css" />
+    <link href="../WebUI/css/common.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/animate.css" />
+</head>
+<body>
+    <div class="big_box">
+        <div id="fullpage">
+            <div class="section section1">
+                <img src="img/10.jpg" alt="" />
+                <div class="tp"><p></p><p></p></div>
+            </div>
+            <div class="section section2">
+                <div class="part part1">
+                    <img class="al text" src="img/24.png" alt="" />
+                    <img class="ar img" src="img/21.png" alt="" />
+                </div>
+                <div class="part part2">
+                    <img class="al img" src="img/22.png" alt="" />
+                    <img class="ar text" src="img/25.png" alt="" />
+                </div>
+                <div class="part part3">
+                    <img class="al text" src="img/26.png" alt="" />
+                    <img class="ar img" src="img/23.png" alt="" />
+                </div>
+            </div>
+            <div class="section section3">
+                <img class="back" src="img/30.png" alt="" />
+                <img class="m" src="img/31.png" alt="" />
+                <img class="lt" src="img/32.png" alt="" />
+                <img class="rt" src="img/33.png" alt="" />
+                <img class="lb" src="img/34.png" alt="" />
+                <img class="rb" src="img/35.png" alt="" />
+            </div>
+            <div class="section section4">
+                <img class="bc" src="img/40.png" alt="" />
+                <img class="showwidth" src="" alt="" />
+                <div class="blank">
+                    <div></div>
+                </div>
+                <img class="i1" src="img/41.png" alt="" />
+                <img class="i2" src="img/42.png" alt="" />
+                <img class="i3" src="img/43.png" alt="" />
+                <img class="i4" src="img/44.png" alt="" />
+            </div>
+        </div>
+
+    </div>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="/WebUI/js/href.js"></script>
+    <script>
+        isBrowser("/CompatibilityMode/Resource/sylx.html", "/Resource/sylx/sylx.html", "/Resource/sylx/sylx.html");
+    </script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+
+    <script>
+        $(function () {
+            start();
+            $('#fullpage').fullpage({
+                navigation: true,
+                onLeave: function (index, nextIndex) {
+
+                    if (index == 2) {
+                        $('.part1 .text, .part3 .text').removeClass('slideInLeft');
+                        $('.part2 .text').removeClass('slideInRight');
+                        $('img.img').removeClass('fadeIn')
+                    }
+                    if (index == 3) {
+                        $('img.m').removeClass('fadeIn');
+                        $('img.lt').removeClass('rotateInDownRight');
+                        $('img.rt').removeClass('rotateInDownLeft');
+                        $('img.lb').removeClass('rotateInUpRight');
+                        $('img.rb').removeClass('rotateInUpLeft');
+                    }
+                    if (index == 4) {
+                        $('img.showwidth').removeAttr('src', 'img/47.png');
+                        $('div.blank div').removeClass('ftr')
+                    }
+
+                    if (nextIndex == 1) {
+                        start();
+                    }
+                    if (nextIndex == 2) {
+                        $('.part1 .text, .part3 .text').addClass('animated slideInLeft');
+                        $('.part2 .text').addClass('animated  slideInRight');
+                        $('img.img').addClass('animated fadeIn')
+                    }
+                    if (nextIndex == 3) {
+                        $('img.m').addClass('animated fadeIn');
+                        $('img.lt').addClass('animated rotateInDownRight');
+                        $('img.rt').addClass('animated rotateInDownLeft');
+                        $('img.lb').addClass('animated rotateInUpRight');
+                        $('img.rb').addClass('animated rotateInUpLeft');
+                    }
+
+                },
+                afterLoad: function (anchorLink, index) {
+                    if (index == 4) {
+                        $('img.showwidth').attr('src', 'img/47.png');
+                        $('div.blank div').addClass('ftr')
+                        var isIE = /msie/.test(navigator.userAgent.toLowerCase());
+                        if (isIE) {
+                            $('div.blank div').removeClass('ftr');
+                        }
+                    }
+                }
+            });
+        });
+        function start() {
+            var s = "涵盖了当今商业领域的重要主题";
+            var con = $('.tp>p:eq(0)');
+            var length = s.length;
+            var index = 0;
+            $('.tp>p').text('');
+
+            var tId = setInterval(function () {
+                con.append(s.charAt(index));
+                index++;
+                if (index == length) {
+                    clearInterval(tId);
+                    secend();
+                }
+            }, 100);
+        }
+        function secend() {
+            var s = "为管理学教学与学习提供强大高效的课程资源";
+            var con = $('.tp>p:eq(1)');
+            var length = s.length;
+            var index = 0;
+            var tId = setInterval(function () {
+                con.append(s.charAt(index));
+                index++;
+                if (index == length) {
+                    clearInterval(tId);
+                }
+            }, 100);
+        }
+    </script>
+</body>
+</html>

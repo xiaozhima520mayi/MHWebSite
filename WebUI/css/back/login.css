@@ -1,0 +1,21 @@
+﻿input{ border:0;outline:medium none;}
+html{ height:100%;}
+body{background-image: url('../../images/backImage/mainbg.png');background-repeat: repeat;background-position: center top; height:100%; overflow:hidden;}
+.logo{ width:660px; height:80px; margin:30px auto 50px auto; overflow:hidden;}
+.fbox{width: 415px;height: 330px;margin: 0px auto 0px auto;background-image: url('../../images/backImage/l2.png'); background-repeat: no-repeat;}
+.fbox .help{ text-align:right; padding:25px 35px 15px 0px;}
+.fbox ul{ width:260px; margin:0px auto;}
+.fbox ul.tl{ margin-top:25px;}
+.fbox ul.tl li{ margin:10px auto;}
+.fbox ul li{ margin:8px auto; clear:both; overflow:hidden;}
+.fbox ul li.name label{background-image: url('../../images/backImage/l4.png');background-repeat: no-repeat;width:40px;height:38px;display:inline-block;float:left;}
+.fbox ul li.password label{background-image: url('../../images/backImage/l6.png');background-repeat: no-repeat;width:40px;height:38px;display:inline-block;float:left;}
+.fbox ul li.name input,.fbox ul li.password input{background-image: url('../../images/backImage/l5.png');background-repeat: no-repeat;width:208px;height:22px; padding:8px 0; line-height:22px;float:left;padding-right:10px;}
+.fbox ul li.concode input{background-image: url('../../images/backImage/l8.png');background-repeat: no-repeat;width:139px;height:22px; line-height:22px;float:left;padding:8px 10px;}
+.fbox ul li.concode img{ float:right; width:90px;}
+.fbox ul li.forget{ color:#505050;}
+.fbox ul li.forget a{ color:#4278d0;}
+.footer{ width:540px; margin:10px auto; text-align:center;}
+.footers{ text-align:center; line-height:24px; height:24px; color:#442e0d;}
+.footers a{color:#bc5b26; text-decoration:underline;}
+.but_logo{ background:url(../../images/backImage/l01.png) no-repeat; width:253px; height:41px; border:0; cursor:pointer;}

@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>上业科技-图书馆座位管理系统</title>
+    <link rel="Shortcut Icon " href="/WebUI/images/logo_ico.ico">
+    <meta name="description" content="">
+    <meta content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=0" name="viewport" />
+    <link href="assets/css/reset.css" rel="stylesheet" />
+    <link href="assets/css/idangerous.swiper.css" rel="stylesheet" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <style type="text/css">
+        .swiper-container-vertical > .swiper-pagination {
+            right: 48px;
+        }
+        .pagination {
+          position: absolute;
+          z-index: 20;
+          margin-top: -60px;
+          top: 50%;
+          right:50px;
+          width: 24px;
+          text-align: center;
+        }
+        .pagination span,#system-nav span{
+            cursor: pointer;
+        }
+        .swiper-pagination-switch {
+            display: inline-block;
+            width:26px;
+            height:26px;
+            border:2px solid #fff;
+            border-radius: 99px;
+            margin-bottom:28px;
+
+            font-size: 0;
+            opacity: 1;
+            background: transparent;
+        }
+        .swiper-active-switch {
+            background:#fff;
+            border:2px solid #fff;
+            border:2px solid transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="big_box">
+        <div class="swiper-container container center-block">
+            <div class="head">
+                <div class="col-ins center-block" style="position:relative;">
+                    <a class="logo" href="#"><img src="assets/images/logo.png" /></a>
+                    <div id="system-nav">
+                        <span class="swiper-pagination-bullet-active">首页</span>
+                        <span>产品价值</span>
+                        <span>系统结构</span>
+                        <span>产品特色</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-wrapper seat-system">
+                <div class="swiper-slide index">
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s" src="assets/images/upload/index/ani-index-img01.png" />
+                    <img class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.6s" swiper-animate-delay="0.9s" src="assets/images/upload/index/ani-index-img02.png" />
+                    <img class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.9s" swiper-animate-delay="0.9s" src="assets/images/upload/index/ani-index-img03.png" />
+                    <img class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1.2s" swiper-animate-delay="0.3s" src="assets/images/upload/index/ani-index-img04.png" />
+                    <img class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3s" swiper-animate-delay="1.2s" src="assets/images/upload/index/ani-index-img05.png" />
+                </div>
+                <div class="swiper-slide value">
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.4s" swiper-animate-delay="0.2s" src="assets/images/upload/value/ani-value-img01.png" />
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.6s" swiper-animate-delay="0.4s" src="assets/images/upload/value/ani-value-img02.png" />
+                    <img class="ani" swiper-animate-effect="fadeInLeftBig" swiper-animate-duration="0.4s" swiper-animate-delay="0.8s" src="assets/images/upload/value/ani-value-img03.png" />
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.4s" swiper-animate-delay="1.2s" src="assets/images/upload/value/ani-value-img04.png" />
+                    <img class="ani" swiper-animate-effect="fadeInLeftBig" swiper-animate-duration="0.7s" swiper-animate-delay="1.4s" src="assets/images/upload/value/ani-value-img05.png" />
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.7s" swiper-animate-delay="2s" src="assets/images/upload/value/ani-value-img06.png" />
+                    <img class="ani" swiper-animate-effect="fadeInLeftBig" swiper-animate-duration="0.7s" swiper-animate-delay="2.4s" src="assets/images/upload/value/ani-value-img07.png" />
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.7s" swiper-animate-delay="3s" src="assets/images/upload/value/ani-value-img08.png" />
+                </div>
+                <div class="swiper-slide system">
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2s" src="assets/images/upload/system/ani-system-img01.png" />
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s" src="assets/images/upload/system/ani-system-img03.png" />
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.7s" src="assets/images/upload/system/ani-system-img02.png" />
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.1s" src="assets/images/upload/system/ani-system-img05.png" />
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.3s" src="assets/images/upload/system/ani-system-img04.png" />
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s" src="assets/images/upload/system/ani-system-img07.png" />
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.7s" src="assets/images/upload/system/ani-system-img06.png" />
+                </div>
+                <div class="swiper-slide products">
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.4s" swiper-animate-delay="0.4s" src="assets/images/upload/products/ani-pro-img01.png" />
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.6s" src="assets/images/upload/products/ani-pro-img02.png" />
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.6s" src="assets/images/upload/products/ani-pro-img09.png" />
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s" src="assets/images/upload/products/ani-pro-img03.png" />
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s" src="assets/images/upload/products/ani-pro-img04.png" />
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.8s" src="assets/images/upload/products/ani-pro-img05.png" />
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.1s" src="assets/images/upload/products/ani-pro-img06.png" />
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.4s" src="assets/images/upload/products/ani-pro-img07.png" />
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.7s" src="assets/images/upload/products/ani-pro-img08.png" />
+                    <img class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.4s" swiper-animate-delay="3.2s" src="assets/images/upload/foot-img.png" />
+                </div>
+            </div>
+            <div class="pagination"></div>
+        </div>
+    </div>
+    <script src="../../WebUI/js/jquery/jquery-1.8.3.min.js"></script>
+    <script src="/WebUI/js/href.js"></script> 
+    <script>
+        isBrowser("/CompatibilityMode/Software/seatsystem.html", "/Software/seatsystem/index.html", "/Software/seatsystem/index.html");
+    </script>
+    <script src="assets/js/vendor/idangerous.swiper.js"></script>
+    <script src="assets/js/vendor/swiper.animate1.0.2.min.js"></script>
+    <script src="assets/js/App.js"></script>
+    <script type="text/javascript">
+    var mySwiper;
+        $(".swiper-container").height($(window).height());
+        $("#system-nav").find("span").eq(0).html("首页")
+        $(window).resize(function () {
+            $(".swiper-container").height($(window).height());
+        });
+        mySwiper = new Swiper('.swiper-container', {
+            mode: 'vertical',
+            loop: false,
+            pagination: '.pagination',
+            createPagination :true,
+            mousewheelControl: true,
+            mousewheelSensitivity: 1,
+            paginationClickable: true,
+            paginationBulletRender: function (index, className) {
+                return '<span class="' + className + '">' + txt[index] + '</span>';
+            },
+            onInit: function (swiper) { //Swiper2.x的初始化是onFirstInit
+                swiperAnimateCache(swiper);
+                swiperAnimate(swiper);
+            },
+            onSlideChangeEnd: function (swiper) {
+                navs.find("span").eq(swiper.activeIndex).addClass("swiper-pagination-bullet-active").siblings().removeClass("swiper-pagination-bullet-active");
+                swiperAnimate(swiper);
+            }
+        })
+        function getSreenHeight() {
+            setTimeout(function () { $(window).scrollTop(0); }, 500)
+        }
+        getSreenHeight();
+        function navclick(n){
+            mySwiper.swipeTo(n, 1000, true);
+        };
+        var navs = $("#system-nav");
+        navs.find("span").each(function(){
+            var ths = $(this);
+            ths.click(function(){
+                var cmp = $(this).index();
+                ths.addClass("swiper-pagination-bullet-active").siblings().removeClass("swiper-pagination-bullet-active");
+                navclick(cmp);
+            })
+        })
+    </script>
+</body>
+</html>

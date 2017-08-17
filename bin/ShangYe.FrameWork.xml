@@ -1,0 +1,3179 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ShangYe.FrameWork</name>
+    </assembly>
+    <members>
+        <member name="T:ShangYe.FrameWork.Helper.RandomHelper">
+            <summary>
+            随机数帮助类
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.RandomHelper.GetSystemID">
+            <summary>
+            产生一个18位唯一ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.RandomHelper.GetSystemID20">
+            <summary>
+            产生一个20位唯一ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.RandomHelper.GetSystemID(System.Int32)">
+            <summary>
+            产生一个指定长度唯一ID
+            </summary>
+            <param name="Length">长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.RandomHelper.GetGuid">
+            <summary>
+            产生一个36位唯一Guid
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.RandomHelper.GetDistinctFileName(System.String)">
+            <summary>
+            产生的一个唯一的文件名
+            </summary>
+            <param name="suffix">后缀名</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.RandomHelper.GetRandomStr(System.Int32)">
+            <summary>
+            获取一个指定长度的随机字符串
+            </summary>
+            <param name="length">长度</param>
+            <returns>返回随机字符串</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.RandomHelper.GetRandomStr(System.String,System.Int32)">
+            <summary>
+            产生一个随机指定长度的字符串
+            </summary>
+            <param name="dictionary">要产生随机的字符串</param>
+            <param name="length"></param>
+            <returns>返回随机字符串</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.RandomHelper.GetRandomStr(System.Random,System.Int32)">
+            <summary>
+            产生一个0-9组成的指定长度的随机字符串
+            </summary>
+            <param name="r">随机函数对象</param>
+            <param name="length">长度</param>
+            <returns>返回随机字符串</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.RandomHelper.GetRandomABC(System.Int32)">
+            <summary>
+            产生一个aA-zZ组成的指定长度的随机字符串
+            </summary>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.RandomHelper.GetRandomStr(System.Random,System.String,System.Int32)">
+            <summary>
+            产生随机字符串函数
+            </summary>
+            <param name="r">随机函数对象</param>
+            <param name="dictionary">要产生随机的字符串</param>
+            <param name="length">长度</param>
+            <returns>返回随机字符串</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.RandomHelper.GetRandomString(System.Int32)">
+            <summary>
+            利用ascii码，获取数字或字母组合的不重复随机字符串
+            </summary>
+            <param name="maxLength"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.RandomHelper.GetRandomNum(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            获得随机整形数
+            </summary>
+            <param name="i"></param>
+            <param name="length"></param>
+            <param name="up">随机数的上限</param>
+            <param name="down">随机数的下限</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.RandomHelper.GetRandom">
+            <summary>
+            获取一个10000000-99999999随机数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.RandomHelper.GetRandomArray(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            功能描述：返回不重复随机数数组
+            创建日期：2006-4-30
+            </summary>
+            <param name="Number">随机数个数</param>
+            <param name="minNum">随机数下限</param>
+            <param name="maxNum">随机数上限</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.RandomHelper.RndString(System.Int32,System.Int32[])">
+            <summary>
+            获取随机字符串
+            </summary>
+            <param name="strLength">字符串长度</param>
+            <param name="Seed">随机函数种子值</param>
+            <returns>指定长度的随机字符串</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.RandomHelper.GenerateRandom(System.Int32)">
+            <summary>
+            生成一个指定长度的随机数
+            </summary>
+            <param name="Length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.RandomHelper.MakePassword(System.Int32)">
+            <summary>
+            随机密码生成
+            </summary>
+            <param name="pwdlen"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.DataAttribute.ForeignKeyAttribute">
+            <summary>
+            外键属性
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Base.IDataAccessInterface`1">
+            <summary>
+            查询基础接口
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="F:ShangYe.FrameWork.Struct.ViewModelBase`1.ida">
+            <summary>
+            数据库操作对象
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Struct.ViewModelBase`1.selectList">
+            <summary>
+            查询子集对象
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ViewModelBase`1.GetData(System.String)">
+            <summary>
+            返回实体
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ViewModelBase`1.GetRecordCount(System.String)">
+            <summary>
+            返回统计结果
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ViewModelBase`1.QueryDataToList(System.String)">
+            <summary>
+            返回List集合
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ViewModelBase`1.QueryDataToList(System.String,System.Int32)">
+            <summary>
+            返回List集合
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <param name="recordCount">返回记录条数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ViewModelBase`1.QueryDataToList(System.String,System.Int32,System.String)">
+            <summary>
+            返回List集合
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <param name="recordCount">返回记录条数</param>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ViewModelBase`1.QueryDataToList(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            返回List集合
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <param name="recordCount">返回记录条数</param>
+            <param name="groupBy">分组</param>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ViewModelBase`1.QueryDataToList(System.Int32,System.Int32,System.Int32@,System.String,System.String)">
+            <summary>
+            返回分页List集合
+            </summary>
+            <param name="currentPage">当前页</param>
+            <param name="pageSize">一页显示数</param>
+            <param name="recordCount">返回总记录数</param>
+            <param name="sqlWhere">条件</param>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ViewModelBase`1.QueryDataToList(System.Int32,System.Int32,System.Int32@,System.String,System.String,System.String)">
+            <summary>
+            返回分页List集合
+            </summary>
+            <param name="currentPage">当前页</param>
+            <param name="pageSize">一页显示数</param>
+            <param name="recordCount">返回总记录数</param>
+            <param name="sqlWhere">条件</param>
+            <param name="groupBy">分组</param>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ViewModelBase`1.QueryDataToTable(System.String)">
+            <summary>
+            返回DataTable集合
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ViewModelBase`1.QueryDataToTable(System.String,System.Int32)">
+            <summary>
+            返回DataTable集合
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <param name="recordCount">返回记录条数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ViewModelBase`1.QueryDataToTable(System.String,System.Int32,System.String)">
+            <summary>
+            返回DataTable集合
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <param name="recordCount">返回记录条数</param>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ViewModelBase`1.QueryDataToTable(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            返回DataTable集合
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <param name="recordCount">返回记录条数</param>
+            <param name="groupBy">分组</param>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ViewModelBase`1.QueryDataToTable(System.Int32,System.Int32,System.Int32@,System.String,System.String)">
+            <summary>
+            返回分页DataTable集合
+            </summary>
+            <param name="currentPage">当前页</param>
+            <param name="pageSize">一页显示数</param>
+            <param name="recordCount">返回总记录数</param>
+            <param name="sqlWhere">条件</param>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ViewModelBase`1.QueryDataToTable(System.Int32,System.Int32,System.Int32@,System.String,System.String,System.String)">
+            <summary>
+            返回分页DataTable集合
+            </summary>
+            <param name="currentPage">当前页</param>
+            <param name="pageSize">一页显示数</param>
+            <param name="recordCount">返回总记录数</param>
+            <param name="sqlWhere">条件</param>
+            <param name="groupBy">分组</param>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.Base.Builder.CustomReflectionBuilder`1">
+            <summary>
+            自定义反射生成器
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="F:ShangYe.FrameWork.Base.Builder.CustomReflectionBuilder`1.fields">
+            <summary>
+            字段
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.Builder.CustomReflectionBuilder`1.Build(System.Data.SqlClient.SqlDataReader)">
+            <summary>
+            实体类赋值
+            </summary>
+            <param name="reader"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.Builder.CustomReflectionBuilder`1.CreateBuilder(System.Data.SqlClient.SqlDataReader)">
+            <summary>
+            构造实体类
+            </summary>
+            <param name="reader"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.Builder.CustomReflectionBuilder`1.Buildss(System.Data.SqlClient.SqlDataReader,System.Collections.Generic.List{System.Object})">
+            <summary>
+            实体类赋值
+            </summary>
+            <param name="reader"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.UrlRouting.IUrlAccess">
+            <summary>
+            Url访问跳转接口
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Section.CachingCollection">
+            <summary>
+            元素集合配置
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Section.CachingCollection.CreateNewElement">
+            <summary>
+            创建元素
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Section.CachingCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            取得主键
+            </summary>
+            <param name="element">元素对象</param>
+            <returns></returns>
+        </member>
+        <member name="P:ShangYe.FrameWork.Section.CachingCollection.CollectionType">
+            <summary>
+            对象类型
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.ClientHelper.IsIPAddress(System.String)">
+            <summary>
+            判断是否是IP地址格式 0.0.0.0
+            </summary>
+            <param name="str1">待判断的IP地址</param>
+            <returns>true or false</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.ClientHelper.IsLocalIp(System.String)">
+            <summary>
+            校验本地IP还是外网IP
+            </summary>
+            <param name="ip">Ip</param>
+            <returns></returns>
+        </member>
+        <member name="P:ShangYe.FrameWork.Helper.ClientHelper.ClientIP">
+            <summary>
+            取得客户端真实IP。如果有代理则取第一个非内网地址
+            by flower.b
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Helper.ClientHelper.ClientName">
+            <summary>
+            取得客户端用户名
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Helper.ClientHelper.AccessUrl">
+            <summary>
+            取得客户端访问url
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Helper.ClientHelper.AccessTimeStamp">
+            <summary>
+            取得客户端访问时间戳
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Helper.ClientHelper.UserAgent">
+            <summary>
+            取得客户端的用户信息
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Helper.ClientHelper.BrowserID">
+            <summary>
+            取得客户端的浏览器ID
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Helper.ClientHelper.Browser">
+            <summary>
+            取得客户端的浏览器信息
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.UploadFile.FileSave">
+            <summary>
+            上传文件保存
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.UploadFile.FileSave.SaveFile(System.Byte[],System.String)">
+            <summary>
+            文件上传
+            </summary>
+            <param name="fileStream"></param>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.JsonHelper">
+            <summary>
+            Json操作
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.JsonHelper.JsonToObj``1(System.String)">
+            <summary>
+            Json转对象
+            </summary>
+            <typeparam name="T">能序列化的对象</typeparam>
+            <param name="szJson">Json字符串</param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.FileHelp">
+            <summary>
+            文件辅助类
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.FileHelp.GetFileClass(System.Byte[])">
+            <summary>
+            得到文件的分类编码
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.FileHelp.CheckContent(System.String,System.String)">
+            <summary>
+            检验文件是否正确
+            </summary>
+            <param name="fileClass"></param>
+            <param name="Ext">后缀名</param>
+            <returns>0:正常文件；1-可疑文件；2-禁止文件</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.FileHelp.GetFileExt(System.String)">
+            <summary>
+            取得文件扩展名
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.FileHelp.GetFileProperty(System.String)">
+            <summary>
+            获取文件属性
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.FileHelp.IsIndex(System.String)">
+            <summary>
+            是否支持检索
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.FileHelp.WriteFile(System.String,System.Text.Encoding,System.Collections.Generic.IList{System.String})">
+            <summary>
+            写文件
+            </summary>
+            <param name="path">路径</param>
+            <param name="encod">编码类型</param>
+            <param name="li">文件内容</param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.DataAttribute.ProcedureAttribute">
+            <summary>
+            主键属性
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.UrlRouting.UrlDomainAccess">
+            <summary>
+            域跳转
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.UrlRouting.UrlDomainAccess.IsAccess(ShangYe.FrameWork.UrlRouting.UrlAccessMode)">
+            <summary>
+            判断方法
+            </summary>
+            <param name="hostName">域</param>
+            <param name="port">端口</param>
+            <param name="area">区域</param>
+            <param name="siteTheme">站点信息</param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.UploadImage.ImageThumMode">
+            <summary>
+            压缩模式
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.UploadImage.ImageThumMode.None">
+            <summary>
+            空
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.UploadImage.ImageThumMode.FixHeight">
+            <summary>
+            缩放高
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.UploadImage.ImageThumMode.FixWeight">
+            <summary>
+            缩放宽
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.UploadImage.ImageThumMode.FixWeightAndHeight">
+            <summary>
+            缩放宽高
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.UploadImage.ImageThumMode.LimitWeight">
+            <summary>
+            限制宽
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.UploadImage.ImageThumMode.LimitHeight">
+            <summary>
+            限制高
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.UploadImage.ImageThumMode.LimitWeightAndHeight">
+            <summary>
+            限制宽和高
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.UploadImage.ImageThumMode.Fill">
+            <summary>
+            填充
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.UploadImage.Locations">
+            <summary>
+            水印图位置
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.UploadImage.Locations.LeftTop">
+            <summary>
+            左上角
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.UploadImage.Locations.LeftBottom">
+            <summary>
+            左下角
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.UploadImage.Locations.RightTop">
+            <summary>
+            右上角
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.UploadImage.Locations.RightBottom">
+            <summary>
+            右下角
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.UploadImage.Locations.TopCenter">
+            <summary>
+            头中
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.UploadImage.Locations.LeftCenter">
+            <summary>
+            左中
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.UploadImage.Locations.RightCenter">
+            <summary>
+            右中
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.UploadImage.Locations.Center">
+            <summary>
+            中间
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.UploadImage.Locations.BottomCenter">
+            <summary>
+            底居中
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Section.ISection">
+            <summary>
+            取配置文件值实现的接口
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Section.ISection.Get(System.String)">
+            <summary>
+            实现的方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.Caching.DependValueCache`2">
+            <summary>
+            简单依赖缓存
+            </summary>
+            <typeparam name="TKey">键类型</typeparam>
+            <typeparam name="TResult">返回的值</typeparam>
+        </member>
+        <member name="T:ShangYe.FrameWork.Caching.IDependCache`2">
+            <summary>
+            高级缓存
+            </summary>
+            <typeparam name="TKey">键</typeparam>
+            <typeparam name="TResult">返回值</typeparam>
+        </member>
+        <member name="T:ShangYe.FrameWork.Caching.ICache">
+            <summary>
+            缓存接口
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.IDependCache`2.Get(`0,System.Func{`1})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.IDependCache`2.Get(`0,System.Func{`1},System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="idep">依赖缓存项</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.IDependCache`2.Get(`0,System.Func{`1},System.Nullable{System.DateTime},System.Nullable{System.TimeSpan})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="absoluteExpiration">绝对过期时间：设置绝对时间后，相对时间为空</param>
+            <param name="slidingExpiration">相对过期时间:设置相对时间后，绝对时间为空</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.IDependCache`2.Get(`0,System.Func{`1},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.DateTime},System.Nullable{System.TimeSpan})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="idep">依赖缓存项</param>
+            <param name="absoluteExpiration">绝对过期时间：设置绝对时间后，相对时间为空</param>
+            <param name="slidingExpiration">相对过期时间:设置相对时间后，绝对时间为空</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.IDependCache`2.Remove(`0)">
+            <summary>
+            删除缓存
+            </summary>
+            <param name="key">键</param>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependValueCache`2.Get(`0,System.Func{`1})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependValueCache`2.Gets(`0,System.Func{`1})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependValueCache`2.Get(`0,System.Func{`1},System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="idep">依赖缓存项</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependValueCache`2.Gets(`0,System.Func{`1},System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="idep">依赖缓存项</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependValueCache`2.Get(`0,System.Func{`1},System.Nullable{System.DateTime},System.Nullable{System.TimeSpan})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="absoluteExpiration">绝对过期时间：设置绝对时间后，相对时间为空</param>
+            <param name="slidingExpiration">相对过期时间:设置相对时间后，绝对时间为空</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependValueCache`2.Gets(`0,System.Func{`1},System.Nullable{System.DateTime},System.Nullable{System.TimeSpan})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="absoluteExpiration">绝对过期时间：设置绝对时间后，相对时间为空</param>
+            <param name="slidingExpiration">相对过期时间:设置相对时间后，绝对时间为空</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependValueCache`2.Get(`0,System.Func{`1},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.DateTime},System.Nullable{System.TimeSpan})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="idep">依赖缓存项</param>
+            <param name="absoluteExpiration">绝对过期时间：设置绝对时间后，相对时间为空</param>
+            <param name="slidingExpiration">相对过期时间:设置相对时间后，绝对时间为空</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependValueCache`2.Gets(`0,System.Func{`1},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.DateTime},System.Nullable{System.TimeSpan})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="idep">依赖缓存项</param>
+            <param name="absoluteExpiration">绝对过期时间：设置绝对时间后，相对时间为空</param>
+            <param name="slidingExpiration">相对过期时间:设置相对时间后，绝对时间为空</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependValueCache`2.Remove(`0)">
+            <summary>
+            删除缓存
+            </summary>
+            <param name="key">键</param>
+        </member>
+        <member name="T:ShangYe.FrameWork.Base.SQL.SqlString`1">
+            <summary>
+            SqlString 拼接类
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.SqlString`1.Delete(System.Object,System.String)">
+            <summary>
+            删除（按条件）
+            </summary>
+            <param name="info">实体类</param>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.SqlString`1.Deletes(System.Object,System.String)">
+            <summary>
+            删除（按条件）
+            </summary>
+            <param name="info">实体类</param>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.SqlString`1.Insert(System.Object)">
+            <summary>
+            插入数据
+            </summary>
+            <param name="info">实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.SqlString`1.Inserts(System.Object)">
+            <summary>
+            插入数据
+            </summary>
+            <param name="info">实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.SqlString`1.GetList(System.Object,System.Collections.Generic.IList{System.String})">
+            <summary>
+            返回实体类下面的实体
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.SqlString`1.GetLists(System.Object,System.Collections.Generic.IList{System.String})">
+            <summary>
+            返回实体类下面的实体
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.SqlString`1.GetListType(System.Object)">
+            <summary>
+            返回实体类下面的实体
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.SqlString`1.GetListTypes(System.Object)">
+            <summary>
+            返回实体类下面的实体
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.SqlString`1.Update(System.Object,System.String,System.String)">
+            <summary>
+            修改数据实体
+            </summary>
+            <param name="info">实体类</param>
+            <param name="setWhere">修改参数</param>
+            <param name="sqlWhere">修改条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.SqlString`1.Updates(System.Object,System.String,System.String)">
+            <summary>
+            修改数据实体
+            </summary>
+            <param name="info">实体类</param>
+            <param name="setWhere">修改参数</param>
+            <param name="sqlWhere">修改条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.SqlString`1.GetData(System.Object,System.String)">
+            <summary>
+            查询
+            </summary>
+            <param name="info"></param>
+            <param name="sqlWhere"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.SqlString`1.GetDatas(System.Object,System.String)">
+            <summary>
+            查询
+            </summary>
+            <param name="info"></param>
+            <param name="sqlWhere"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.SqlString`1.GetRecordCount(System.Object,System.String)">
+            <summary>
+            返回表记录数
+            </summary>
+            <param name="info"></param>
+            <param name="sqlWhere"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.SqlString`1.GetRecordCounts(System.Object,System.String)">
+            <summary>
+            返回表记录数
+            </summary>
+            <param name="info"></param>
+            <param name="sqlWhere"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.SqlString`1.QueryDataToTable(System.Object,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            查询数据（非分页方式）
+            </summary>
+            <param name="info">实体类</param>
+            <param name="condition">条件</param>
+            <param name="groupBy">分组</param>
+            <param name="orderBy">排序</param>
+            <param name="recordCount">返回记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.SqlString`1.QueryDataToTablesv(System.Object,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            查询数据（非分页方式）
+            </summary>
+            <param name="info">实体类</param>
+            <param name="condition">条件</param>
+            <param name="groupBy">分组</param>
+            <param name="orderBy">排序</param>
+            <param name="recordCount">返回记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.SqlString`1.QueryDataToTableRecordCount(System.Object,System.String,System.String,System.String)">
+            <summary>
+            取得符合条件的记录总数
+            </summary>
+            <param name="info">实体类</param>
+            <param name="condition">条件</param>
+            <param name="groupBy">分组</param>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.SqlString`1.QueryDataToTableRecordCounts(System.Object,System.String,System.String,System.String)">
+            <summary>
+            取得符合条件的记录总数
+            </summary>
+            <param name="info">实体类</param>
+            <param name="condition">条件</param>
+            <param name="groupBy">分组</param>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.SqlString`1.QueryDataToTable(System.Object,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            查询数据（分页方式）
+            </summary>
+            <param name="info">实体类</param>
+            <param name="condition">条件</param>
+            <param name="groupBy">分组</param>
+            <param name="orderBy">排序</param>
+            <param name="currentPage">当前页</param>
+            <param name="pageSize">条/页</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.UrlRouting.RewriteHandle.Analyze(ShangYe.FrameWork.UrlRouting.ITheme,ShangYe.FrameWork.UrlRouting.ISiteThemeInfo)">
+            <summary>
+            处理方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.Section.CachingElement">
+            <summary>
+            缓存节点配制
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Section.CachingElement.Key">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Section.CachingElement.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.DataAttribute.GetFrameWorkAttribute.GetSchemaName(System.Object)">
+            <summary>
+            获取架构名
+            </summary>
+            <param name="o">实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.DataAttribute.GetFrameWorkAttribute.GetTableName(System.Object)">
+            <summary>
+            获取表名
+            </summary>
+            <param name="o">实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.DataAttribute.GetFrameWorkAttribute.GetPrimaryKey(System.Object)">
+            <summary>
+            获取主键
+            </summary>
+            <param name="o">实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.DataAttribute.GetFrameWorkAttribute.GetForeignKey(System.Object)">
+            <summary>
+            获取外键
+            </summary>
+            <param name="o">实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.DataAttribute.GetFrameWorkAttribute.GetProcedureName(System.Object)">
+            <summary>
+            获取存储过程名字
+            </summary>
+            <param name="o">实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.DataAttribute.GetFrameWorkAttribute.GetIdentity(System.Object)">
+            <summary>
+            获取自增长Id
+            </summary>
+            <param name="o">实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.DataAttribute.GetFrameWorkAttribute.GetProcedureParameter(System.Reflection.PropertyInfo)">
+            <summary>
+            获取参数类型
+            </summary>
+            <param name="o">实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.DataAttribute.GetFrameWorkAttribute.GetDbNameParameter(System.Object)">
+            <summary>
+            获取数据库名
+            </summary>
+            <param name="o">实体类</param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.Caching.ISimpleCache`2">
+            <summary>
+            基础缓存接口
+            </summary>
+            <typeparam name="TKey"></typeparam>
+            <typeparam name="TResult"></typeparam>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.ISimpleCache`2.Get(`0,System.Func{`1})">
+            <summary>
+            获取或设置缓存值
+            </summary>
+            <param name="key"></param>
+            <param name="acquire"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.Base.IDataAccessOperInterface`1">
+            <summary>
+            增，删，改接口
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.Builder.ColumnBuilder`1.BuildInsertDBCommandParam(System.Object)">
+            <summary>
+            创建 Insert 操作 SqlParameter 数组
+            </summary>
+            <param name="model">实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.Builder.ColumnBuilder`1.BuildUpdateDBCommandParam(System.Object,System.Collections.Generic.List{System.String})">
+            <summary>
+            取得更新字段参数
+            </summary>
+            <param name="model"></param>
+            <param name="li"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.Builder.ColumnBuilder`1.BuildSPDBCommandParam(System.Object)">
+            <summary>
+            存储过程
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.Builder.BulidParameter.BuildCriteriaDBCommandParam(System.Collections.Generic.IList{ShangYe.FrameWork.Base.SqlParameterEntity},ShangYe.FrameWork.Base.DBVersion,System.String)">
+            <summary>
+            主键
+            </summary>
+            <param name="list"></param>
+            <param name="dvb"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.Builder.BulidParameter.GetDbType(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="o"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.Builder.BulidParameter.GetSqlDbType(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="o"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.Builder.BulidParameter.GetOleDbType(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="o"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.Builder.BulidParameter.GetFieldType(ShangYe.FrameWork.Base.FieldType,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="o"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.Builder.BulidParameter.GetFieldType(System.String,System.Int32)">
+            <summary>
+            获取数据类型
+            </summary>
+            <param name="FieldType">数据类型</param>
+            <param name="Locality">数组中的位置 0：SQL数据库类型 1：C#中类型 2：Sql Parameter 类型 3：4：初使值</param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.UrlRouting.CustomerRouteHandler">
+            <summary>
+            地址验证跳转类
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.UrlRouting.CustomerRouteHandler.#ctor(System.String,ShangYe.FrameWork.UrlRouting.ISiteThemeInfo)">
+            <summary>
+            地址验证跳转类
+            </summary>
+            <param name="vp">跳转路径</param>
+            <param name="siteThemes">跳转站点信息</param>
+        </member>
+        <member name="M:ShangYe.FrameWork.UrlRouting.CustomerRouteHandler.GetHttpHandler(System.Web.Routing.RequestContext)">
+            <summary>
+            地址请求方法
+            </summary>
+            <param name="requestContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.UrlRouting.CustomerRouteHandler.IsVeri(System.String,System.String,System.String,ShangYe.FrameWork.UrlRouting.SiteThemeInfo)">
+            <summary>
+            验证地址跟哪个站点匹配
+            </summary>
+            <param name="hostName"></param>
+            <param name="port"></param>
+            <param name="paths"></param>
+            <param name="sti"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.Index.Store">
+            <summary>
+            压缩
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Index.IndexType">
+            <summary>
+            索引字段类型
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Index.IndexType.Analyzed">
+            <summary>
+            分词并建立索引
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Index.IndexType.NotNorms_Analyzed">
+            <summary>
+            不分词并建立索引
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Index.DataType">
+            <summary>
+            数据类型
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Index.DataType.String">
+            <summary>
+            字符串
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Index.DataType.Number">
+            <summary>
+            数值
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Index.IndexField.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Index.IndexField.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Index.IndexField.Store">
+            <summary>
+            是否压缩
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Index.IndexField.Weight">
+            <summary>
+            权重
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Index.IndexField.IndexType">
+            <summary>
+            索引字段类型
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Index.IndexField.DataType">
+            <summary>
+            数据类型
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Caching.DependFileCache`2">
+            <summary>
+            文件缓存依赖
+            </summary>
+            <typeparam name="TKey">键类型</typeparam>
+            <typeparam name="TResult">返回的值</typeparam>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependFileCache`2.#ctor(ShangYe.FrameWork.Section.ISection)">
+            <summary>
+            文件缓存依赖构造函数
+            </summary>
+            <param name="isection"></param>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependFileCache`2.Get(`0,System.Func{`1})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键类型</param>
+            <param name="value">返回的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependFileCache`2.Gets(`0,System.Func{`1})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键类型</param>
+            <param name="value">返回的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependFileCache`2.Get(`0,System.Func{`1},System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="idep">依赖缓存项</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependFileCache`2.Gets(`0,System.Func{`1},System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="idep">依赖缓存项</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependFileCache`2.Get(`0,System.Func{`1},System.Nullable{System.DateTime},System.Nullable{System.TimeSpan})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="absoluteExpiration">绝对过期时间：设置绝对时间后，相对时间为空</param>
+            <param name="slidingExpiration">相对过期时间:设置相对时间后，绝对时间为空</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependFileCache`2.Gets(`0,System.Func{`1},System.Nullable{System.DateTime},System.Nullable{System.TimeSpan})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="absoluteExpiration">绝对过期时间：设置绝对时间后，相对时间为空</param>
+            <param name="slidingExpiration">相对过期时间:设置相对时间后，绝对时间为空</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependFileCache`2.Get(`0,System.Func{`1},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.DateTime},System.Nullable{System.TimeSpan})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="idep">依赖缓存项</param>
+            <param name="absoluteExpiration">绝对过期时间：设置绝对时间后，相对时间为空</param>
+            <param name="slidingExpiration">相对过期时间:设置相对时间后，绝对时间为空</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependFileCache`2.Gets(`0,System.Func{`1},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.DateTime},System.Nullable{System.TimeSpan})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="idep">依赖缓存项</param>
+            <param name="absoluteExpiration">绝对过期时间：设置绝对时间后，相对时间为空</param>
+            <param name="slidingExpiration">相对过期时间:设置相对时间后，绝对时间为空</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependFileCache`2.Remove(`0)">
+            <summary>
+            删除缓存
+            </summary>
+            <param name="key">键</param>
+        </member>
+        <member name="T:ShangYe.FrameWork.UrlRouting.Rewrite">
+            <summary>
+            url地址路由配制实体信息
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.UrlRouting.Rewrite.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.UrlRouting.Rewrite.Url">
+            <summary>
+            Url地址
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.UrlRouting.Rewrite.Pattern">
+            <summary>
+            参数规则验证
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.UrlRouting.Rewrite.PhysicalFile">
+            <summary>
+            请求实际路径
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.UrlRouting.Rewrite.RoutsGroup">
+            <summary>
+            规则组
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.OctreeQuantizer">
+            <summary>
+            Quantize using an Octree
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.Quantizer">
+            <summary>
+            Summary description for Class1.
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.Quantizer.#ctor(System.Boolean)">
+            <summary>
+            Construct the quantizer
+            </summary>
+            <param name="singlePass">If true, the quantization only needs to loop through the source pixels once</param>
+            <remarks>
+            If you construct this class with a true value for singlePass, then the code will, when quantizing your image,
+            only call the 'QuantizeImage' function. If two passes are required, the code will call 'InitialQuantizeImage'
+            and then 'QuantizeImage'.
+            </remarks>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.Quantizer.Quantize(System.Drawing.Image)">
+            <summary>
+            Quantize an image and return the resulting output bitmap
+            </summary>
+            <param name="source">The image to quantize</param>
+            <returns>A quantized version of the image</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.Quantizer.FirstPass(System.Drawing.Imaging.BitmapData,System.Int32,System.Int32)">
+            <summary>
+            Execute the first pass through the pixels in the image
+            </summary>
+            <param name="sourceData">The source data</param>
+            <param name="width">The width in pixels of the image</param>
+            <param name="height">The height in pixels of the image</param>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.Quantizer.SecondPass(System.Drawing.Imaging.BitmapData,System.Drawing.Bitmap,System.Int32,System.Int32,System.Drawing.Rectangle)">
+            <summary>
+            Execute a second pass through the bitmap
+            </summary>
+            <param name="sourceData">The source bitmap, locked into memory</param>
+            <param name="output">The output bitmap</param>
+            <param name="width">The width in pixels of the image</param>
+            <param name="height">The height in pixels of the image</param>
+            <param name="bounds">The bounding rectangle</param>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.Quantizer.InitialQuantizePixel(ShangYe.FrameWork.Helper.Quantizer.Color32*)">
+            <summary>
+            Override this to process the pixel in the first pass of the algorithm
+            </summary>
+            <param name="pixel">The pixel to quantize</param>
+            <remarks>
+            This function need only be overridden if your quantize algorithm needs two passes,
+            such as an Octree quantizer.
+            </remarks>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.Quantizer.QuantizePixel(ShangYe.FrameWork.Helper.Quantizer.Color32*)">
+            <summary>
+            Override this to process the pixel in the second pass of the algorithm
+            </summary>
+            <param name="pixel">The pixel to quantize</param>
+            <returns>The quantized value</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.Quantizer.GetPalette(System.Drawing.Imaging.ColorPalette)">
+            <summary>
+            Retrieve the palette for the quantized image
+            </summary>
+            <param name="original">Any old palette, this is overrwritten</param>
+            <returns>The new color palette</returns>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.Quantizer._singlePass">
+            <summary>
+            Flag used to indicate whether a single pass or two passes are needed for quantization.
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.Quantizer.Color32">
+            <summary>
+            Struct that defines a 32 bpp colour
+            </summary>
+            <remarks>
+            This struct is used to read data from a 32 bits per pixel image
+            in memory, and is ordered in this manner as this is the way that
+            the data is layed out in memory
+            </remarks>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.Quantizer.Color32.Blue">
+            <summary>
+            Holds the blue component of the colour
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.Quantizer.Color32.Green">
+            <summary>
+            Holds the green component of the colour
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.Quantizer.Color32.Red">
+            <summary>
+            Holds the red component of the colour
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.Quantizer.Color32.Alpha">
+            <summary>
+            Holds the alpha component of the colour
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.Quantizer.Color32.ARGB">
+            <summary>
+            Permits the color32 to be treated as an int32
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Helper.Quantizer.Color32.Color">
+            <summary>
+            Return the color for this Color32 object
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.OctreeQuantizer.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Construct the octree quantizer
+            </summary>
+            <remarks>
+            The Octree quantizer is a two pass algorithm. The initial pass sets up the octree,
+            the second pass quantizes a color based on the nodes in the tree
+            </remarks>
+            <param name="maxColors">The maximum number of colors to return</param>
+            <param name="maxColorBits">The number of significant bits</param>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.OctreeQuantizer.InitialQuantizePixel(ShangYe.FrameWork.Helper.Quantizer.Color32*)">
+            <summary>
+            Process the pixel in the first pass of the algorithm
+            </summary>
+            <param name="pixel">The pixel to quantize</param>
+            <remarks>
+            This function need only be overridden if your quantize algorithm needs two passes,
+            such as an Octree quantizer.
+            </remarks>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.OctreeQuantizer.QuantizePixel(ShangYe.FrameWork.Helper.Quantizer.Color32*)">
+            <summary>
+            Override this to process the pixel in the second pass of the algorithm
+            </summary>
+            <param name="pixel">The pixel to quantize</param>
+            <returns>The quantized value</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.OctreeQuantizer.GetPalette(System.Drawing.Imaging.ColorPalette)">
+            <summary>
+            Retrieve the palette for the quantized image
+            </summary>
+            <param name="original">Any old palette, this is overrwritten</param>
+            <returns>The new color palette</returns>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.OctreeQuantizer._octree">
+            <summary>
+            Stores the tree
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.OctreeQuantizer._maxColors">
+            <summary>
+            Maximum allowed color depth
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree">
+            <summary>
+            Class which does the actual quantization
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.#ctor(System.Int32)">
+            <summary>
+            Construct the octree
+            </summary>
+            <param name="maxColorBits">The maximum number of significant bits in the image</param>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.AddColor(ShangYe.FrameWork.Helper.Quantizer.Color32*)">
+            <summary>
+            Add a given color value to the octree
+            </summary>
+            <param name="pixel"></param>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.Reduce">
+            <summary>
+            Reduce the depth of the tree
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.TrackPrevious(ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.OctreeNode)">
+            <summary>
+            Keep track of the previous node that was quantized
+            </summary>
+            <param name="node">The node last quantized</param>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.Palletize(System.Int32)">
+            <summary>
+            Convert the nodes in the octree to a palette with a maximum of colorCount colors
+            </summary>
+            <param name="colorCount">The maximum number of colors</param>
+            <returns>An arraylist with the palettized colors</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.GetPaletteIndex(ShangYe.FrameWork.Helper.Quantizer.Color32*)">
+            <summary>
+            Get the palette index for the passed color
+            </summary>
+            <param name="pixel"></param>
+            <returns></returns>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.mask">
+            <summary>
+            Mask used when getting the appropriate pixels for a given node
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree._root">
+            <summary>
+            The root of the octree
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree._leafCount">
+            <summary>
+            Number of leaves in the tree
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree._reducibleNodes">
+            <summary>
+            Array of reducible nodes
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree._maxColorBits">
+            <summary>
+            Maximum number of significant bits in the image
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree._previousNode">
+            <summary>
+            Store the last node quantized
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree._previousColor">
+            <summary>
+            Cache the previous color quantized
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.Leaves">
+            <summary>
+            Get/Set the number of leaves in the tree
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.ReducibleNodes">
+            <summary>
+            Return the array of reducible nodes
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.OctreeNode">
+            <summary>
+            Class which encapsulates each node in the tree
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.OctreeNode.#ctor(System.Int32,System.Int32,ShangYe.FrameWork.Helper.OctreeQuantizer.Octree)">
+            <summary>
+            Construct the node
+            </summary>
+            <param name="level">The level in the tree = 0 - 7</param>
+            <param name="colorBits">The number of significant color bits in the image</param>
+            <param name="octree">The tree to which this node belongs</param>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.OctreeNode.AddColor(ShangYe.FrameWork.Helper.Quantizer.Color32*,System.Int32,System.Int32,ShangYe.FrameWork.Helper.OctreeQuantizer.Octree)">
+            <summary>
+            Add a color into the tree
+            </summary>
+            <param name="pixel">The color</param>
+            <param name="colorBits">The number of significant color bits</param>
+            <param name="level">The level in the tree</param>
+            <param name="octree">The tree to which this node belongs</param>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.OctreeNode.Reduce">
+            <summary>
+            Reduce this node by removing all of its children
+            </summary>
+            <returns>The number of leaves removed</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.OctreeNode.ConstructPalette(System.Collections.ArrayList,System.Int32@)">
+            <summary>
+            Traverse the tree, building up the color palette
+            </summary>
+            <param name="palette">The palette</param>
+            <param name="paletteIndex">The current palette index</param>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.OctreeNode.GetPaletteIndex(ShangYe.FrameWork.Helper.Quantizer.Color32*,System.Int32)">
+            <summary>
+            Return the palette index for the passed color
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.OctreeNode.Increment(ShangYe.FrameWork.Helper.Quantizer.Color32*)">
+            <summary>
+            Increment the pixel count and add to the color information
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.OctreeNode._leaf">
+            <summary>
+            Flag indicating that this is a leaf node
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.OctreeNode._pixelCount">
+            <summary>
+            Number of pixels in this node
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.OctreeNode._red">
+            <summary>
+            Red component
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.OctreeNode._green">
+            <summary>
+            Green Component
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.OctreeNode._blue">
+            <summary>
+            Blue component
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.OctreeNode._children">
+            <summary>
+            Pointers to any child nodes
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.OctreeNode._nextReducible">
+            <summary>
+            Pointer to next reducible node
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.OctreeNode._paletteIndex">
+            <summary>
+            The index of this node in the palette
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.OctreeNode.NextReducible">
+            <summary>
+            Get/Set the next reducible node
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Helper.OctreeQuantizer.Octree.OctreeNode.Children">
+            <summary>
+            Return the child nodes
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.GrayscaleQuantizer">
+            <summary>
+            Summary description for PaletteQuantizer.
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.PaletteQuantizer">
+            <summary>
+            Summary description for PaletteQuantizer.
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.PaletteQuantizer.#ctor(System.Collections.ArrayList)">
+            <summary>
+            Construct the palette quantizer
+            </summary>
+            <param name="palette">The color palette to quantize to</param>
+            <remarks>
+            Palette quantization only requires a single quantization step
+            </remarks>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.PaletteQuantizer.QuantizePixel(ShangYe.FrameWork.Helper.Quantizer.Color32*)">
+            <summary>
+            Override this to process the pixel in the second pass of the algorithm
+            </summary>
+            <param name="pixel">The pixel to quantize</param>
+            <returns>The quantized value</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.PaletteQuantizer.GetPalette(System.Drawing.Imaging.ColorPalette)">
+            <summary>
+            Retrieve the palette for the quantized image
+            </summary>
+            <param name="palette">Any old palette, this is overrwritten</param>
+            <returns>The new color palette</returns>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.PaletteQuantizer._colorMap">
+            <summary>
+            Lookup table for colors
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Helper.PaletteQuantizer._colors">
+            <summary>
+            List of all colors in the palette
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.GrayscaleQuantizer.#ctor">
+            <summary>
+            Construct the palette quantizer
+            </summary>
+            <remarks>
+            Palette quantization only requires a single quantization step
+            </remarks>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.GrayscaleQuantizer.QuantizePixel(ShangYe.FrameWork.Helper.Quantizer.Color32*)">
+            <summary>
+            Override this to process the pixel in the second pass of the algorithm
+            </summary>
+            <param name="pixel">The pixel to quantize</param>
+            <returns>The quantized value</returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.IpTolong">
+            <summary>
+            Ip转换
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.IpTolong.TransFormIp(System.String)">
+            <summary>
+            Ip转换成long
+            </summary>
+            <param name="Ip">ip地址</param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.UrlRouting.UrlRoute">
+            <summary>
+            Url重写规则
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.UrlRouting.ISiteThemeInfo">
+            <summary>
+            站点皮肤信息接口
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.DataToExcel">
+            <summary>
+            数据转换成excel
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.DataToExcel.RenderToExcel(System.Data.DataTable)">
+            <summary>
+            DataReader转换成Excel文档流
+            </summary>
+            <param name="reader"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.DataToExcel.AutoSizeColumns(NPOI.SS.UserModel.ISheet)">
+            <summary>
+            自动设置Excel列宽
+            </summary>
+            <param name="sheet">Excel表</param>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.DataToExcel.RenderToDataTable(System.String,System.String)">
+            <summary>
+            读取excel
+            </summary>
+            <param name="fileName"></param>
+            <param name="sheetName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.Index.WriteIndex">
+            <summary>
+            写入索引
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Index.WriteIndex.filePath">
+            <summary>
+            索引文件路径
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.WriteIndex.#ctor(System.String)">
+            <summary>
+            写入索引
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.WriteIndex.Insert(ShangYe.FrameWork.Index.IndexFieldItem)">
+            <summary>
+            插入一条索引
+            </summary>
+            <param name="item">索引项</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.WriteIndex.InsertEncrypt(ShangYe.FrameWork.Index.IndexFieldItem)">
+            <summary>
+            插入一条索引
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.WriteIndex.Update(System.String,System.String,ShangYe.FrameWork.Index.IndexFieldItem)">
+            <summary>
+            更新索引
+            </summary>
+            <param name="idName"></param>
+            <param name="idValue"></param>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.WriteIndex.UpdateEncrypt(System.String,System.String,ShangYe.FrameWork.Index.IndexFieldItem)">
+            <summary>
+            更新索引
+            </summary>
+            <param name="idName"></param>
+            <param name="idValue"></param>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.WriteIndex.Delete(System.String,System.String)">
+            <summary>
+            更新索引
+            </summary>
+            <param name="idName"></param>
+            <param name="idValue"></param>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.WriteIndex.DeleteEncrypt(System.String,System.String)">
+            <summary>
+            更新索引
+            </summary>
+            <param name="idName"></param>
+            <param name="idValue"></param>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.WriteIndex.Delete(Lucene.Net.Search.Query)">
+            <summary>
+            删除过引
+            </summary>
+            <param name="query">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.WriteIndex.Close">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Index.SeachIndex">
+            <summary>
+            搜索索引
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.SeachIndex.Seach``1(Lucene.Net.Search.Query,System.Int32,System.Func{Lucene.Net.Search.ScoreDoc[],``0})">
+            <summary>
+            返回记录的指定条数
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="querys">检索条件</param>
+            <param name="topNumber">显示条数</param>
+            <param name="fun">执行的方法</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.SeachIndex.Seachs``1(Lucene.Net.Search.Query,System.Int32,System.Func{Lucene.Net.Search.ScoreDoc[],``0})">
+            <summary>
+            返回记录的指定条数
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="querys">检索条件</param>
+            <param name="topNumber">显示条数</param>
+            <param name="fun">执行的方法</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.SeachIndex.Seach(Lucene.Net.Search.Query,System.Int32)">
+            <summary>
+            返回记录的指定条数
+            </summary>
+            <param name="querys">检索条件</param>
+            <param name="topNumber">显示条数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.SeachIndex.Seachs(Lucene.Net.Search.Query,System.Int32)">
+            <summary>
+            返回记录的指定条数
+            </summary>
+            <param name="querys">检索条件</param>
+            <param name="topNumber">显示条数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.SeachIndex.Seach(Lucene.Net.Search.Query,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            分页查询
+            </summary>
+            <param name="querys">条件</param>
+            <param name="currentPage">当前页</param>
+            <param name="pageSize">页码</param>
+            <param name="count">总记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.SeachIndex.Seachs(Lucene.Net.Search.Query,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            分页查询
+            </summary>
+            <param name="querys">条件</param>
+            <param name="currentPage">当前页</param>
+            <param name="pageSize">页码</param>
+            <param name="count">总记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.SeachIndex.Seach(Lucene.Net.Search.Query,System.Int32,System.Int32,System.Int32@,Lucene.Net.Search.Sort)">
+            <summary>
+            分页排序查询
+            </summary>
+            <param name="querys">条件</param>
+            <param name="currentPage">当前页</param>
+            <param name="pageSize">页码</param>
+            <param name="count">总记录数</param>
+            <param name="sort">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.SeachIndex.Seachs(Lucene.Net.Search.Query,System.Int32,System.Int32,System.Int32@,Lucene.Net.Search.Sort)">
+            <summary>
+            分页排序查询
+            </summary>
+            <param name="querys">条件</param>
+            <param name="currentPage">当前页</param>
+            <param name="pageSize">页码</param>
+            <param name="count">总记录数</param>
+            <param name="sort">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.SeachIndex.Seach(Lucene.Net.Search.Query,System.Int32,Lucene.Net.Search.Sort)">
+            <summary>
+            排序查询
+            </summary>
+            <param name="querys">条件</param>
+            <param name="topNumber">显示条数</param>
+            <param name="sort">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.SeachIndex.GetValue(System.Int32,System.String)">
+            <summary>
+            根据Id取指定字段的值
+            </summary>
+            <param name="id">Id</param>
+            <param name="fieldName">字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.SeachIndex.GetValues(System.Int32,System.String)">
+            <summary>
+            根据Id取指定字段的值
+            </summary>
+            <param name="id">Id</param>
+            <param name="fieldName">字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.SeachIndex.GetData(System.String,System.String)">
+            <summary>
+            查询单条
+            </summary>
+            <param name="tableTag">表头</param>
+            <param name="tableValue">表值</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Index.SeachIndex.GetDatas(System.String,System.String)">
+            <summary>
+            查询单条
+            </summary>
+            <param name="tableTag">表头</param>
+            <param name="tableValue">表值</param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.FilePropertyInfo">
+            <summary>
+            文件属性信息
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Helper.FilePropertyInfo.Length">
+            <summary>
+            文件长度
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Helper.FilePropertyInfo.Author">
+            <summary>
+            创作者
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.DataAttribute.SchemaAttribute">
+            <summary>
+            架构属性
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Caching.DependSqlCache`2">
+            <summary>
+            数据库缓存依赖
+            </summary>
+            <typeparam name="TKey"></typeparam>
+            <typeparam name="TResult"></typeparam>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependSqlCache`2.#ctor(ShangYe.FrameWork.Section.ISection)">
+            <summary>
+            文件依赖缓存构造函数
+            </summary>
+            <param name="isection"></param>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependSqlCache`2.Get(`0,System.Func{`1})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependSqlCache`2.Gets(`0,System.Func{`1})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependSqlCache`2.Get(`0,System.Func{`1},System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="idep">依赖缓存项</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependSqlCache`2.Gets(`0,System.Func{`1},System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="idep">依赖缓存项</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependSqlCache`2.Get(`0,System.Func{`1},System.Nullable{System.DateTime},System.Nullable{System.TimeSpan})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="absoluteExpiration">绝对过期时间：设置绝对时间后，相对时间为空</param>
+            <param name="slidingExpiration">相对过期时间:设置相对时间后，绝对时间为空</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependSqlCache`2.Gets(`0,System.Func{`1},System.Nullable{System.DateTime},System.Nullable{System.TimeSpan})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="absoluteExpiration">绝对过期时间：设置绝对时间后，相对时间为空</param>
+            <param name="slidingExpiration">相对过期时间:设置相对时间后，绝对时间为空</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependSqlCache`2.Get(`0,System.Func{`1},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.DateTime},System.Nullable{System.TimeSpan})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="idep">依赖缓存项</param>
+            <param name="absoluteExpiration">绝对过期时间：设置绝对时间后，相对时间为空</param>
+            <param name="slidingExpiration">相对过期时间:设置相对时间后，绝对时间为空</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependSqlCache`2.Gets(`0,System.Func{`1},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.DateTime},System.Nullable{System.TimeSpan})">
+            <summary>
+            获取缓存值
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="idep">依赖缓存项</param>
+            <param name="absoluteExpiration">绝对过期时间：设置绝对时间后，相对时间为空</param>
+            <param name="slidingExpiration">相对过期时间:设置相对时间后，绝对时间为空</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependSqlCache`2.Remove(`0)">
+            <summary>
+            删除缓存
+            </summary>
+            <param name="key">键</param>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependSqlCache`2.GetSqlCacheDependency(`0)">
+            <summary>
+            取得依赖对象
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependSqlCache`2.GetSqlCacheDependency(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            取得依赖对象
+            </summary>
+            <param name="idep"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.UploadImage.ImageHelp">
+            <summary>
+            上传图片处理
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.UploadImage.ImageHelp.ToThumImages(System.IO.Stream,System.String,System.Int32,System.Int32,ShangYe.FrameWork.UploadImage.ImageThumMode,ShangYe.FrameWork.UploadImage.Watermark)">
+            <summary>
+            生成缩略图
+            </summary>
+            <param name="fileStream">文件流</param>
+            <param name="thumImagePath">生成的缩略图的文件路径</param>
+            <param name="thumImageWidth">缩略图的宽度</param>
+            <param name="thumImageHeight">缩略图的高度</param>
+            <param name="imageThumMode">压缩模式</param>
+            <param name="wat">是否添加水印</param>
+        </member>
+        <member name="M:ShangYe.FrameWork.UploadImage.ImageHelp.ToThumImages(System.IO.Stream,ShangYe.FrameWork.UploadImage.CutInfo,ShangYe.FrameWork.UploadImage.Watermark)">
+            <summary>
+            截剪图片
+            </summary>
+            <param name="fileStream">文件流</param>
+            <param name="ci">文件生成信息</param>
+            <param name="wat">水印</param>
+        </member>
+        <member name="M:ShangYe.FrameWork.UploadImage.ImageHelp.SaveImage(System.IO.Stream,System.String,ShangYe.FrameWork.UploadImage.Watermark)">
+            <summary>
+            保存图片
+            </summary>
+            <param name="fileStream">保存图片流</param>
+            <param name="savePath">图片路径</param>
+            <param name="wat">是否添加水印</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.UploadImage.ImageHelp.MakeWaterImage(System.Drawing.Bitmap,System.String,ShangYe.FrameWork.UploadImage.Locations,System.Int32)">
+            <summary>
+            添加水印
+            </summary>
+            <param name="initImage">添加水印流</param>
+            <param name="watermarkImage">水印图片</param>
+            <param name="loca">位置</param>
+            <param name="alpha">透明度100</param>
+        </member>
+        <member name="M:ShangYe.FrameWork.UploadImage.ImageHelp.GetCodecInfo(System.Guid)">
+            <summary>
+            取得编码
+            </summary>
+            <param name="guid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.LogHelper">
+            <summary>
+            日志记录
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.LogHelper.LogError(System.String,System.String,System.Exception)">
+            <summary>
+            错误日志
+            </summary>
+            <param name="module">命名空间</param>
+            <param name="func">方法名</param>
+            <param name="message">错误信息</param>
+        </member>
+        <member name="T:ShangYe.FrameWork.UrlRouting.UrlIpAccess">
+            <summary>
+            Ip访问跳转
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.UrlRouting.SiteThemeInfo">
+            <summary>
+            站点皮肤信息
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.UrlRouting.SiteThemeInfo.Domain">
+            <summary>
+            域名
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.UrlRouting.SiteThemeInfo.Ip">
+            <summary>
+            Ip
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.UrlRouting.SiteThemeInfo.Port">
+            <summary>
+            端口号
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.UrlRouting.SiteThemeInfo.Area">
+            <summary>
+            区块
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.UrlRouting.SiteThemeInfo.ThemeName">
+            <summary>
+            主题包名
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.UrlHelp">
+            <summary>
+            Url帮助
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.UrlHelp.GetDomainName(System.String)">
+            <summary>
+            获取域名
+            </summary>
+            <param name="url">url地址</param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.Data.SqlHelper">
+            <summary>
+            SqlHelper 数据库操作类
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Data.SqlHelper.connectionCommerceString">
+            <summary>
+            读取配置文件的连接字符串
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Data.SqlHelper.connectionResourcesString">
+            <summary>
+            读取配置文件的连接字符串
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Data.SqlHelper.parmCache">
+            <summary>
+            SQL SqlParameter绥存变量
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.SqlHelper.ExecuteNonQuery(System.Data.CommandType,System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            对连接执行Transact-SQL 语句并返回受影响的行数
+            </summary>
+            <remarks>
+            示例:  
+             int result = ExecuteNonQuery(connString, CommandType.StoredProcedure, "PublishOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="cmdType">SQL命令类型</param>
+            <param name="cmdText">SQL存储过程或SQL语句</param>
+            <param name="commandParameters">SqlParameter参数数组</param>
+            <returns>an int representing the number of rows affected by the command</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.SqlHelper.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            对连接执行Transact-SQL 语句并返回受影响的行数
+            </summary>
+            <remarks>
+            示例:  
+             int result = ExecuteNonQuery(connString, CommandType.StoredProcedure, "PublishOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="connection">存的的数据库链接</param>
+            <param name="cmdType">SQL命令类型</param>
+            <param name="cmdText">SQL存储过程或SQL语句</param>
+            <param name="commandParameters">SqlParameter参数数组</param>
+            <returns>an int representing the number of rows affected by the command</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.SqlHelper.ExecuteNonQuery(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            对连接执行Transact-SQL 语句并返回受影响的行数
+            </summary>
+            <remarks>
+            示例:  
+             int result = ExecuteNonQuery(connString, CommandType.StoredProcedure, "PublishOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="trans">存的的SQL事务</param>
+            <param name="cmdType">SQL命令类型</param>
+            <param name="cmdText">SQL存储过程或SQL语句</param>
+            <param name="commandParameters">SqlParameter参数数组</param>
+            <returns>an int representing the number of rows affected by the command</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.SqlHelper.ExecuteReader(System.Data.CommandType,System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            ExecuteReader
+            </summary>
+            <remarks>
+            示例:  
+             SqlDataReader r = ExecuteReader(connString, CommandType.StoredProcedure, "PublishOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="cmdType">SQL命令类型</param>
+            <param name="cmdText">SQL存储过程或SQL语句</param>
+            <param name="commandParameters">SqlParameter参数数组</param>
+            <returns>A SqlDataReader containing the results</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.SqlHelper.ExecuteDataSet(System.Data.CommandType,System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回DataSet数据
+            </summary>
+            <param name="cmdType">SQL命令类型</param>
+            <param name="cmdText">SQL存储过程或SQL语句</param>
+            <param name="commandParameters">SqlParameter参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.SqlHelper.ExecuteDataSet(System.Data.CommandType,System.String,System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回DataSet数据
+            </summary>
+            <param name="cmdType">SQL命令类型</param>
+            <param name="cmdText">SQL存储过程或SQL语句</param>
+            <param name="TableName">TableName</param>
+            <param name="commandParameters">SqlParameter参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.SqlHelper.ExecuteScalar(System.Data.CommandType,System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行SQL命令,返回一行和一列
+            </summary>
+            <param name="cmdType">SQL命令类型</param>
+            <param name="cmdText">SQL存储过程或SQL语句</param>
+            <param name="commandParameters">SqlParameter参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.SqlHelper.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行一个SQL命令 返回一行和一列
+            using the provided parameters.
+            </summary>
+            <remarks>
+            示例:  
+             Object obj = ExecuteScalar(connString, CommandType.StoredProcedure, "PublishOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="connection">存的的数据库链接</param>
+            <param name="cmdType">SQL命令类型</param>
+            <param name="cmdText">SQL存储过程或SQL语句</param>
+            <param name="commandParameters">SqlParameter参数数组</param>
+            <returns>An object that should be converted to the expected type using Convert.To{Type}</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.SqlHelper.CacheParameters(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            add parameter array to the cache
+            </summary>
+            <param name="cacheKey">Key to the parameter cache</param>
+            <param name="commandParameters">an array of SqlParamters to be cached</param>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.SqlHelper.GetCachedParameters(System.String)">
+            <summary>
+            Retrieve cached parameters
+            </summary>
+            <param name="cacheKey">key used to lookup parameters</param>
+            <returns>Cached SqlParamters array</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.SqlHelper.PrepareCommand(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            创建SQL执行命令
+            </summary>
+            <param name="cmd">SqlCommand</param>
+            <param name="conn">SqlConnection object</param>
+            <param name="trans">SqlTransaction object</param>
+            <param name="cmdType">Cmd type 示例 stored procedure or text</param>
+            <param name="cmdText">Command text, 示例 Select * from Products</param>
+            <param name="cmdParms">SqlParameters to use in the command</param>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.SqlHelper.ExecuteTransaction(System.Collections.ArrayList,System.String)">
+            <summary>
+            执行多条SQL语句，实现数据库事务。
+            </summary>
+            <param name="SQLStringList">多条SQL语句</param>		
+        </member>
+        <member name="F:ShangYe.FrameWork.Struct.ModelBase`1.ida">
+            <summary>
+            数据库操作对象
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Struct.ModelBase`1.selectList">
+            <summary>
+            查询子集对象
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Struct.ModelBase`1.OpList">
+            <summary>
+            操作子集对象
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ModelBase`1.Delete(System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ModelBase`1.Insert">
+            <summary>
+            插入信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ModelBase`1.Update(System.String,System.String)">
+            <summary>
+            更新数据
+            </summary>
+            <param name="setWhere">设置字段</param>
+            <param name="sqlWhere">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ModelBase`1.GetData(System.String)">
+            <summary>
+            返回实体
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ModelBase`1.GetRecordCount(System.String)">
+            <summary>
+            返回统计结果
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ModelBase`1.QueryDataToList(System.String)">
+            <summary>
+            返回List集合
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ModelBase`1.QueryDataToList(System.String,System.Int32)">
+            <summary>
+            返回List集合
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <param name="recordCount">返回记录条数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ModelBase`1.QueryDataToList(System.String,System.Int32,System.String)">
+            <summary>
+            返回List集合
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <param name="recordCount">返回记录条数</param>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ModelBase`1.QueryDataToList(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            返回List集合
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <param name="recordCount">返回记录条数</param>
+            <param name="groupBy">分组</param>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ModelBase`1.QueryDataToList(System.Int32,System.Int32,System.Int32@,System.String,System.String)">
+            <summary>
+            返回分页List集合
+            </summary>
+            <param name="currentPage">当前页</param>
+            <param name="pageSize">一页显示数</param>
+            <param name="recordCount">返回总记录数</param>
+            <param name="sqlWhere">条件</param>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ModelBase`1.QueryDataToList(System.Int32,System.Int32,System.Int32@,System.String,System.String,System.String)">
+            <summary>
+            返回分页List集合
+            </summary>
+            <param name="currentPage">当前页</param>
+            <param name="pageSize">一页显示数</param>
+            <param name="recordCount">返回总记录数</param>
+            <param name="sqlWhere">条件</param>
+            <param name="groupBy">分组</param>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ModelBase`1.QueryDataToTable(System.String)">
+            <summary>
+            返回DataTable集合
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ModelBase`1.QueryDataToTable(System.String,System.Int32)">
+            <summary>
+            返回DataTable集合
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <param name="recordCount">返回记录条数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ModelBase`1.QueryDataToTable(System.String,System.Int32,System.String)">
+            <summary>
+            返回DataTable集合
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <param name="recordCount">返回记录条数</param>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ModelBase`1.QueryDataToTable(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            返回DataTable集合
+            </summary>
+            <param name="sqlWhere">条件</param>
+            <param name="recordCount">返回记录条数</param>
+            <param name="groupBy">分组</param>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ModelBase`1.QueryDataToTable(System.Int32,System.Int32,System.Int32@,System.String,System.String)">
+            <summary>
+            返回分页DataTable集合
+            </summary>
+            <param name="currentPage">当前页</param>
+            <param name="pageSize">一页显示数</param>
+            <param name="recordCount">返回总记录数</param>
+            <param name="sqlWhere">条件</param>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ModelBase`1.QueryDataToTable(System.Int32,System.Int32,System.Int32@,System.String,System.String,System.String)">
+            <summary>
+            返回分页DataTable集合
+            </summary>
+            <param name="currentPage">当前页</param>
+            <param name="pageSize">一页显示数</param>
+            <param name="recordCount">返回总记录数</param>
+            <param name="sqlWhere">条件</param>
+            <param name="groupBy">分组</param>
+            <param name="orderBy">排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Struct.ModelBase`1.Opclude(System.String)">
+            <summary>
+            加入子表
+            </summary>
+            <param name="TableName">表名</param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.StringFormat">
+            <summary>
+            字符操作
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.IpAreaSeach.#ctor(System.String)">
+            <summary>
+             构造函数
+            </summary>
+            <param name="ipfilePath">纯真IP数据库路径</param>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.IpAreaSeach.GetIPLocation(System.String)">
+            <summary>
+             获取指定IP所在地理位置
+            </summary>
+            <param name="strIP">要查询的IP地址</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.IpAreaSeach.IPToLong(System.String)">
+            <summary>
+             将字符串形式的IP转换位long
+            </summary>
+            <param name="strIP"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.IpAreaSeach.BlockToArray(System.Byte[])">
+            <summary>
+             将索引区字节块中的起始IP转换成Long数组
+            </summary>
+            <param name="ipBlock"></param>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.IpAreaSeach.SearchIP(System.Int64[],System.Int32,System.Int32)">
+            <summary>
+             从IP数组中搜索指定IP并返回其索引
+            </summary>
+            <param name="ipArray">IP数组</param>
+            <param name="start">指定搜索的起始位置</param>
+            <param name="end">指定搜索的结束位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.IpAreaSeach.ReadIPBlock">
+            <summary>
+             读取IP文件中索引区块
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.IpAreaSeach.ReadLongX(System.Int32)">
+            <summary>
+             从IP文件中读取指定字节并转换位long
+            </summary>
+            <param name="bytesCount">需要转换的字节数，主意不要超过8字节</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.IpAreaSeach.ReadString(System.Int32)">
+            <summary>
+             从IP文件中读取字符串
+            </summary>
+            <param name="flag">转向标志</param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.IpAreaSeach.IPLocation">
+            <summary>
+             地理位置,包括国家和地区
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.DataAttribute.TableAttribute">
+            <summary>
+            表名称
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.DataAttribute.PrimaryKeyAttribute">
+            <summary>
+            主键属性
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Base.SQL.DataAccessSql`1">
+            <summary>
+            Sql数据库操作类
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.DataAccessSql`1.Delete(System.Object,System.String)">
+            <summary>
+            删除记录
+            </summary>
+            <param name="info"></param>
+            <param name="sqlWhere"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.DataAccessSql`1.Deletes(System.Object,System.String)">
+            <summary>
+            删除记录
+            </summary>
+            <param name="info"></param>
+            <param name="sqlWhere"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.DataAccessSql`1.Insert(System.Object,System.Collections.Generic.IList{System.String})">
+            <summary>
+            插入记录
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.DataAccessSql`1.Inserts(System.Object,System.Collections.Generic.IList{System.String})">
+            <summary>
+            插入记录
+            </summary>
+            <param name="o"></param>
+            <param name="al"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.DataAccessSql`1.GetInsertConfig(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="d"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.DataAccessSql`1.Update(System.Object,System.String,System.String)">
+            <summary>
+            更新记录
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.DataAccessSql`1.Updates(System.Object,System.String,System.String)">
+            <summary>
+            更新记录
+            </summary>
+            <param name="info"></param>
+            <param name="setWhere"></param>
+            <param name="sqlWhere"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.DataAccessSql`1.GetData(System.Object,System.Collections.Generic.IList{System.Object},System.String)">
+            <summary>
+            返回实体
+            </summary>
+            <param name="o"></param>
+            <param name="li"></param>
+            <param name="sqlWhere"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.DataAccessSql`1.GetDatasv(System.Object,System.Collections.Generic.IList{System.Object},System.String)">
+            <summary>
+            返回实体
+            </summary>
+            <param name="o"></param>
+            <param name="li"></param>
+            <param name="sqlWhere"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.DataAccessSql`1.GetRecordCount(System.Object,System.String)">
+            <summary>
+            返回查询行数
+            </summary>
+            <param name="info"></param>
+            <param name="sqlWhere"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.DataAccessSql`1.GetRecordCounts(System.Object,System.String)">
+            <summary>
+            返回查询行数
+            </summary>
+            <param name="info"></param>
+            <param name="sqlWhere"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.DataAccessSql`1.ExecuteProcedureQuery(System.Object)">
+            <summary>
+            返回是否执行成功
+            </summary>
+            <param name="info">实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.DataAccessSql`1.ExecuteProcedureQuerys(System.Object)">
+            <summary>
+            返回是否执行成功
+            </summary>
+            <param name="info">实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.DataAccessSql`1.ExecuteProcedureDataSet(System.Object)">
+            <summary>
+            返回DataSet
+            </summary>
+            <param name="info">实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Base.SQL.DataAccessSql`1.ExecuteProcedureDataSets(System.Object)">
+            <summary>
+            返回DataSet
+            </summary>
+            <param name="info">实体类</param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.Base.SqlParameterEntity">
+            <summary>
+            参数实体
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Base.SqlParameterEntity.KeyName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Base.SqlParameterEntity.DbType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Base.SqlParameterEntity.Size">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.Base.SqlParameterEntity.Evalue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.CommonHelper.CheckCondition(System.String)">
+            <summary>
+            Where 条件校验
+            </summary>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.CommonHelper.CheckGroupBy(System.String)">
+            <summary>
+            GroupBy 校验
+            </summary>
+            <param name="groupBy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.CommonHelper.CheckOrderBy(System.String)">
+            <summary>
+            OrderBy 校验
+            </summary>
+            <param name="orderBy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.CommonHelper.GetOneSpace">
+            <summary>
+            取得一空格
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.CommonHelper.IsModelInsertType(System.Type)">
+            <summary>
+            是否为可添加到数据库类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.CommonHelper.GetMinPage(System.Int32,System.Int32)">
+            <summary>
+            获最最小行
+            </summary>
+            <param name="CurrentPage">当前页</param>
+            <param name="PageSize">每页显示的记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.CommonHelper.GetMaxPage(System.Int32,System.Int32)">
+            <summary>
+            获取最大行
+            </summary>
+            <param name="MinPage">最小行</param>
+            <param name="PageSize">每页显示的记录数</param>
+            <returns></returns>
+        </member>
+        <member name="P:ShangYe.FrameWork.Helper.CommonHelper.Nolock">
+            <summary>
+            返回字串:(nolock)
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.DataAttribute.IdentityAttribute">
+            <summary>
+            主键属性
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Base.DBVersion">
+            <summary>
+            数据库版本
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Base.DBVersion.SQLServer2000">
+            <summary>
+            SQLServer 2000
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Base.DBVersion.SQLServer2005">
+            <summary>
+            SQLServer 2005
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Base.DBVersion.SQLServer2008">
+            <summary>
+            SQLServer 2008
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Base.DBVersion.OleDb">
+            <summary>
+            Oledb
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Base.DBVersion.Oracle">
+            <summary>
+            Oracle
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Base.DBVersion.SQLite">
+            <summary>
+            SQLite
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.Base.DBVersion.MySQL">
+            <summary>
+            MySQL
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Base.ColumnType">
+            <summary>
+            数据类型
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.UrlRouting.UrlLocalAccess">
+            <summary>
+            本地地址跳转规则
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.UrlRouting.UrlLocalAccess.IsAccess(ShangYe.FrameWork.UrlRouting.UrlAccessMode)">
+            <summary>
+            本地跳转
+            </summary>
+            <param name="hostName"></param>
+            <param name="port"></param>
+            <param name="area"></param>
+            <param name="siteTheme"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.DataSerializer">
+            <summary>
+            数据序列化
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.DataSerializer.JsonToObj``1(System.String)">
+            <summary>
+            Json转对象
+            </summary>
+            <typeparam name="T">能序列化的对象</typeparam>
+            <param name="szJson">Json字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.DataSerializer.XmlToObj``1(System.String,System.Text.Encoding)">
+            <summary>
+            Json转对象
+            </summary>
+            <typeparam name="T">能序列化的对象</typeparam>
+            <param name="szXml">Xml字符串</param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.Data.OleDbHelp">
+            <summary>
+            ACCESS数据库操作类
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.OleDbHelp.#ctor">
+            <summary>
+            ACCESS数据库操作类
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.OleDbHelp.CreateCommand(System.String,System.Data.OleDb.OleDbConnection,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            创建一个OleDbCommand对象实例
+            </summary>
+            <param name="commandText">SQL命令</param>
+            <param name="connection">数据库连接对象实例OleDbConnection</param>
+            <param name="oleDbParameters">可选参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.OleDbHelp.MakeParm(System.String,System.Object)">
+            <summary>
+            创建一个OleDbParameter参数对象实例
+            </summary>
+            <param name="parmname">参数名称</param>
+            <param name="parmvalue">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.OleDbHelp.ExecuteNonQuery(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            执行 SQL INSERT、DELETE、UPDATE 和 SET 语句等命令。
+            </summary>
+            <param name="commandText">SQL命令</param>
+            <param name="oleDbParameters">可选参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.OleDbHelp.ExecuteScalar(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            从数据库中检索单个值(例如一个聚合值)。
+            </summary>
+            <param name="commandText"></param>
+            <param name="oleDbParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.OleDbHelp.ExecuteDataReader(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            提供读取数据行的方法。
+            </summary>
+            <param name="commandText">SQL命令</param>
+            <param name="oleDbParameters">可选参数</param>
+            <returns>OleDbDataReader</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.OleDbHelp.ExecuteDataAdapter(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            表示一组数据命令和一个数据库连接，它们用于填充 DataSet 和更新数据源。
+            </summary>
+            <param name="commandText">SQL命令</param>
+            <param name="oleDbParameters">可选参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.OleDbHelp.ExecuteDataSet(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            返回一个DataSet数据集。
+            </summary>
+            <param name="commandText">SQL命令</param>
+            <param name="oleDbParameters">可选参数</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Data.OleDbHelp.ExecuteTransaction(System.Collections.ArrayList)">
+            <summary>
+            执行多条SQL语句，实现数据库事务。
+            </summary>
+            <param name="SQLStringList">多条SQL语句</param>		
+        </member>
+        <member name="P:ShangYe.FrameWork.Data.OleDbHelp.Connection">
+            <summary>
+            返回当前的数据库连接对象OleDbConnection。
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.UrlRouting.ITheme">
+            <summary>
+            主题接口
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.UrlRouting.GlobalValues">
+            <summary>
+            修改只读属性类
+            </summary>
+        </member>
+        <member name="F:ShangYe.FrameWork.UrlRouting.GlobalValues.NameObjectCollectionBaseIsReadOnly">
+            <summary>
+            属性修改值
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.UploadImage.CutInfo">
+            <summary>
+            截剪信息
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.UploadImage.CutInfo.X">
+            <summary>
+            X坐标
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.UploadImage.CutInfo.Y">
+            <summary>
+            Y坐标
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.UploadImage.CutInfo.Width">
+            <summary>
+            宽度
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.UploadImage.CutInfo.Height">
+            <summary>
+            高度
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.UploadImage.CutInfo.RatioWidth">
+            <summary>
+            图片缩放宽
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.UploadImage.CutInfo.RatioHeight">
+            <summary>
+            图片缩放高
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.UploadImage.CutInfo.GeneratePath">
+            <summary>
+            生成路径
+            </summary>
+        </member>
+        <member name="P:ShangYe.FrameWork.UploadImage.CutInfo.Mode">
+            <summary>
+            true：将图片缩放到指定的宽度截剪，false：将图片按指定的X,Y,和缩放比率截剪
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Index.IndexFieldItem">
+            <summary>
+            字段组
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.HtmlFormat">
+            <summary>
+            html文本处理
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.HtmlFormat.DisplayHtml(System.String)">
+            <summary>
+            恢复HTML标记
+            </summary>
+            <param name="strChar">HTML字符串</param>
+            <returns>返回恢复后的字符串</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.HtmlFormat.NoHTML(System.String)">
+            <summary>
+            完全去除HTML标记
+            </summary>
+            <param name="Htmlstring">HTML字符串</param>
+            <returns>已经去除后的文字</returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.HtmlFormat.StringHtml(System.String)">
+            <summary>
+            去除HTML标签
+            </summary>
+            <param name="strhtml">HTML字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.HtmlFormat.ReplaceHtml(System.String)">
+            <summary>
+            用正则表达式过滤HTML危险代码
+            </summary>
+            <param name="html">HTML字符串</param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.DataAttribute.ProcedureParameterAttribute">
+            <summary>
+            外键属性
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Caching.DependencyAccess">
+            <summary>
+            缓存依赖工厂
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependencyAccess.CreateValueDependency``2">
+            <summary>
+            创建普通缓存
+            </summary>
+            <typeparam name="TKey">键类型</typeparam>
+            <typeparam name="TResult">返回对象类型</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependencyAccess.CreateFileDependency``2(ShangYe.FrameWork.Section.ISection)">
+            <summary>
+            创建文件依赖缓存
+            </summary>
+            <typeparam name="TKey">键类型</typeparam>
+            <typeparam name="TResult">返回对象类型</typeparam>
+            <param name="isetion">缓存配置类</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Caching.DependencyAccess.CreateSqlDependency``2(ShangYe.FrameWork.Section.ISection)">
+            <summary>
+            创建数据库依赖缓存
+            </summary>
+            <typeparam name="TKey">键类型</typeparam>
+            <typeparam name="TResult">返回对象类型</typeparam>
+            <param name="isetion">缓存配置类</param>
+            <returns></returns>
+        </member>
+        <member name="F:ShangYe.FrameWork.Struct.ProcedureBase`1.ida">
+            <summary>
+            数据库操作对象
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.DataToXml">
+            <summary>
+            数据转换成XML
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.DataToXml.ListToXmlSingle``1(System.Collections.Generic.List{``0},System.Text.Encoding)">
+            <summary>
+            List转换成XML
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="li">转换的数组</param>
+            <param name="Encodings">编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.DataToXml.ListToXmlMulti``1(System.Collections.Generic.List{``0},System.Text.Encoding,System.Int32)">
+            <summary>
+            List转换成XML并返回带总记录条数的XML
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="li">转换的数组</param>
+            <param name="Encodings">编码</param>
+            <param name="count">记录条数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.DataToXml.ObjectToXml``1(System.Collections.Generic.List{``0},System.Text.Encoding,System.Int32)">
+            <summary>
+            List集合转换
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="li">转换的数组</param>
+            <param name="Encodings">编码</param>
+            <param name="count">记录条数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.DataToXml.ObjectToXml``1(``0,System.Text.Encoding)">
+            <summary>
+            类转换成XML
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="obje">对象</param>
+            <param name="Encodings">编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.DataToXml.ObjectToXmls``1(``0,System.Text.Encoding)">
+            <summary>
+            类转换成XML
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="obje">对象</param>
+            <param name="Encodings">编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.DataToXml.DataTableToXml(System.Data.DataTable,System.Text.Encoding)">
+            <summary>
+            DataTable转换成XML
+            </summary>
+            <param name="dt">数据集</param>
+            <param name="Encodings">编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.DataToXml.DataTableToXml(System.Data.DataTable,System.Text.Encoding,System.Int32)">
+            <summary>
+            DataTable转换成XML并反回带记录总条数的XML
+            </summary>
+            <param name="dt">数据集</param>
+            <param name="Encodings">编码</param>
+            <param name="count">总条数</param>
+            <returns></returns>
+        </member>
+        <member name="T:ShangYe.FrameWork.Helper.ChineseConverter">
+            <summary>
+            汉字转换
+            </summary>
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.ChineseConverter.GetPinyin(System.String)">
+            <summary> 
+            汉字转化为拼音
+            </summary> 
+            <param name="str">汉字</param> 
+            <returns>全拼</returns> 
+        </member>
+        <member name="M:ShangYe.FrameWork.Helper.ChineseConverter.GetFirstPinyin(System.String)">
+            <summary> 
+            汉字转化为拼音首字母
+            </summary> 
+            <param name="str">汉字</param> 
+            <returns>首字母</returns> 
+        </member>
+        <member name="T:ShangYe.FrameWork.DataAttribute.WeightAttribute">
+            <summary>
+            权重
+            </summary>
+        </member>
+        <member name="T:ShangYe.FrameWork.DataAttribute.DBNameAttribute">
+            <summary>
+            主键属性
+            </summary>
+        </member>
+    </members>
+</doc>

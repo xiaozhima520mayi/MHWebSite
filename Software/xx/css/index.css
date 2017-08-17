@@ -1,0 +1,172 @@
+/* CSS Document */
+
+
+.logo{ background:url(../images/logo.png) no-repeat left center;width:1000px;height:100px; position:absolute;top:0px;left:50%;margin-left:-500px;}
+.logo{ background:url(../images/logo.png) no-repeat left center;width:1000px;height:100px; position:absolute;top:0px;left:50%;margin-left:-500px;}
+.page-one-content{ background:url(../images/xx1.jpg) no-repeat center center;width:700px;height:453px; margin:0 auto;  position:relative; z-index:2; }
+.page-one-header{ background:url(../images/bga.jpg) no-repeat center center;width:1000px;height:647px;margin:0 auto;}
+.page-two-top{ background:url(../images/page-two-top.jpg) no-repeat center center;width:520px;height:134px;margin:0 auto;position:relative;top:0px;left:0px; opacity:0;}
+.page-two-middle{ background:url(../images/page-two-middle.jpg) no-repeat center center;width:640px;height:133px;margin:30px auto;position:relative;top:0px;left:0px; opacity:0;}
+.page-two-foot{ background:url(../images/page-two-foot.jpg) no-repeat center center;width:530px;height:163px;margin:0 auto;position:relative;top:0px;left:0px; opacity:0;}
+.page-four-h1{ background:url(../images/page-four-h2.jpg) no-repeat center center;width:530px;height:163px;margin:0 auto;}
+.page-four-infor{background:url(../images/.page-four-infor1.jpg) no-repeat center center;width:619px;height:161px;margin:50px auto;}
+.menu{overflow:hidden;padding-left:50px;}
+.menu li{width:187px;height:194px;text-align:center;border:none;float:left;}
+.content{width:556px;height:400px;position:relative; background:url(../images/bg-1.jpg) no-repeat 50px 20px; }
+.current{}
+.others{}
+.one{ background:url(../images/1_3.jpg) no-repeat center bottom;}
+.two{ background:url(../images/2_3.jpg) no-repeat center bottom;}
+.three{background:url(../images/3_3.jpg) no-repeat center bottom;}
+.onehover{background:url(../images/4_3.jpg) no-repeat center bottom;}
+.twohover{ background:url(../images/5_3.jpg) no-repeat center bottom;}
+.threehover{ background:url(../images/6_3.jpg) no-repeat center bottom;}
+.box{width:656px;height:600px; margin:0 auto;}
+.sign{font:normal 32px/60px "微软雅黑"; position:absolute;top:60px;left:60%;}
+.information{font:normal 16px/30px "微软雅黑"; position:relative;top:110px;left:60%;}
+@media screen and (max-width: 1920px) {
+.logo{ background:url(../images/logo.png) no-repeat left center;width:1000px;height:100px; position:absolute;top:0px;left:50%;margin-left:-500px;}
+.page-one-content{ background:url(../images/xx.jpg) no-repeat center center;width:1000px;height:647px;margin:0 auto; z-index:2;position:relative;top:0px;left:0px; opacity:0; }
+.page-one-header{ background:url(../images/bg1.jpg) no-repeat center center;width:681px;height:553px;margin:0 auto;position:relative;top:0px;left:0px; opacity:0;}
+.page-two-top{ background:url(../images/page-two-top1.jpg) no-repeat center center;width:743px;height:192px;margin:0 auto;position:relative;top:0px;left:0px; opacity:0;}
+.page-two-middle{ background:url(../images/page-two-middle1.jpg) no-repeat center center;width:914px;height:190px;margin:50px auto;position:relative;top:0px;left:0px; opacity:0;}
+.page-two-foot{ background:url(../images/page-two-foot1.jpg) no-repeat center center;width:757px;height:234px;margin:0 auto;position:relative;top:0px;left:0px; opacity:0;}
+.page-four-h1{ background:url(../images/page-four-h1.jpg) no-repeat center center;width:777px;height:225px;margin:0 auto;position:relative;top:0px;left:0px; opacity:0;}
+.page-four-infor{background:url(../images/.page-four-infor.jpg) no-repeat center center;width:884px;height:230px;margin:50px auto;position:relative;top:0px;left:0px; opacity:0;}
+.menu{overflow:hidden;padding-left:50px;}
+.menu li{width:187px;height:194px;text-align:center;border:none;float:left;}
+.content{width:656px;height:400px;position:relative; background:url(../images/bg.jpg) no-repeat left center; }
+.current{}
+.others{}
+.one{ background:url(../images/1_03.jpg);}
+.two{ background:url(../images/2_03.jpg);}
+.three{ background:url(../images/3_03.jpg);}
+.onehover{ background:url(../images/4_03.jpg);}
+.twohover{ background:url(../images/5_03.jpg);}
+.threehover{ background:url(../images/6_03.jpg);}
+.box{width:656px;height:600px; margin:0 auto;}
+.sign{font:normal 48px/60px "微软雅黑"; position:absolute;top:60px;left:55%;}
+.information{font:normal 18px/30px "微软雅黑"; position:relative;top:130px;left:55%;}
+}
+@media screen and (min-width: 1280px) and (max-width: 1680px){
+.logo{ background:url(../images/logo.png) no-repeat left center;width:1000px;height:100px; position:absolute;top:0px;left:50%;margin-left:-500px;}
+.page-one-content{background:url(../images/xx1.jpg) no-repeat center center;width:700px;height:453px; margin:0 auto; position:relative; z-index:2; }
+.page-one-header{ background:url(../images/bga.jpg) no-repeat center center;width:474px;height:373px;margin:0 auto;}
+.page-two-top{ background:url(../images/page-two-top.jpg) no-repeat center center;width:520px;height:134px;margin:0 auto;position:relative;top:0px;left:0px; opacity:0;}
+.page-two-middle{ background:url(../images/page-two-middle.jpg) no-repeat center center;width:640px;height:133px;margin:30px auto;position:relative;top:0px;left:0px; opacity:0;}
+.page-two-foot{ background:url(../images/page-two-foot.jpg) no-repeat center center;width:530px;height:163px;margin:0 auto;position:relative;top:0px;left:0px; opacity:0;}
+.page-four-h1{ background:url(../images/page-four-h2.jpg) no-repeat center center;width:530px;height:163px;margin:0 auto;position:relative;top:0px;left:0px; opacity:0;}
+.page-four-infor{background:url(../images/.page-four-infor1.jpg) no-repeat center center;width:619px;height:161px;margin:50px auto; position:relative;top:0px;left:0px; opacity:0;}
+.menu{overflow:hidden;padding-left:50px;}
+.menu li{width:187px;height:194px;text-align:center;border:none;float:left;}
+.content{width:556px;height:400px;position:relative; background:url(../images/bg-1.jpg) no-repeat 50px 20px; }
+.current{}
+.others{}
+.one{ background:url(../images/1_3.jpg) no-repeat center bottom;}
+.two{ background:url(../images/2_3.jpg) no-repeat center bottom;}
+.three{background:url(../images/3_3.jpg) no-repeat center bottom;}
+.onehover{background:url(../images/4_3.jpg) no-repeat center bottom;}
+.twohover{ background:url(../images/5_3.jpg) no-repeat center bottom;}
+.threehover{ background:url(../images/6_3.jpg) no-repeat center bottom;}
+.box{width:656px;height:600px; margin:0 auto;}
+.sign{font:normal 32px/60px "微软雅黑"; position:absolute;top:60px;left:60%;}
+.information{font:normal 16px/30px "微软雅黑"; position:relative;top:110px;left:60%;}
+}
+
+.myfirst{animation:myfirst 2s;
+-moz-animation:myfirst 2s; 
+-webkit-animation:myfirst 2s; 
+-o-animation:myfirst 2s; opacity:1;}
+
+@keyframes myfirst
+{
+0%   {left:-200px;}
+65%  {left:20px;}
+100% {left:0px;}
+}
+
+@-moz-keyframes myfirst 
+{
+0%   {left:-200px;}
+65%  {left:20px;}
+100% {left:0px;}
+}
+
+@-webkit-keyframes myfirst 
+{
+0%   {left:-200px;}
+65%  {left:20px;}
+100% {left:0px;}}
+}
+
+@-o-keyframes myfirst 
+{
+0%   {left:-200px;}
+65%  {left:20px;}
+100% {left:0px;}
+}
+
+.mysecond{animation:mysecond 2s;
+-moz-animation:mysecond 2s; 
+-webkit-animation:mysecond 2s; 
+-o-animation:mysecond 2s; opacity:1;}
+
+@keyframes mysecond
+{
+0%   {left:160px;}
+65%  {left:-20px;}
+100% {left:0px;}
+}
+
+@-moz-keyframes mysecond 
+{
+0%   {left:160px;}
+65%  {left:-20px;}
+100% {left:0px;}
+}
+
+@-webkit-keyframes mysecond 
+{
+0%   {left:160px;}
+65%  {left:-20px;}
+100% {left:0px;}}
+}
+
+@-o-keyframes mysecond 
+{
+0%   {left:160px;}
+65%  {left:-20px;}
+100% {left:0px;}
+}
+.mythird{animation:mythird 3s;
+-moz-animation:mythird 3s; 
+-webkit-animation:mythird 3s; 
+-o-animation:mythird 3s; opacity:1;}
+
+@keyframes mythird
+{
+0%   {-webkit-transform:scale(0);-moz-transform:scale(0);-o-transform:scale(0);transform:scale(0);}
+85%  {-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1);transform:scale(1.1);}
+100% {-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);transform:scale(1);}
+}
+
+@-moz-keyframes mythird
+{
+0%   {-webkit-transform:scale(0);-moz-transform:scale(0);-o-transform:scale(0);transform:scale(0);}
+85%  {-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1);transform:scale(1.1);}
+100% {-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);transform:scale(1);}
+}
+
+@-webkit-keyframes mythird 
+{
+0%   {-webkit-transform:scale(0);-moz-transform:scale(0);-o-transform:scale(0);transform:scale(0);}
+85%  {-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1);transform:scale(1.1);}
+100% {-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);transform:scale(1);}
+}
+
+@-o-keyframes mythird
+{
+0%   {-webkit-transform:scale(0);-moz-transform:scale(0);-o-transform:scale(0);transform:scale(0);}
+85%  {-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1);transform:scale(1.1);}
+100% {-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);transform:scale(1);}
+}

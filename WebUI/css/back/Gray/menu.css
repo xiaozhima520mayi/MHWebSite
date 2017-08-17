@@ -1,0 +1,10 @@
+﻿.context_menu{position:absolute; z-index:99999999;}
+.menucol{position:absolute;width:150px; border:1px solid #B8CBCB; background:#fff; top:0; left:0; padding:1px;}
+.menucol li{ height:25px; line-height:25px; text-indent:10px; cursor:pointer; position:relative;}
+.menucol li a{ margin-left:10px; display:block; height:25px;}
+.menucol li span.r{ float:right; background:url(../../../images/backImage/tool.png) no-repeat -462px 0; width:6px; height:9px; overflow:hidden; margin:8px 8px 0 0;}
+.menucol li span.ico{ position:absolute; top:8px; left:8px; width:8px; height:8px; overflow:hidden;}
+.menucol li span.hook{ background:url(../../../images/backImage/tool.png) no-repeat -454px 0;}
+.menucol li.e{background:#348ccc;}
+.menucol li.e a{color:#fff;}
+.menucol li.e a:hover{ text-decoration:none;}

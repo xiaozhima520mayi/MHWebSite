@@ -1,0 +1,23 @@
+﻿@charset "utf-8";
+img{border:0;}
+*{padding:0;margin:0;list-style:none;}
+
+
+.slides{width:100%; overflow:hidden; position:relative;overflow:hidden; height:300px;}
+.slideInner{ position:relative;}
+.slideInner a{display:block;background-position:center center;position:relative;text-align:center;z-index:1; float:left;}
+.slideInner a div.img1{width:100%;position:absolute;left:50%;margin-left:-535px;}
+.slideInner a div.img2{width:100%;position:absolute;top:557px;left:50%;margin-left:-535px;}
+.slideInner .slide3 .img2{top:200px;}
+.slideInner .slide3 .img3{width:181px;height:286px;position:absolute;left:50%;margin-left:330px;top:330px;}
+.nav{width:100%;position:relative;display:none;}
+.nav a{display:block;width:41px;height:119px;opacity:.2;z-index:9;}
+.nav a.prev{position:absolute;left:50px;top:-550px;margin-top:-58px;background:url(../img/ban_pre.png) no-repeat;}
+.nav a.next{position:absolute;right:50px;top:-550px;margin-top:-58px;background:url(../img/ban_next.png) no-repeat;}
+
+.navListBox{width: 144px;}
+.navListBox li{width:32px;height:32px;float:left;margin-left:5px;overflow:hidden;}
+.navListBox li:first-child{margin-left:0;}
+.navListBox li a{display:inline-block;width:25px;height:25px;color: #000;text-decoration: none; background:url(../images/dian-one.png) no-repeat center center;}
+.navListBox li:hover{box-shadow: none;}
+.navListBox li.e a{background:url(../images/dian-two.png) no-repeat center center; z-index:99999; position:relative;}

@@ -1,0 +1,9 @@
+.section { text-align: center; height:800px; overflow:hidden; position:relative;}
+
+div.p1 { width: 70%; height: 160px; margin: 0 auto; margin-top:50px; vertical-align: middle;overflow:hidden; }
+div.p2 { width: 1000px; margin: -100px auto 0; height:650px;overflow:hidden; position:relative;}
+div.p3 { width: 70%; height: 70%; margin: 0 auto; }
+img.s1 { margin-top:50px; }
+#fp-nav ul li a span, .fp-slidesNav ul li a span { width: 28px; height: 28px; background-color: #dfdcdc; border: none; }
+#fp-nav ul li, .fp-slidesNav ul li { margin-bottom: 50px; margin-right: 40px; }
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span { background: dodgerblue; }

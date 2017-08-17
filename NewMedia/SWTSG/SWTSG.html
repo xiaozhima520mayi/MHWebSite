@@ -1,0 +1,105 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+    <title>上业科技-三维虚拟智慧图书馆平台</title>
+    <link rel="Shortcut Icon " href="/WebUI/images/logo_ico.ico">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="css/SWTSG.css" />
+</head>
+<body>
+    <div class="big_box">
+        <div id="fullpage">
+            <div class="section">
+                <div class="p1">
+                    <img class="p" src="img/11.png" alt="" />
+                </div>
+                <div class="p2">
+                    <img class="s s1" src="img/12.png" alt="" />
+                </div>
+            </div>
+            <div class="section">
+                <div class="p1">
+                    <img src="" alt="" />
+                </div>
+                <div class="p2">
+                    <img src="" alt="" />
+                </div>
+            </div>
+            <div class="section">
+                <div class="p1">
+                    <img src="" alt="" />
+                </div>
+                <div class="p2">
+                    <img src="" alt="" />
+                </div>
+            </div>
+            <div class="section">
+                <div class="p1">
+                    <img src="" alt="" />
+                </div>
+                <div class="p2">
+                    <img src="" alt="" />
+                </div>
+            </div>
+            <div class="section">
+                <div class="p1">
+                    <img src="" alt="" />
+                </div>
+                <div class="p2">
+                    <img src="" alt="" />
+                </div>
+            </div>
+            <div class="section">
+                <div class="p1">
+                    <img src="" alt="" />
+                </div>
+                <div class="p3">
+                    <img src="" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="/WebUI/js/href.js"></script>
+    <script>
+        isBrowser("../../CompatibilityMode/NewMedia/SWTSG/SWTSG.html", "/SWTSG.html", "/SWTSG.html");
+    </script>
+    <script src="js/scrollReveal.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script>
+        $(function () {
+            $('#fullpage').fullpage({
+                sectionsColor: ['rgb(74,103,168)', 'rgb(241,241,241)', 'rgb(255,255,255)', 'rgb(241,241,241)', 'rgb(255,255,255)', 'rgb(241,241,241)'],
+                navigation: true,
+                afterLoad: function (anchorLink, index) {
+                    if (index == 2) {
+                        $('div.active img:eq(0)').attr("src", "img/21.png").addClass('p');
+                        $('div.active img:eq(1)').attr("src", "img/22.png").addClass('s');
+                    }
+                    else if (index == 3) {
+                        $('div.active img:eq(0)').attr("src", "img/31.png").addClass('p');
+                        $('div.active img:eq(1)').attr("src", "img/32.png").addClass('s');
+
+                    }
+                    else if (index == 4) {
+                        $('div.active img:eq(0)').attr("src", "img/41.png").addClass('p');
+                        $('div.active img:eq(1)').attr("src", "img/42.png").addClass('s');
+                    }
+                    else if (index == 5) {
+                        $('div.active img:eq(0)').attr("src", "img/51.png").addClass('p');
+                        $('div.active img:eq(1)').attr("src", "img/52.png").addClass('s');
+                    }
+                    else if (index == 6) {
+                        $('div.active img:eq(0)').attr("src", "img/61.png").addClass('p');
+                        $('div.active img:eq(1)').attr("src", "img/62.png").addClass('s');
+                        $('div.active img:eq(2)').attr("src", "img/63.png").show();
+                    }
+                }
+
+            })
+        });
+    </script>
+</body>
+</html>

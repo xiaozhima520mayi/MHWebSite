@@ -1,0 +1,341 @@
+/* CSS Document */
+#menu { margin: 0; padding: 0; position: fixed;list-style-type: none; z-index: 70;}
+#menu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
+#menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
+#menu .active a { color: #fff; background-color: #333;}
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0) translateY(0px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    -moz-transform: translateX(0) translateY(0px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    -ms-transform: translateX(0) translateY(0px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    transform: translateX(0) translateY(0px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+  }
+  50% {
+    -webkit-transform: translateX(0) translateY(10px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    -moz-transform: translateX(0) translateY(10px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    -ms-transform: translateX(0) translateY(10px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    transform: translateX(0) translateY(10px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+  }
+  100% {
+    -webkit-transform: translateX(0px) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    -moz-transform: translateX(0px) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    -ms-transform: translateX(0px) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    transform: translateX(0px) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+  }
+}
+@-moz-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0) translateY(0px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    -moz-transform: translateX(0) translateY(0px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    -ms-transform: translateX(0) translateY(0px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    transform: translateX(0) translateY(0px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+  }
+  50% {
+    -webkit-transform: translateX(0) translateY(10px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    -moz-transform: translateX(0) translateY(10px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    -ms-transform: translateX(0) translateY(10px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    transform: translateX(0) translateY(10px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+  }
+  100% {
+    -webkit-transform: translateX(0px) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    -moz-transform: translateX(0px) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    -ms-transform: translateX(0px) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    transform: translateX(0px) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+  }
+}
+
+@keyframes mythird
+{
+0%   {-webkit-transform:scale(0);-moz-transform:scale(0);-o-transform:scale(0);transform:scale(0);}
+85%  {-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1);transform:scale(1.1);}
+100% {-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);transform:scale(1);}
+}
+
+@-moz-keyframes mythird
+{
+0%   {-webkit-transform:scale(0);-moz-transform:scale(0);-o-transform:scale(0);transform:scale(0);}
+85%  {-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1);transform:scale(1.1);}
+100% {-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);transform:scale(1);}
+}
+
+
+@-webkit-keyframes mythird 
+{
+0%   {-webkit-transform:scale(0);-moz-transform:scale(0);-o-transform:scale(0);transform:scale(0);}
+85%  {-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1);transform:scale(1.1);}
+100% {-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);transform:scale(1);}
+}
+
+@-o-keyframes mythird
+{
+0%   {-webkit-transform:scale(0);-moz-transform:scale(0);-o-transform:scale(0);transform:scale(0);}
+85%  {-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1);transform:scale(1.1);}
+100% {-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);transform:scale(1);}
+}
+
+.page-one-header{width:100% ;height:80px; background:#FFF; position:fixed;*position:relative;top:0px;z-index:70;}
+.header-infor{width:1000px;height:80px;margin:0 auto; overflow:hidden;}
+.logo{ background:url(../images/logo.png) no-repeat center 20px;float:left;display:inline;width:220px;height:80px;
+}
+.nav{width:500px;height:80px;float:right;display:inline; overflow:hidden;}
+.nav a{width:95px;height:80px;display:inline-block;float:left;margin-left:30px;font:normal 18px/80px "微软雅黑"}
+.nav-line{ border-bottom:3px solid #29a1dd;width:95px;height:60px; margin-left:28px;background:none;}
+
+@media screen and (max-width: 1920px) {
+.page-one-header{width:100%;height:100px; background:#FFF; position:fixed;*position:relative;top:0px;z-index:70;}
+.header-infor{width:1000px;height:100px;margin:0 auto; overflow:hidden;}
+.logo{ background:url(../images/logo.png) no-repeat center 20px;float:left;display:inline;width:220px;height:100px;
+}
+.nav{width:500px;height:100px;float:right;display:inline; overflow:hidden;}
+.nav a{width:95px;height:100px;display:inline-block;float:left;margin-left:30px;font:normal 18px/100px "微软雅黑"}
+.nav-line{ border-bottom:3px solid #29a1dd;width:95px;height:70px; margin-left:28px;background:none;}
+}
+
+@media screen and (max-width: 1366px) {
+.page-one-header{width:100%;height:80px; background:#FFF; position:fixed;*position:relative;top:0px;z-index:70;}
+.header-infor{width:1000px;height:80px;margin:0 auto; overflow:hidden;}
+.logo{ background:url(../images/logo.png) no-repeat center 20px;float:left;display:inline;width:220px;height:80px;
+}
+.nav{width:500px;height:80px;float:right;display:inline; overflow:hidden;}
+.nav a{width:95px;height:80px;display:inline-block;float:left;margin-left:30px;font:normal 18px/80px "微软雅黑"}
+.nav-line{ border-bottom:3px solid #29a1dd;width:95px;height:60px; margin-left:28px;background:none;}
+}
+#global_scroll {
+  width: 29px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  margin-left: -14px;
+  bottom: 20px;
+  transition: opacity 1s;
+  -webkit-animation: scroll 2s infinite;
+  -moz-animation: scroll 2s infinite;
+  -ms-animation: scroll 2s infinite;
+  animation: scroll 2s infinite;
+}
+
+
+#page-one{background:#53b5fe;
+  background-image: -webkit-linear-gradient(0deg, #53b5fe 0%, #53b5fe 30%, #5aa5ff 50%, #53b5fe 70%, #53b5fe 100%);
+  background-image: -moz-linear-gradient(0deg, #53b5fe 0%, #53b5fe 30%, #5aa5ff 50%, #53b5fe 70%, #53b5fe 100%);
+  background-image: -ms-linear-gradient(0deg, #53b5fe 0%, #53b5fe 30%, #5aa5ff 50%, #53b5fe 70%, #53b5fe 100%);
+
+  }
+ 
+.page-one-sign{width:380px;height:42px; margin:0 auto 0 auto; background:url(../images/sign.png) no-repeat;*margin-top:80px;
+}
+.page-one-information{width:530px;height:32px;font:normal 26px/32px "微软雅黑";color:#fff;margin:20px auto;
+}
+.page-one-photo{width:582px;height:300px; background:none; margin:40px auto 0 auto; position:relative; }
+.computer{ position:absolute;left:0px;
+animation:myfirst 1s;
+-moz-animation:myfirst 1s; 
+-webkit-animation:myfirst 1s; 
+-o-animation:myfirst 1s; 
+}
+
+
+
+
+.ipad{ position:absolute;left:340px;top:125px;}
+
+
+
+.iphone{ position:absolute;right:30px;bottom:0px;
+animation:mythird 1s;
+-moz-animation:mythird 1s; 
+-webkit-animation:mythird 1s; 
+-o-animation:mythird 1s; 
+}
+
+.pulse{animation:mythird 2s;
+-moz-animation:mythird 2s; 
+-webkit-animation:mythird 2s; 
+-o-animation:mythird 2s; opacity:1; }
+
+/*******************************************************第一页完*********************************************************************/
+#page-two{background:#f9ffd3;}
+.page-two-sign{font:normal 35px/70px "微软雅黑"; position:absolute;*position:relative;top:-80px; opacity:0;
+}
+
+.page-two-information{ position:relative;width:700px;height:385px; margin:0 auto; background:none;*top:25%;}
+
+
+.page-two-photo{ position:absolute;right:95px;bottom:10px; background:url(../images/xiaoxue.png) no-repeat center right;width:495px;height:354px;opacity:0;
+-webkit-filter:blur(3px);-webkit-filter:brightness(0.95);
+-moz-filter:blur(3px);-moz-filter:brightness(0.95);
+-o-filter:blur(3px);-o-filter:brightness(0.95);
+filter:blur(3px);filter:brightness(0.95);
+}
+.page-two-photo:hover{-webkit-filter:blur(0px);-webkit-filter:brightness(1);-moz-filter:blur(0px);-moz-filter:brightness(1);-o-filter:blur(0px);-o-filter:brightness(1);filter:blur(0px);filter:brightness(1);}
+.page-two-xiaoxueg{position:relative;right:0px;bottom:4px; background:url(../images/xiaoxueg.png) no-repeat;width:495px;height:354px;*position:absolute;*top:0px;transition: opacity 1s;
+  -webkit-animation: scroll 2s infinite;
+  -moz-animation: scroll 2s infinite;
+  -ms-animation: scroll 2s infinite;
+  animation: scroll 2s infinite;}
+
+
+
+.page-two-infor{ line-height:30px;font:normal 18px/30px "微软雅黑"; position:relative;top:0px;*top:-50px; text-align:left; opacity:0;}
+.sixth{animation:sixeth 2s;
+-moz-animation:sixeth 2s; 
+-webkit-animation:sixeth 2s; 
+-o-animation:sixeth 2s; opacity:1;}
+.fadeInUpBig{opacity:1;animation:fadeInUpBig 2s;
+-moz-animation:fadeInUpBig 2s; 
+-webkit-animation:fadeInUpBig 2s; 
+-o-animation:fadeInUpBig 2s; }
+@keyframes sixeth
+{
+0%   {left:200px;}
+65%{left:-50px;}
+100% {left:0px;}
+}
+
+@-moz-keyframes sixeth
+{
+0%   {left:200px;}
+65%{left:-50px;}
+100% {left:0px;}
+}
+
+@-webkit-keyframes sixeth
+{
+0%   {left:200px;}
+65%{left:-50px;}
+100% {left:0px;}
+}
+
+@-o-keyframes sixeth
+{
+0%   {left:200px;}
+65%{left:-50px;}
+100% {left:0px;}
+}
+
+/*******************************************************第2页完*********************************************************************/
+#page-three{ background:#e3fdff;}
+.page-three-information{width:703px;height:394px;margin:0 auto; background:none; position:relative;*top:25%;}
+.page-three-sign{font:normal 35px/70px "微软雅黑"; position:absolute;top:-80px;right:0px; opacity:0;
+}
+.page-three-photo{ background:url(../images/qimengg.png) no-repeat;position:absolute;width:387px;height:387px;*top:0px; opacity:0;
+}
+.page-three-qimengg{ background:url(../images/qimeng.png) no-repeat;position:relative;left:20px;top:240px;width:168px;height:144px;}
+.page-three-qimengg:hover{
+-webkit-animation: swing 1s;
+-moz-animation: swing 1s ;
+-o-animation: swing 1s;
+animation: swing 1s ;}
+
+
+
+.page-three-infor{ line-height:30px;font:normal 18px/30px "微软雅黑"; position:absolute;right:0px;
+  transition: opacity 1s;
+  -webkit-animation: scroll 2s infinite;
+  -moz-animation: scroll 2s infinite;
+  -ms-animation: scroll 2s infinite;
+  animation: scroll 2s infinite; }
+.page-three-info{ line-height:30px;font:normal 18px/30px "微软雅黑"; position:absolute;right:-3px;top:30px;
+  transition: opacity 1s;
+  -webkit-animation: scroll 2s infinite;
+  -moz-animation: scroll 2s infinite;
+  -ms-animation: scroll 2s infinite;
+  animation: scroll 2s infinite; }
+
+/*******************************************************第3页完*********************************************************************/
+#page-four{ background:#fff0f8;}
+.page-four-sign{font:normal 35px/70px "微软雅黑"; position:absolute;top:-80px; opacity:0;
+}
+.page-four-photo{ background:url(../images/qinzig.png) no-repeat center right;position:absolute;right:0px;width:500px;height:387px; opacity:0;
+-webkit-filter:blur(3px);-webkit-filter:brightness(0.95);
+-moz-filter:blur(3px);-moz-filter:brightness(0.95);
+-o-filter:blur(3px);-o-filter:brightness(0.95);
+filter:blur(3px);filter:brightness(0.95);
+
+}
+
+@keyframes myeighth
+{
+0%{right:1000px;}
+90% {right:0px;top:0px;}
+95%{top:-30px;}
+100%{top:0px;}
+}
+
+@-moz-keyframes myeighth 
+{
+0%{right:1000px;}
+100% {right:0px;}
+}
+
+@-webkit-keyframes myeighth 
+{
+0%{right:1000px;}
+90% {right:0px;top:0px;}
+95%{top:-30px;}
+100%{top:0px;}
+}
+
+@-o-keyframes myeighth 
+{
+0%{right:1000px;}
+100% {right:0px;}
+}
+.page-four-qinzig{ background:url(../images/qinzi.png) no-repeat;position:relative;left:10px;top:200px;width:189px;height:175px;
+animation:mylast 2s infinite;
+-moz-animation:mylast 2s infinite; 
+-webkit-animation:mylast 2s infinite; 
+-o-animation:mylast 2s infinite; 
+}
+.page-four-photo:hover{-webkit-filter:blur(0px);-webkit-filter:brightness(1);-moz-filter:blur(0px);-moz-filter:brightness(1);-o-filter:blur(0px);-o-filter:brightness(1);filter:blur(0px);filter:brightness(1);
+}
+
+@keyframes mylast
+{
+0% {left:10px;}
+50% {left:-10px;}
+100% {left:10px;}
+
+}
+
+@-moz-keyframes mylast
+{
+0% {left:10px;}
+50% {left:-10px;}
+100% {left:10px;}
+}
+
+@-webkit-keyframes mylast
+{
+0% {left:10px;}
+50% {left:-10px;}
+100% {left:10px;}
+}
+
+@-o-keyframes mylast
+{
+0% {left:10px;}
+50% {left:-10px;}
+100% {left:10px;}
+}
+
+.page-four-infor{ line-height:30px;font:normal 18px/30px "微软雅黑"; position:relative;top:0px; text-align:left; }
+
+.page-four-footer{font:normal 12px/30px "微软雅黑";width:300px;height: 50px;position: absolute;left: 50%;margin-left: -150px;bottom: 20px;}
+.slideInRight{animation:slideInRight 1s;
+-moz-animation:slideInRight 1s; 
+-webkit-animation:slideInRight 1s; 
+-o-animation:slideInRight 1s;
+opacity:1;}
+.fadeInLeftBig{animation:fadeInLeftBig 1s;
+-moz-animation:fadeInLeftBig 1s; 
+-webkit-animation:fadeInLeftBig 1s; 
+-o-animation:fadeInLeftBig 1s; opacity:1;}
+.bounceOutLeft{
+animation:fadeInLeftBig 1s;
+-moz-animation:fadeInLeftBig 1s; 
+-webkit-animation:fadeInLeftBig 1s; 
+-o-animation:fadeInLeftBig 1s;
+opacity:1;
+}

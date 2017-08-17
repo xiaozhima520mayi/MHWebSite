@@ -1,0 +1,23 @@
+@charset "utf-8";
+img{border:0;}
+*{padding:0;margin:0;list-style:none;}
+
+
+.slides{width:100%;height: 944px; position:relative;overflow:hidden;}
+.slideInner{height: 944px; position:relative;left:0;margin-left:0;}
+.slideInner a{display:block;height: 944px;background-position:center center;position:relative;text-align:center;z-index:1;}
+.slideInner a div.img1{width:100%;position:absolute;left:50%;margin-left:-535px;}
+.slideInner a div.img2{width:100%;position:absolute;top:557px;left:50%;margin-left:-535px;}
+.slideInner .slide3 .img2{top:200px;}
+.slideInner .slide3 .img3{width:181px;height:286px;position:absolute;left:50%;margin-left:330px;top:330px;}
+.nav{width:100%;position:relative;display:none;}
+.nav a{display:block;width:41px;height:119px;opacity:.2;z-index:9;}
+.nav a.prev{position:absolute;left:50px;top:-550px;margin-top:-58px;background:url(../img/ban_pre.png) no-repeat;}
+.nav a.next{position:absolute;right:50px;top:-550px;margin-top:-58px;background:url(../img/ban_next.png) no-repeat;}
+
+.navListBox{position:absolute;left:70%;top:675px;z-index:99;width: 300px;}
+.navListBox li{width:32px;height:32px;float:left;margin-left:5px;overflow:hidden;}
+.navListBox li:first-child{margin-left:0;}
+.navListBox li a{display:block;width:32px;height:32px;background-color:#fff;}
+
+.navListBox li a.active{width:30px;height:30px;border: 1px solid #fff;}

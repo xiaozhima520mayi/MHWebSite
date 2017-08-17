@@ -1,0 +1,174 @@
+﻿#menu { position: fixed; right: 30px;#right: 30px; top: 50%; width: 10px; margin-top: -50px; padding: 0; list-style-type: none; z-index: 70;}
+#menu li { width:10px; height:10px; float:left; margin-top:10px;}
+#menu li a { display:block; float:left; width:10px; height:10px; text-indent:-100px; overflow:hidden; border-radius:5px; background:#fff;}
+#menu li.active a { background:#0074EA}
+
+
+@charset "utf-8";
+img{border:0;}
+*{padding:0;margin:0;list-style:none;}
+
+
+.slides{width:100%; overflow:hidden; position:relative;overflow:hidden; height:300px;}
+.slideInner{ position:relative;}
+.slideInner a{display:block;background-position:center center;position:relative;text-align:center;z-index:1; float:left;}
+.slideInner a div.img1{width:100%;position:absolute;left:50%;margin-left:-535px;}
+.slideInner a div.img2{width:100%;position:absolute;top:557px;left:50%;margin-left:-535px;}
+.slideInner .slide3 .img2{top:200px;}
+.slideInner .slide3 .img3{width:181px;height:286px;position:absolute;left:50%;margin-left:330px;top:330px;}
+.nav{width:100%;position:relative;display:none;}
+.nav a{display:block;width:41px;height:119px;opacity:.2;z-index:9;}
+.nav a.prev{position:absolute;left:50px;top:-550px;margin-top:-58px;background:url(../img/ban_pre.png) no-repeat;}
+.nav a.next{position:absolute;right:50px;top:-550px;margin-top:-58px;background:url(../img/ban_next.png) no-repeat;}
+
+.navListBox{width: 148px;}
+.navListBox li{width:32px;height:32px;float:left;margin-left:5px;display:inline; overflow:hidden;}
+.navListBox li:first-child{margin-left:0;}
+.navListBox li a{display:inline-block;width:25px;height:25px;color: #000;text-decoration: none; background:url(../images/LeListen/dian-one.png) no-repeat center center;}
+.navListBox li:hover{box-shadow: none;}
+.navListBox li.e a{background:url(../images/LeListen/dian-two.png) no-repeat center center; z-index:99999; position:relative;}
+
+
+.section{ height:768px; overflow:hidden}
+#wrapper{width: 760px;margin: 0 auto;}
+#slider{width: 1000px;margin: 0px auto;position: relative;*top:20%;}
+.scroll{height: 324px;width: 1000px;overflow: auto;overflow-x: hidden;position: relative;clear: left;background:none;}
+.scrollContainer div.panel{height: 324px;width: 1000px;}
+#shade{background: #EDEDEC url(../images/LeListen/shade.jpg) no-repeat 0 0;height: 50px;}
+ul.navigation{ margin:0 auto; text-align:center;}
+ul.navigation li{display:inline-block;margin-right:10px;width:25px;height:25px;*display:inline;}
+ul.navigation a{display:inline-block;width:25px;height:25px;color: #000;text-decoration: none; background:url(../images/LeListen/dian-one.png) no-repeat center center;}
+ul.navigation a:hover{background:url(../images/LeListen/dian-two.png) no-repeat center center;}
+ul.navigation a.selected{background:url(../images/LeListen/dian-two.png) no-repeat center center;}
+ul.navigation a:focus{outline: none;background:url(../images/LeListen/dian-two.png) no-repeat center center;}
+.scrollButtons{position: absolute;top: 150px;cursor: pointer;}
+.scrollButtons.left{left: -40px;}
+.scrollButtons.right{right: -40px;}
+.hide{display: none;}
+/*********************************************************************************/
+.panel4-header{ width:70px;height:71px; margin:0 auto;}
+.panel4-content{width:1000px;height:150px; text-align:center;font:italic 24px/150px "微软雅黑";color:#fff;}
+.panel4-line{width:160px;height:2px; background:#fff; margin:0 auto;}
+.panel4-footer{width:160px;height:44px; background:none; margin:0 auto;font:normal 18px/44px "微软雅黑"; text-align:center;color:#fff;}
+
+
+#panel1{ background:#0e2b75 url(../images/LeListen/bg.jpg) no-repeat center center; background-size:cover; overflow:hidden;}
+.panel-one-button{ background:url(../images/LeListen/nextpage.png) no-repeat;width:189px;height:68px;margin:0 auto;}
+.arrow-down{ background:url(../images/LeListen/nextpage-arrw.png) no-repeat;width:23px;height:22px;float:left;margin:18px 10px 0px 32px;  transition: opacity 1s;*margin-top\0:25px;}
+.scrollify{font:normal 22px/68px "微软雅黑"; color:#fff;width:100px;height:68px;float:left; margin-top:-7px;*margin-top\0:-2px;}
+
+/***************************************************************第一页完*********************************************************************************/
+#panel2 .polyangle {
+	background: url(../images/LeListen/polyangle.png) no-repeat center bottom;
+	width: 217px;
+	height: 265px;
+	margin: 0 20px;
+	display: inline;
+	vertical-align: middle;
+	float:left;
+}
+#panel2 .polyangle .number {
+	color: #fff;
+	font-style: normal;
+	font-size: 36px;
+	display: block;
+	margin-top: 5px;
+	margin-left: -5px;
+}
+#panel2 .link-list {margin-top:23px;}
+#panel2 .link-list .list-item {line-height:30px;}
+#panel2 .link-list .link {color:#c7c7c7; font:normal 20px/30px "微软雅黑";}
+/****************************************************************************第二页完*************************************************************************/
+#panel3 .centerbox {background:url(../images/LeListen/single-iphone.png) no-repeat center center;width:300px;height:460px;float:left;
+ }
+.icon{width:60px;height:60px;display:inline-block;float:right;}
+.details{width:270px;height:60px;float:left;}
+.details h4{color:#f24d09;font:normal 18px/30px "微软雅黑";}
+.details p{color:#ced4ce;font:normal 14px/20px "微软雅黑";}
+#panel3 .icon-microphone {background:url(../images/LeListen/microphone.png) no-repeat center center;}
+#panel3 .icon-wrench {background:url(../images/LeListen/wrench.png) no-repeat center center;}
+#panel3 .icon-tag {background:url(../images/LeListen/tag.png) no-repeat center center;}
+#panel3 .icon-back {background:url(../images/LeListen/back.png) no-repeat center center;}
+#panel3 .icon-anonymous {background:url(../images/LeListen/anonymous.png) no-repeat center center;}
+#panel3 .icon-pad {background:url(../images/LeListen/pad.png) no-repeat center center;}
+.feature-one {width:350px; height:60px;position:relative;left:0px; text-align:right; margin-top:100px;float:left;
+}
+.feature-two {width:350px; height:60px;position:relative;left:0px; text-align:right; margin-top:30px;float:left;
+}
+.feature-three {width:350px; height:60px;position:relative;left:0px; text-align:right; margin-top:30px;float:left;
+}
+.iconl{width:60px;height:60px;display:inline-block;float:left;}
+.detailsl{width:270px;height:60px;float:right;}
+.detailsl h4{color:#f24d09;font:normal 18px/30px "微软雅黑";}
+.detailsl p{color:#ced4ce;font:normal 14px/20px "微软雅黑";}
+.feature-four {width:350px; height:60px; text-align:left; margin-top:100px; 
+position:relative;left:0px;}
+
+.mysecond{animation:mysecond 2s;
+-moz-animation:mysecond 2s; 
+-webkit-animation:mysecond 2s; 
+-o-animation:mysecond 2s;}
+
+.feature-five {width:350px; height:60px; text-align:left;top:30px;position:relative;left:0px;
+}
+.feature-six {width:350px; height:60px; text-align:left;top:60px;position:relative;left:0px;
+}
+.page-three-left{width:350px;height:460px;float:left;display:inline;}
+.page-three-right{width:350px;height:460px;float:right;display:inline;}
+
+/****************************************************************************第3页完*************************************************************************/
+
+#panel4{ background:url(../images/LeListen/bgs.jpg) repeat center center; overflow:hidden;}
+
+.logo{ background:url(../images/LeListen/logo-1366.png) no-repeat;width:419px;height:62px ;margin:0 auto;*margin:10% auto 0 auto;}
+.panel-one-content{font:normal 28px/32px "黑体" !important;width:550px !important;height:32px!important;margin:70px auto 100px auto!important;color:#fff!important;}
+.panel-one-button{ background:url(../images/LeListen/nextpage.png) no-repeat!important;width:220px!important;height:68px!important;margin:0 auto!important;}
+/***************************************************************第一页完*********************************************************************************/
+.white-text{width:160px!important;height:40px!important;margin:80px auto 20px auto!important;font:normal 32px/40px "黑体"!important;color:#fff!important;}
+#panel2 .section-container {margin:4% auto 0 auto!important;overflow:hidden!important;text-align:center!important;width:780px !important;}
+.colored-line{width:200px!important;height:2px!important; background:#fb5220!important;margin:0 auto!important;}
+.section-description{width:220px!important;height:40px!important;margin:0 auto!important;font:normal 20px/40px "微软雅黑"!important; text-align:center!important;color:#c7c7c7!important;}
+/****************************************************************************第二页完*************************************************************************/
+.page-three-text{width:170px!important;height:32px!important;margin:0 auto 20px auto!important;font:normal 28px/32px "黑体"!important;color:#fff!important;}
+#panel3 .section-header{margin:4% auto 0 auto!important;overflow:hidden!important;text-align:center!important;}
+#panel3 .section-container {margin:1% auto 0 auto!important;overflow:hidden!important;text-align:center!important;width:1000px !important;}
+@media screen and (max-width: 1920px) {
+.logo{ background:url(../images/LeListen/logo-1920.png) no-repeat;width:488px;height:73px;margin:250px auto 0;}
+.panel-one-content{font:normal 40px/40px "黑体";width:760px;height:40px;margin:120px auto 150px auto;color:#fff;}
+.panel-one-button{ background:url(../images/LeListen/nextpage.png) no-repeat;width:189px;height:68px;margin:0 auto;}
+
+/***************************************************************第一页完*********************************************************************************/
+.white-text{width:200px;height:40px;margin:50px auto 30px auto;font:normal 40px/40px "黑体";color:#fff;}
+#panel2 .section-container {margin-top:8%;overflow:hidden;text-align:center;}
+.colored-line{width:260px;height:2px; background:#fb5220;margin:0 auto;}
+.section-description{width:260px;height:50px;margin:0 auto;font:normal 20px/50px "微软雅黑"; text-align:center;color:#c7c7c7;}
+/****************************************************************************第二页完*************************************************************************/
+.page-three-text{width:194px;height:40px;margin:0 auto 20px auto;font:normal 32px/40px "黑体";color:#fff;}
+.section-container{width:1000px;height:460px;margin:0 auto;}
+/****************************************************************************第3页完*************************************************************************/
+}
+
+@media screen and (max-width: 1366px) {
+.logo{ background:url(../images/LeListen/logo-1366.png) no-repeat;width:419px;height:62px;margin:0 auto;}
+.panel-one-content{font:normal 28px/32px "黑体";width:550px;height:32px;margin:70px auto 100px auto;color:#fff;}
+.panel-one-button{ background:url(../images/LeListen/nextpage.png) no-repeat;width:220px;height:68px;margin:0 auto;}
+/***************************************************************第一页完*********************************************************************************/
+.white-text{width:160px;height:40px;margin:80px auto 20px auto;font:normal 32px/40px "黑体";color:#fff;}
+#panel2 .section-container {margin-top:4%;overflow:hidden;text-align:center;}
+.colored-line{width:200px;height:2px; background:#fb5220;margin:0 auto;}
+.section-description{width:220px;height:40px;margin:0 auto;font:normal 20px/40px "微软雅黑"; text-align:center;color:#c7c7c7;}
+/****************************************************************************第二页完*************************************************************************/
+.page-three-text{width:170px;height:32px;margin:0 auto 20px auto;font:normal 28px/32px "黑体";color:#fff;}
+
+/****************************************************************************第3页完*************************************************************************/
+}
+.moveElem{ margin-top:150px;}
+.panel4-header{ margin:0 auto; text-align:center;}
+.panel4-content{height:150px; text-align:center; font:italic 24px/150px "微软雅黑";color:#fff; margin:0 auto;}
+.panel4-line{width:160px;height:2px; background:#fff; margin:0 auto;}
+.panel4-footer{width:160px;height:44px; background:none; margin:0 auto;font:normal 18px/44px "微软雅黑"; text-align:center;color:#fff;}
+.navListBox{margin: 50px auto 0; position:relative;}
+.slides{height: 450px;}
+ul.navigation li{display:inline-block;margin-right:10px;width:25px;height:25px;*display:inline;}
+ul.navigation a{display:inline-block;width:25px;height:25px;color: #000;text-decoration: none; background:url(../images/LeListen/dian-one.png) no-repeat center center;}
+ul.navigation .e{background:url(../images/LeListen/dian-two.png) no-repeat center center; z-index:99999; position:relative;}

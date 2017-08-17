@@ -1,0 +1,37 @@
+﻿/*公用样式*/
+html{-webkit-font-smoothing:antialiased;}
+body{margin:0;padding:0;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,textarea,p,th,td,label,span,a
+{padding:0;margin:0;font-size:12px;font-family:Arial,\5B8B\4F53,sans-serif; color:#494949;}
+fieldset,img,input{border:0 none;}
+ol,ul,li{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+input:focus{outline:none;}
+.radio{margin:4px;width:14px;height:14px;vertical-align:middle;_margin:7px 0 0 4px;_vertical-align:baseline;}
+.checkbox{margin:4px;width:14px;height:14px;vertical-align:middle;_margin:12px 4px 0 4px;_vertical-align:baseline;}
+a{text-decoration:none;}
+a:hover {color:#ba2636;text-decoration:underline;}
+a:active {color:#ba2636;}
+.cursor{cursor:pointer;}
+.cursorm{cursor:move;}
+.weight{ font-size:14px; font-weight:bold;}
+.fleft{float:left}
+.fright{float:right}
+.fnone{float:none;}
+.fclear{clear:both;height:0;overflow:hidden;}
+.absolute{position:absolute;}
+.relative{position:relative;}
+.tleft{text-align:left}
+.tright{text-align:right}
+.tcenter{text-align:center}
+.hidden{display:none;}
+.inline{display:inline;}
+.block{display:block;}
+.nobg{background:none;}
+.underline{text-decoration:underline;}
+.noborder{border:0;}
+.clear{clear:both}
+a {blr:expression(this.onFocus=this.blur());outline:none;}
+a:hover{ text-decoration:none}

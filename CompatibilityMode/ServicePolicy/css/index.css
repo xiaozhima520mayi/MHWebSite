@@ -1,0 +1,111 @@
+.section{ height:1080px; overflow:hidden;}
+#fp-nav ul li,.fp-slidesNav ul li { margin: 40px; }
+#fp-nav ul li a span,.fp-slidesNav ul li a span { width: 28px; height: 28px; border-radius: 28px; background: #b6b6b6; border: none; }
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span { width: 28px; height: 28px; border-radius: 28px; background: #19a9b9; border: 5px solid #c5d9e5; margin-left: -5px; margin-top: -4px; }
+.section1 { background: url(../img/section1-bg.jpg) repeat center center; }
+.section3 { background: #f9f9f9; }
+.title1 { background: url(../img/title.png); width: 697px; height: 207px; margin: 0 auto; margin-top: 5%;}
+.nav { overflow: hidden; width: 876px; margin: 0 auto; padding-bottom: 150px; margin-top: 4%; }
+.nav a { float: left; margin: 0 69px; width: 154px; }
+.nav a div { width: 154px; height: 154px; border-radius: 77px; }
+.nav a h2 { color: #1a1a1a; text-align: center; font-size: 22px; margin-top: 20px; }
+.nav a:hover h2 { color: #ffffff; }
+.circle1 { background: #88cfe1 url(../img/azfw.png) center center no-repeat; }
+.nav a:hover .circle1 { background: #3781aa url(../img/azfw-hover.png) center center no-repeat; }
+.circle2 { background: #88cfe1 url(../img/whfw.png) center center no-repeat; }
+.nav a:hover .circle2 { background: #3781aa url(../img/whfw-hover.png) center center no-repeat; }
+.circle3 { background: #88cfe1 url(../img/xyfw.png) center center no-repeat; }
+.nav a:hover .circle3 { background: #3781aa url(../img/xyfw-hover.png) center center no-repeat; }
+.flash-tel { width: 280px; height: 300px; background: url(../img/tel.png) no-repeat center bottom; position: relative; margin-left: 50%; left: -140px; }
+.tel-1 { position: absolute; background: url(../img/tle-1.png); width: 161px; height: 63px; top: 125px; left: 75px; }
+.voice1,
+.voice2,
+.voice3 { width: 276px; height: 134px; position: absolute; top: 105px; left: 10px; }
+.voice1 { background: url(../img/voice1.png);}
+
+.voice2 { background: url(../img/voice2.png);}
+
+.voice3 { background: url(../img/voice3.png);}
+
+
+/*第二屏文案*/
+
+.content2 { height: 730px; margin: 0 auto; width: 1200px; overflow: hidden; }
+.flash-box2 { width: 600px; float: left; height: 100%; margin-top:220px; }
+.tab2 { float: left; width: 600px; }
+.tab2 h3 { font-size: 54px; color: #212121; text-align: center; margin-top: 220px;}
+.tab2 .tabbtn { overflow: hidden; margin-left: 90px; margin-top: 60px;}
+.tab2 .tabbtn li { float: left; cursor:default; }
+.tab2 .tabbtn li a { width: 114px; height: 44px; background: #e8e8e8; border-radius: 6px; text-align: center; line-height: 44px; font-size: 20px; display: block; margin-right: 34px; color: #8c8c8c; }
+.tab2 .tabbtn .current a { background: #1aa9b9; color: #ffffff; }
+.tab2 .tabcon { width: 464px; margin-left: 80px;}
+.tab2 .tabcon .sublist { margin-top: 60px; color: #acacac; font-size: 16px; line-height: 30px; }
+/*第三屏文案*/
+
+.content3 {margin: 0 auto; width: 1200px; overflow: hidden;height:1080px; }
+.flash-box3 { width: 600px; float: left; height: 100%; margin-top:270px; }
+.tab3 { float: left; width: 600px; margin-top: 180px; }
+.tab3 h3 { font-size: 54px; color: #212121; text-align: center; margin-top: 120px;}
+.tab3 .tabcon { width: 560px; margin-left: 20px; height:80px;}
+.tab3 .tabcon .sublist { margin-top: 60px; color: #acacac; font-size: 16px; line-height: 30px; }
+.tab3 .tabbtn { overflow: hidden; margin-top: 60px;}
+.tab3 .tabbtn li { float: left; margin-left: 22px; }
+.tab3 .tabbtn li a { width: 112px; height: 86px; background: #e8e8e8; border-radius: 6px; text-align: center; line-height: 44px; font-size: 20px; display: block; color: #8c8c8c; padding-top: 14px; }
+.tab3 .tabbtn .current a { background: #ffc200; color: #ffffff; }
+.tab3 .tabbtn li a span { width: 50px; height: 41px; margin: 0 auto; display: block; }
+.title3-1 { background: url(../img/title3-1.png); }
+.title3-2 { background: url(../img/title3-2.png); }
+.title3-3 { background: url(../img/title3-3.png); }
+.title3-4 { background: url(../img/title3-4.png); }
+.tab3 .tabbtn .current a .title3-1 { background: url(../img/title3-1-hover.png); }
+.tab3 .tabbtn .current a .title3-2 { background: url(../img/title3-2-hover.png); }
+.tab3 .tabbtn .current a .title3-3 { background: url(../img/title3-3-hover.png); }
+.tab3 .tabbtn .current a .title3-4 { background: url(../img/title3-4-hover.png); }
+/*第四屏文案*/
+
+.content4 { margin: 0 auto; width: 1200px; overflow: hidden;height:700px; }
+.flash-box4 { width: 700px; float: left; height: 100%; margin-top:270px; }
+.tab4 { float: left; width: 500px; margin-top:150px; }
+.tab4 h3 { font-size: 54px; color: #212121; text-align: center; margin-top: 120px;}
+.tab4 .tabbtn { overflow: hidden; margin-top: 60px; }
+.tab4 .tabbtn li { float: left; margin-left: 90px;display:inline; }
+.tab4 .tabbtn li a { width: 130px; height: 150px; text-align: center; line-height: 44px; font-size: 20px; display: block; color: #8c8c8c; padding-top: 14px; }
+.tab4 .tabbtn .current a { color: #ff5655; }
+.tab4 .tabbtn li a span { width: 107px; height: 109px; margin: 0 auto; display: block; }
+.title4-1 { background: url(../img/title4-1.png); }
+.title4-2 { background: url(../img/title4-2.png); }
+.tab4 .tabbtn .current a .title4-1 { background: url(../img/title4-1-hover.png); }
+.tab4 .tabbtn .current a .title4-2 { background: url(../img/title4-2-hover.png); }
+.tab4 .tabcon { width: 450px; margin-left: 20px;}
+.tab4 .tabcon .sublist { margin-top: 50px; margin-left: 80px; }
+.tab4 .tabcon .sublist ul li { list-style-type: square; color: #acacac; font-size: 16px; line-height: 30px; }
+/*动画*/
+
+.flash-box2 { position: relative; }
+.flash2-1 { background: url(../img/flash2-1.png); width: 254px; height: 402px; position: absolute; top: 313px; left: 30px; z-index: 11;}
+.flash2-2 { background: url(../img/flash2-2.png); width: 545px; height: 536px; position: absolute; top: 0px; left: 40px; z-index: 9; }
+.flash2-3 { background: url(../img/flash2-3.png); width: 474px; height: 369px; position: absolute; top: 92px; left: 113px; z-index: 10;}
+.content3 { position: relative; }
+.flash3-1 { background: url(../img/flash3-1.png); width: 130px; height: 130px; position: absolute; z-index: 21; left: 1020px;}
+.flash3-2-1 { background: url(../img/flash3-2-1.png); width: 11px; height: 218px; position: absolute; z-index: 22; top: 310px; left: 886px; }
+.flash3-2-2 { background: url(../img/flash3-2-2.png); width: 117px; height: 11px; position: absolute; z-index: 23; top: 520px; left: 886px; }
+.flash3-2-3 { background: url(../img/flash3-2-3.png); width: 11px; height: 108px; position: absolute; z-index: 24; left: 992px; top: 520px; }
+.flash3-2-4 { background: url(../img/flash3-2-4.png); width: 275px; height: 11px; position: absolute; z-index: 25; right: 198px; top: 617px; }
+
+
+.flash3-3 { background: url(../img/flash3-3.png); width: 163px; height: 103px; position: absolute; z-index: 26; left: 1040px; top: 470px; }
+.flash3-4 { background: url(../img/flash3-4.png); width: 122px; height: 85px; position: absolute; z-index: 27; left: 760px; top: 350px;}
+.flash3-5 { background: url(../img/flash3-5.png); width: 139px; height: 86px; position: absolute; z-index: 28; top: 580px; }
+.flash3-6 { background: url(../img/flash3-6.png); width: 605px; height: 517px; position: absolute; z-index: 20; }
+.flash-box4 { position: relative; }
+.flash4-1 { background: url(../img/flash4-1.png); width: 284px; height: 310px; position: absolute; z-index: 33; top: 200px; }
+.flash4-2 { background: url(../img/flash4-2.png); width: 286px; height: 116px; position: absolute; z-index: 34; top: 400px; left: 150px; }
+.flash4-3 { background: url(../img/flash4-3.png); width: 92px; height: 115px; position: absolute; z-index: 35; top: 410px; left: 380px;  }
+.flash4-4 { background: url(../img/flash4-4.png); width: 447px; height: 480px; position: absolute; z-index: 32;}
+.flash4-5 { background: url(../img/flash4-5.png); width: 639px; height: 429px; position: absolute; z-index: 31; left: 30px; top: 40px;}
+
+.flash4-6 { background: url(../img/flash4-6.png); width: 644px; height: 234px; position: absolute; z-index: 30; }
+.flash-box4:hover > .flash4-3 { background-size: 80% 80%; background-repeat: no-repeat; }
+.footer-box { position: absolute; width: 100%; bottom: 20px; }
+.footer { color: #919191; text-align: center; width: 800px; margin: 0 auto;}

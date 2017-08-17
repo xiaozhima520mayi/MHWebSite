@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/base.css" />
+    <link href="../WebUI/css/common.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/slide.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script src="/WebUI/js/href.js"></script>
+    <script>
+        isBrowser("../../CompatibilityMode/NewMedia/baobaozhikucmp/index.html", "/index.html", "/index.html");
+    </script>
+    <script type="text/javascript" src="js/slide.js"></script>
+    <title>上业科技-宝宝智库触摸屏系统</title>
+    <link rel="Shortcut Icon " href="/WebUI/images/logo_ico.ico">
+    <script>
+        $(document).ready(function () {
+            $(".slideInner").slide({
+                slideContainer: $('.slideInner a'),
+                effect: 'easeOutCirc',
+                autoRunTime: 2000,
+                slideSpeed: 1000,
+                nav: true,
+                autoRun: true,
+                prevBtn: $('a.prev'),
+                nextBtn: $('a.next')
+            });
+        });
+        $(window).scroll(function () {
+            console.log($(this).scrollTop());
+            if ($(this).scrollTop() > 0) {
+
+            }
+            if ($(this).scrollTop() > 700) {
+                $('.section2').find(".photo2").removeClass('opacity');
+                $('.section2').find(".photo2").addClass('fadeInUp animated');
+            }
+            if ($(this).scrollTop() > 1600) {
+                $('.section3').find(".photo3").removeClass('opacity');
+                $('.section3').find(".photo3").addClass('fadeInUp animated');
+            }
+            if ($(this).scrollTop() > 2450) {
+                $('.section4').find(".photo4").removeClass('opacity');
+                $('.section4').find(".photo4").addClass('fadeInUp animated');
+            }
+            if ($(this).scrollTop() > 3300) {
+                $('.section5').find(".photo5").removeClass('opacity');
+                $('.section5').find(".photo5").addClass('fadeInUp animated');
+            }
+            if ($(this).scrollTop() > 3400) {
+                $('.footer').find("p").removeClass('opacity');
+                $('.footer').find('p').addClass('fadeInUp animated');
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="big_box">
+        <div class="section section1">
+            <div class="slides">
+                <div class="slideInner">
+                    <a href="#" style="background:url(img/yellow.jpg) center top fixed no-repeat"></a>
+                    <a href="#" style="background:url(img/blue.jpg) center top fixed no-repeat;"></a>
+                    <a href="#" style="background:url(img/red.jpg) center top fixed no-repeat;"></a>
+                    <a href="#" style="background:url(img/green.jpg) center top fixed no-repeat;"></a>
+                </div>
+                <div class="nav">
+                    <a class="prev" href="javascript:;"></a>
+                    <a class="next" href="javascript:;"></a>
+                </div>
+            </div>
+        </div>
+        <div class="section section2">
+            <h2 class="title2"></h2>
+            <h3 class="title2-1"></h3>
+            <div class="photo2 opacity"><img src="img/section2-bg.png"></div>
+        </div>
+        <div class="section section3">
+            <h2 class="title3"></h2>
+            <h3 class="title3-1"></h3>
+            <div class="photo3 opacity"><img src="img/section3-bg.png"></div>
+        </div>
+        <div class="section section4">
+            <h2 class="title4"></h2>
+            <h3 class="title4-1"></h3>
+            <div class="photo4 opacity"><img src="img/section4-bg.png"></div>
+        </div>
+        <div class="section section5">
+            <h2 class="title5"></h2>
+            <h3 class="title5-1"></h3>
+            <div class="photo5 opacity"><img src="img/section5-bg.png"></div>
+        </div>
+    </div>
+</body>
+</html>

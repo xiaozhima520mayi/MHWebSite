@@ -1,0 +1,23 @@
+/* CSS Document */
+
+.section{ height:768px; overflow:hidden;}
+.logo{ background:url(../images/yixiang/logo.png) no-repeat left center;width:1000px;height:100px; position:absolute;top:0px;left:50%;margin-left:-500px;}
+.page-one-content{background:url(../images/yixiang/xx1.jpg) no-repeat center center;width:700px;height:453px; margin:150px auto 0; position:relative; z-index:2; }
+.page-one-header{ background:url(../images/yixiang/bga.jpg) no-repeat center center;width:474px;height:373px;margin:0 auto;}
+.page-two-top{ background:url(../images/yixiang/page-two-top.jpg) no-repeat center center;width:520px;height:134px;margin:120px auto 0;position:relative;top:0px;left:0px; }
+.page-two-middle{ background:url(../images/yixiang/page-two-middle.jpg) no-repeat center center;width:640px;height:133px;margin:30px auto;position:relative;top:0px;left:0px; }
+.page-two-foot{ background:url(../images/yixiang/page-two-foot.jpg) no-repeat center center;width:530px;height:163px;margin:0 auto;position:relative;top:0px;left:0px; }
+.page-four-h1{ background:url(../images/yixiang/page-four-h2.jpg) no-repeat center center;width:530px;height:163px;margin:150px auto 0;position:relative;top:0px;left:0px; }
+.page-four-infor{background:url(../images/yixiang/.page-four-infor1.jpg) no-repeat center center;width:619px;height:161px;margin:50px auto; position:relative;top:0px;left:0px; }
+.menu{overflow:hidden;padding-left:50px;}
+.menu li{width:187px;height:194px;text-align:center;border:none;float:left;}
+.content{width:556px;height:400px;position:relative; background:url(../images/yixiang/bg-1.jpg) no-repeat 50px 20px; }
+.one{ background:url(../images/yixiang/1_3.jpg) no-repeat center bottom;}
+.two{ background:url(../images/yixiang/2_3.jpg) no-repeat center bottom;}
+.three{background:url(../images/yixiang/3_3.jpg) no-repeat center bottom;}
+.onehover{background:url(../images/yixiang/4_3.jpg) no-repeat center bottom;}
+.twohover{ background:url(../images/yixiang/5_3.jpg) no-repeat center bottom;}
+.threehover{ background:url(../images/yixiang/6_3.jpg) no-repeat center bottom;}
+.box{width:656px;height:600px; margin:150px auto 0;}
+.sign{font:normal 32px/60px "微软雅黑"; position:absolute;top:60px;left:60%;}
+.information{font:normal 16px/30px "微软雅黑"; position:relative;top:110px;left:60%;}

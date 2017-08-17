@@ -1,0 +1,9 @@
+﻿.progress{ position:relative; width:290px}
+.progress_l{ width:12px; height:19px; background:url(../../images/Gray/Progress.gif) no-repeat; position:absolute; left:0; top:0;}
+.progress_m{background:url(../../images/Gray/scrollbar_m.gif) repeat-x; height:19px; margin:0 8px}
+.progress_r{width:12px; height:19px; background:url(../../images/Gray/Progress.gif) -12px 0 no-repeat; position:absolute; right:0; top:0; }
+.progress_ag{ width:100%;overflow:hidden;position:relative; left:0; top:7px}
+.progress_agl{ width:10px; height:7px; overflow:hidden; background:url(../../images/Gray/red_scro_l.gif) no-repeat; position:absolute; left:0; top:0;}
+.progress_agc{ margin:0 3px; height:7px; overflow:hidden;background:url(../../images/Gray/red_scro_m.gif) repeat-x;}
+.progress_agr{ width:10px; height:7px; overflow:hidden; background:url(../../images/Gray/red_scro_r.gif) no-repeat ; position:absolute; right:0; top:0;}
+.ff{width:17px; height:18px; background:url(../../images/Gray/ff.png) no-repeat right top ; position:absolute; right:-7px; top:0; z-index:999;}

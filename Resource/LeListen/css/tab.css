@@ -1,0 +1,20 @@
+#wrapper{width: 760px;margin: 0 auto;}
+#slider{width: 1000px;margin: 0px auto;position: relative;*top:20%;}
+.scroll{height: 324px;width: 1000px;overflow: auto;overflow-x: hidden;position: relative;clear: left;background:none;}
+.scrollContainer div.panel{height: 324px;width: 1000px;}
+#shade{background: #EDEDEC url(../images/shade.jpg) no-repeat 0 0;height: 50px;}
+ul.navigation{ margin:0 auto; text-align:center;}
+ul.navigation li{display:inline-block;margin-right:10px;width:25px;height:25px;*display:inline;}
+ul.navigation a{display:inline-block;width:25px;height:25px;color: #000;text-decoration: none; background:url(../images/dian-one.png) no-repeat center center;}
+ul.navigation a:hover{background:url(../images/dian-two.png) no-repeat center center;}
+ul.navigation a.selected{background:url(../images/dian-two.png) no-repeat center center;}
+ul.navigation a:focus{outline: none;background:url(../images/dian-two.png) no-repeat center center;}
+.scrollButtons{position: absolute;top: 150px;cursor: pointer;}
+.scrollButtons.left{left: -40px;}
+.scrollButtons.right{right: -40px;}
+.hide{display: none;}
+/*********************************************************************************/
+.panel4-header{ width:70px;height:71px; margin:0 auto;}
+.panel4-content{width:1000px;height:150px; text-align:center;font:italic 24px/150px "Î¢ÈíÑÅºÚ";color:#fff;}
+.panel4-line{width:160px;height:2px; background:#fff; margin:0 auto;}
+.panel4-footer{width:160px;height:44px; background:none; margin:0 auto;font:normal 18px/44px "Î¢ÈíÑÅºÚ"; text-align:center;color:#fff;}

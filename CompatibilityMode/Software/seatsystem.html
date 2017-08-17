@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>上业科技-图书馆座位管理系统</title>
+    <link rel="Shortcut Icon " href="/WebUI/images/logo_ico.ico">
+    <meta name="description" content="">
+    <meta content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=0" name="viewport" />
+    <link href="../WebUI/css/base.css" rel="stylesheet" />
+    <link href="../WebUI/css/seatsystem.css" rel="stylesheet" />
+
+    <script src="../WebUI/js/jquery-1.4.1.min.js"></script>
+    <script src="/WebUI/js/href.js"></script>
+    <script>
+        isBrowser("/CompatibilityMode/Software/seatsystem.html", "/CompatibilityMode/Software/seatsystem.html", "/Software/seatsystem/index.html");
+    </script>
+    <!--[if IE 6]>
+         <script src="../WebUI/js/pngfix.js"></script>
+            <script type="text/javascript">
+                DD_belatedPNG.fix('*');
+            </script>
+    <![endif]-->
+    <style type="text/css">
+        .swiper-container-vertical > .swiper-pagination { right: 48px; }
+        .pagination { position: absolute; z-index: 20; margin-top: -60px; top: 50%; right: 50px; width: 24px; text-align: center; }
+        .pagination span, #system-nav span { cursor: pointer; }
+        .swiper-pagination-switch { display: inline-block; width: 26px; height: 26px; border: 2px solid #fff; border-radius: 99px; margin-bottom: 28px; font-size: 0; opacity: 1; background: transparent; }
+        .swiper-active-switch { background: #fff; border: 2px solid #fff; border: 2px solid transparent; }
+    </style>
+</head>
+<body>
+    <div class="big_box">
+        <div class="head">
+            <div class="col-ins center-block" style="position:relative;">
+                <a class="logo" href="#"><img src="../WebUI/images/seatsystem/logo.png" /></a>
+                <div id="system-nav" style="display:none">
+                    <span class="swiper-pagination-bullet-active">首页</span>
+                    <span>产品价值</span>
+                    <span>系统结构</span>
+                    <span>产品特色</span>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-wrapper seat-system">
+            <div class="swiper-slide index">
+                <img class="ani" src="../WebUI/images/seatsystem/ani-index-img01.png" style="top: 0; _top: -60px" />
+                <img class="ani" src="../WebUI/images/seatsystem/ani-index-img02.png" style="top: 0; _top: -100px" />
+                <img class="ani" src="../WebUI/images/seatsystem/ani-index-img03.png" style="top: 0; _top: -100px; " />
+                <img class="ani" src="../WebUI/images/seatsystem/ani-index-img04.png" style="top: 0; _top: -100px; " />
+                <img class="ani" src="../WebUI/images/seatsystem/ani-index-img05.png" />
+            </div>
+            <div class="swiper-slide value">
+                <img class="ani" src="../WebUI/images/seatsystem/ani-value-img01.png" />
+                <img class="ani" src="../WebUI/images/seatsystem/ani-value-img02.png" />
+                <img class="ani"  src="../WebUI/images/seatsystem/ani-value-img03.png" />
+                <img class="ani"  src="../WebUI/images/seatsystem/ani-value-img04.png" />
+                <img class="ani" src="../WebUI/images/seatsystem/ani-value-img05.png" />
+                <img class="ani"  src="../WebUI/images/seatsystem/ani-value-img06.png" />
+                <img class="ani" src="../WebUI/images/seatsystem/ani-value-img07.png" />
+                <img class="ani" src="../WebUI/images/seatsystem/ani-value-img08.png" />
+            </div>
+            <div class="swiper-slide system">
+                <img class="ani"src="../WebUI/images/seatsystem/ani-system-img01.png" />
+                <img class="ani"  src="../WebUI/images/seatsystem/ani-system-img03.png" />
+                <img class="ani" src="../WebUI/images/seatsystem/ani-system-img02.png" />
+                <img class="ani"  src="../WebUI/images/seatsystem/ani-system-img05.png" />
+                <img class="ani"  src="../WebUI/images/seatsystem/ani-system-img04.png" />
+                <img class="ani"  src="../WebUI/images/seatsystem/ani-system-img07.png" />
+                <img class="ani"  src="../WebUI/images/seatsystem/ani-system-img06.png" />
+            </div>
+            <div class="swiper-slide products">
+                <img class="ani" src="../WebUI/images/seatsystem/ani-pro-img01.png" />
+                <img class="ani"src="../WebUI/images/seatsystem/ani-pro-img02.png" />
+                <img class="ani" src="../WebUI/images/seatsystem/ani-pro-img09.png" />
+                <img class="ani" src="../WebUI/images/seatsystem/ani-pro-img03.png" />
+                <img class="ani" src="../WebUI/images/seatsystem/ani-pro-img04.png" />
+                <img class="ani" src="../WebUI/images/seatsystem/ani-pro-img05.png" />
+                <img class="ani" src="../WebUI/images/seatsystem/ani-pro-img06.png" />
+                <img class="ani" src="../WebUI/images/seatsystem/ani-pro-img07.png" />
+                <img class="ani" src="../WebUI/images/seatsystem/ani-pro-img08.png" />
+            </div>
+        </div>
+        <div class="pagination"></div>
+    </div>
+    <script>
+        $(function () {
+            $(".head").width($(window).width());
+        })
+        window.onresize = function () {
+            $(".head").width($(window).width());
+        }
+    </script>
+</body>
+</html>

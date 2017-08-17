@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>上业科技-易享</title> 
+    <link href="../../WebUI/css/common.css" rel="stylesheet" />
+    <link rel="Shortcut Icon " href="/WebUI/images/logo_ico.ico">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="../../WebUI/css/common.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="big_box">
+        <div id="dowebok">
+            <div class="section section1">
+                <div class="logo"></div>
+                <div class="page-one-content mysecond"></div>
+            </div>
+            <div class="section section2">
+                <div class="page-two-top"></div>
+                <div class="page-two-middle"></div>
+                <div class="page-two-foot"></div>
+            </div>
+            <div class="section section3">
+                <div class="box">
+                    <ul class="menu">
+                        <li id="one" class="current onehover">
+                        </li>
+                        <li class="others two" id="two">
+                        </li>
+                        <li class="others three" id="three">
+                        </li>
+                    </ul>
+                    <div class="content current">
+                        <h1 class="sign">无需插件</h1>
+                        <p class="information">不需要数据库厂商提供检索</p>
+                        <p class="information">接口不需要进行任何对接工作</p>
+                    </div>
+                    <div class="content current others" style="display:none">
+                        <h1 class="sign">支持馆外访问</h1>
+                        <p class="information">读者在有互联网的地方</p>
+                        <p class="information">经过身份认证后，就可以访问</p>
+                    </div>
+                    <div class="content current others" style="display:none">
+                        <h1 class="sign">统一认证</h1>
+                        <p class="information">与学校的统一身份认证</p>
+                        <p class="information">或者图书馆管理系统进行对接</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section section4">
+                <div class="page-four-h1"></div>
+                <div class="page-four-infor"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="/WebUI/js/href.js"></script>
+    <script>
+        isBrowser("/CompatibilityMode/Software/yixiang.html", "/Software/xx/index.html", "/Software/xx/index.html");
+    </script> 
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <!--支持IE8一下多媒体查询-->
+    <script src="js/respond.src.js"></script>
+    <script>
+        $(function () {
+            //$("#one").css("background", "url(images/4_03.jpg) no-repeat center bottom");
+            $('#dowebok').fullpage({
+                sectionsColor: ['#e4f9e3', '#f8f8d8', '#d4f6f6', '#fed4cc'],
+                continuousVertical: false,
+                'navigation': true,
+                afterLoad: function (anchorLink, index) {
+                    if (index == 2) {
+                        $('.section2').find('.page-two-top').addClass('myfirst');
+                        $('.section2').find('.page-two-middle').addClass('mysecond');
+                        $('.section2').find('.page-two-foot').addClass('myfirst');
+                    }
+                    if (index == 4) {
+                        $('.section4').find('.page-four-h1').addClass('myfirst');
+                        $('.section4').find('.page-four-infor').addClass('mysecond');
+                    }
+                },
+
+                onLeave: function (anchorLink, index) {
+                    if (index == 2) {
+                        $('.section2').find('.page-two-top').removeClass('myfirst');
+                        $('.section2').find('.page-two-middle').removeClass('mysecond');
+                        $('.section2').find('.page-two-foot').removeClass('myfirst');
+                    }
+                    if (index == 4) {
+                        $('.section4').find('.page-four-h1').removeClass('myfirst');
+                        $('.section4').find('.page-four-infor').removeClass('mysecond');
+                    }
+                },
+            });
+
+            $(".menu li").mouseover(function () {
+                //$(".menu li").addClass("others");
+                //$(this).removeClass("others").addClass("current");
+                //var index = $(".menu li").index(this);
+                //$(".content").hide();
+                //$(".content").eq(index).css({ "display": "block" });
+                $(".menu>li").each(function () {
+                    var id = $(this).attr("id");
+                    $(this).attr("class", id);
+                });
+                var index = $(this).index();
+                var cN = $(this).attr("id") + "hover";
+                $(this).addClass(cN)
+                $(".content").hide();
+                $(".content:eq(" + index + ")").show();
+            });
+        });
+
+    </script>
+</body>
+</html>
